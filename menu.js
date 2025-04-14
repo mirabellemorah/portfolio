@@ -5,10 +5,10 @@ toggleTag.addEventListener("click", function () {
     mainTag.classList.toggle("open");
 
     if (mainTag.classList.contains("open")) {
-        toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Close`;
+        toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Close`;
     }
     else {
-        toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Menu`;
+        toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Menu`;
     }
 
 });
