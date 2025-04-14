@@ -1,4 +1,4 @@
-/* GLOBAL FONT SETTINGS */
+/* ========== GLOBAL FONT SETTINGS ==============*/
 :root {
     --color-heading: #000000;
     --color-body: #000000;
@@ -7,7 +7,10 @@
     --color-button-text: #000000;
     --color-offwhite: #F9F8F0;
     --color-black: #000000;
+    --color-link: #000000;
 }
+
+/*============== BODY ================*/
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -17,10 +20,30 @@ body {
     color: var(--color-body);
     background-color: var(--color-offwhite);
     margin: 0;
-    padding: 0;
+    padding: 20px 80px;
 }
 
-/* HEADINGS */
+/*============== HEADER ================*/
+
+header .logo {
+    width: clamp(100px, 10vw, 150px);
+    height: auto;
+}
+
+header nav a {
+    color: var(--color-link);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*============== HEADINGS ================*/
+
 h1,
 h2,
 h3,
@@ -55,7 +78,7 @@ h4 {
     line-height: 1.5;
 }
 
-/* BUTTONS & CTA */
+/*  =========== BUTTONS & CTA ===============*/
 button,
 .btn {
     font-size: clamp(14px, 1.5vw, 16px);
@@ -76,6 +99,8 @@ button:hover,
 .btn:hover {
     transform: scale(0.8);
 }
+
+/*============== RESPONSIVE ================*/
 
 /* Responsive Breakpoints */
 @media screen and (max-width: 1200px) {
@@ -99,6 +124,7 @@ button:hover,
 @media screen and (max-width: 768px) {
     body {
         font-size: clamp(12px, 4vw, 16px);
+        padding: 20px;
     }
 
     h1 {
