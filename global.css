@@ -37,7 +37,6 @@ header {
 
 header .logo {
     width: clamp(40px, 10vw, 100px);
-    height: auto;
 }
 
 header nav a {
@@ -135,7 +134,6 @@ button:hover,
 
     header .logo {
         width: 50px;
-        height: auto;
     }
 
     header {
