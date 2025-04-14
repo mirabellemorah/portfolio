@@ -1,0 +1,22 @@
+section.fp-hero {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fp-hero h2 {
+    font-size: clamp(32px, 100vw, 400px);
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.fp-hero-sub {
+    width: 60vw;
+    margin-top: 0.5em;
+    font-size: clamp(9px, 3vw, 14px);
+}
