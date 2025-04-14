@@ -35,7 +35,7 @@ header {
 }
 
 header .logo {
-    width: clamp(40px, 10vw, 100px);
+    width: 70px;
 }
 
 header nav a {
@@ -46,7 +46,8 @@ header nav a {
 }
 
 a.toggle-nav {
-    visibility: hidden;}
+    display: none;
+}
 
 /*============== HEADINGS ================*/
 
@@ -186,7 +187,7 @@ button:hover,
         height: 100vh;
         padding-left: 20px;
         background-color: var(--color-offwhite);
-        border-left: var(--color-black) 1px solid;
+        /*border-left: var(--color-black) 1px solid; */
     }
 
     main {
@@ -203,7 +204,7 @@ button:hover,
     }
 
     a.toggle-nav {
-        visibility: visible;
+
         position: fixed;
         display: flex;
         gap: 10px;
