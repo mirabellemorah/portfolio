@@ -219,17 +219,17 @@ button:hover,
     }
 
     a.toggle-nav {
-
         position: fixed;
         display: flex;
         gap: 10px;
-        top: 0;
+        top: -3%;
         right: 0;
         padding: 20px 20px;
         color: var(--color-link);
         text-decoration: none;
         z-index: 2;
     }
+}
 
     body {
         font-size: clamp(10px, 4vw, 14px);
