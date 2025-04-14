@@ -1,93 +1,153 @@
 /* GLOBAL FONT SETTINGS */
 :root {
-    --color-heading: #111827;
-    --color-body: #374151;
-    --color-button-bg: #FF5722; /* Or your brand color */
-    --color-button-text: #ffffff;
-  }
-  
-  body {
+    --color-heading: #000000;
+    --color-body: #000000;
+    --color-button-bg: none;
+    /* Or your brand color */
+    --color-button-text: #000000;
+    --color-offwhite: #F9F8F0;
+    --color-black: #000000;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 400;
-    color: var(--color-body);
     line-height: 1.7;
+    color: var(--color-body);
+    background-color: var(--color-offwhite);
     margin: 0;
     padding: 0;
-  }
-  
-  /* HEADINGS */
-  h1, h2, h3, h4 {
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4 {
     color: var(--color-heading);
     margin-bottom: 0.5em;
-  }
-  
-  h1 {
-    font-size: 48px;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -1px;
-  }
-  
-  h2 {
-    font-size: 36px;
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 36px);
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: -0.5px;
-  }
-  
-  h3 {
-    font-size: 28px;
+}
+
+h3 {
+    font-size: clamp(22px, 3vw, 28px);
     font-weight: 600;
     line-height: 1.4;
-  }
-  
-  h4 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.4;
-  }
-  
-  /* SUBHEADINGS */
-  .subheading {
-    font-size: 20px;
+}
+
+h4 {
+    font-size: clamp(20px, 2.5vw, 24px);
     font-weight: 500;
     line-height: 1.5;
-    color: var(--color-body);
-  }
-  
-  /* BUTTONS & CTA */
-  button, .btn {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase; /* or capitalize */
+}
+
+/* BUTTONS & CTA */
+button,
+.btn {
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    text-transform: uppercase;
+    /* or capitalize */
     letter-spacing: 1px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
     cursor: pointer;
     background-color: var(--color-button-bg);
     color: var(--color-button-text);
-    transition: opacity 0.3s ease;
-  }
-  
-  button:hover, .btn:hover {
-    opacity: 0.85;
-  }
-  
-  /* RESPONSIVE TYPOGRAPHY */
-  @media screen and (max-width: 768px) {
-    h1 { font-size: 36px; }
-    h2 { font-size: 30px; }
-    h3 { font-size: 24px; }
-    h4 { font-size: 20px; }
-    body { font-size: 15px; }
-  }
-  
-  @media screen and (max-width: 480px) {
-    h1 { font-size: 32px; }
-    h2 { font-size: 28px; }
-    h3 { font-size: 22px; }
-    body { font-size: 14px; }
-  }
-  
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: scale(0.8);
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: clamp(28px, 5vw, 40px);
+    }
+
+    h2 {
+        font-size: clamp(24px, 4vw, 32px);
+    }
+
+    h3 {
+        font-size: clamp(20px, 3vw, 24px);
+    }
+
+    h4 {
+        font-size: clamp(18px, 2.5vw, 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: clamp(12px, 4vw, 16px);
+    }
+
+    h1 {
+        font-size: clamp(24px, 8vw, 32px);
+    }
+
+    h2 {
+        font-size: clamp(20px, 6vw, 28px);
+    }
+
+    h3 {
+        font-size: clamp(18px, 5vw, 24px);
+    }
+
+    h4 {
+        font-size: clamp(16px, 4vw, 20px);
+    }
+
+    button,
+    .btn {
+        font-size: clamp(12px, 4vw, 14px);
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: clamp(10px, 4vw, 14px);
+    }
+
+    h1 {
+        font-size: clamp(20px, 8vw, 28px);
+    }
+
+    h2 {
+        font-size: clamp(18px, 6vw, 24px);
+    }
+
+    h3 {
+        font-size: clamp(16px, 5vw, 20px);
+    }
+
+    h4 {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+
+    button,
+    .btn {
+        font-size: clamp(10px, 4vw, 12px);
+        padding: 6px 12px;
+    }
+}
