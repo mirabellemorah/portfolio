@@ -32,7 +32,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-universal);
-
 }
 
 header .logo {
@@ -45,6 +44,9 @@ header nav a {
     margin-bottom: 15px;
     margin-right: 10px;
 }
+
+a.toggle-nav {
+    visibility: hidden;}
 
 /*============== HEADINGS ================*/
 
@@ -201,6 +203,7 @@ button:hover,
     }
 
     a.toggle-nav {
+        visibility: visible;
         position: fixed;
         display: flex;
         gap: 10px;
@@ -209,6 +212,7 @@ button:hover,
         padding: 20px 20px;
         color: var(--color-link);
         text-decoration: none;
+        z-index: 2;
     }
 
     body {
