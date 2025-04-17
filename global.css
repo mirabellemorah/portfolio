@@ -6,7 +6,7 @@
     --color-button-bg: none;
     /* Or your brand color */
     --color-button-text: #000000;
-    --color-offwhite: #F9F8F0;
+    --color-offwhite: #f9f8f0;
     --color-black: #000000;
     --color-link: #000000;
     --padding-universal: 30px 80px;
@@ -33,10 +33,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-universal);
+    position: fixed;
+    width: 100%;
 }
 
 header .logo {
     width: 70px;
+    position: relative;
 }
 
 header .logo img {
@@ -53,6 +56,13 @@ header nav a {
 
 a.toggle-nav {
     display: none;
+}
+
+/*============== MAIN ================*/
+
+main {
+
+    background-color: blue;
 }
 
 /*============== SECTIONS ================*/
@@ -190,6 +200,10 @@ button:hover,
 
 @media screen and (max-width: 480px) {
 
+    header {
+        position: relative;
+        width: 100%;
+    }
 
     header nav {
         position: fixed;
@@ -209,10 +223,10 @@ button:hover,
 
     main {
         position: relative;
+        margin-top: px;
         z-index: 1;
         transform: translate(0, 0);
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
-        background-color: #F9F8F0;
     }
 
     main.open {
