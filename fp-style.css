@@ -36,21 +36,46 @@ section.fp-hero {
 
 /*============== SECTION 2 SELECTION ================*/
 
-.fp-filters-list a {
+.fp-project-filter-list::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
 
-    font-size: clamp(14px, 1.5vw, 16px);
+.fp-project-filter-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-bottom: 80px;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.fp-project-filter-list a {
+    flex-shrink: 0;
+    font-size: clamp(9px, 1.5vw, 16px);
     font-weight: 400;
     text-transform: uppercase;
-    /* or capitalize */
-    letter-spacing: 1px;
     padding: 5px 10px;
     border-radius: 20px;
     border: 1px solid black;
-    margin: px;
+    margin-bottom: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(transition-ease-1);
+}
 
+.fp-project-filter-list a.selected {
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    border: none;
+}
 
+.fp-project-filter-list a:hover {
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    scale: 1.05;
 }
 
 /*============== RESPONSIVE ================*/
