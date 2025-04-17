@@ -20,12 +20,42 @@ section.fp-hero {
     font-size: clamp(9px, 3vw, 14px);
 }
 
+/*============== SECTION 1 ================*/
 
+.fp-intro {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.fp-intro div {
+    width: 50%;
+    padding: 0 2em;
+}
+
+/*============== SECTION 2 SELECTION ================*/
+
+.fp-filters-list a {
+
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    text-transform: uppercase;
+    /* or capitalize */
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}
 
 /*============== RESPONSIVE ================*/
 
 /* Responsive Breakpoints */
-
 
 
 @media screen and (max-width: 768px) {

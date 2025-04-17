@@ -35,6 +35,8 @@ header {
     padding: var(--padding-universal);
     position: fixed;
     width: 100%;
+
+
 }
 
 header .logo {
@@ -58,12 +60,26 @@ a.toggle-nav {
     display: none;
 }
 
+/*============== LINKS ================*/
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-link);
+    text-decoration: underline;
+
+}
+
 /*============== MAIN ================*/
 
 main {
-
-    background-color: blue;
+    background-color: var(--color-offwhite);
 }
+
 
 /*============== SECTIONS ================*/
 
@@ -158,7 +174,6 @@ button:hover,
 */
 
 @media screen and (max-width: 768px) {
-
 
     section {
         padding: var(--padding-mobile);
