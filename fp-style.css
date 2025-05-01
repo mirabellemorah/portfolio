@@ -175,19 +175,21 @@ section.fp-hero {
 }
 
 /*================ LOGO SLIDER ================*/
+
 .fp-logos {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding: 0 2em;
+    width: 100%;
 }
 
 .fp-logo-slider {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
     white-space: nowrap;
     position: relative;
 }
