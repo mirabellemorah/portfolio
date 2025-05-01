@@ -23,15 +23,19 @@ section.fp-hero {
 /*============== SECTION 1 ================*/
 
 .fp-intro {
+    position: relative;
     display: flex;
     height: 70vh;
     align-items: center;
-    justify-content: center;
+
 }
 
 .fp-intro div {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 0 2em;
+    justify-content: space-around;
 }
 
 /*============== SECTION 2 SELECTION ================*/
@@ -43,26 +47,25 @@ section.fp-hero {
 
 .fp-project-filter-list {
     display: flex;
-    gap: 10px;
+    gap: 4px;
     overflow-x: auto;
     padding: 10px 0;
-    margin-bottom: 80px;
     scrollbar-width: none;
     /* For Firefox */
     -ms-overflow-style: none;
     /* For Internet Explorer and Edge */
 }
 
+.round-project-cat-btn,
 .fp-project-filter-list a {
-    flex-shrink: 0;
+    flex: 0 0 auto;
     font-size: clamp(9px, 1.5vw, 16px);
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     padding: 5px 10px;
     border-radius: 20px;
+    margin: 5px 0 0 5px;
     border: 1px solid var(--color-black);
-    margin-bottom: 20px;
-    margin-top: 20px;
     cursor: pointer;
     transition: var(transition-ease-1);
 }
@@ -79,34 +82,115 @@ section.fp-hero {
     scale: 1.05;
 }
 
+/*============== SECTION 2 VIEW ALL ================*/
+
+.available,
+.view-all {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+}
+
+.view-all:hover {
+    background-color: var(--color-offwhite);
+    color: var(--color-black);
+}
+
+/*============== SECTION 2 AVAILABLE ================*/
+
+.available-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #B6CC15;
+    border-radius: 50%;
+    transition: var(--transition-ease-1);
+    animation: fadePulse 5s ease-in-out infinite;
+}
+
+.available img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.available {
+
+    position: sticky;
+    top: 80%;
+    left: 90%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadePulse {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+}
+
+
 /*============== SECTION 2 CARDS ================*/
 
 .fp-projects {
     display: flex;
     flex-wrap: wrap;
     min-height: 70vh;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+
+    justify-items: center;
+
 }
 
 .fp-projects .project {
-    flex: 1 1 50%; /* default width for cards */
-    max-width: auto;
+    flex: 1 1 50%;
+    /* default width for cards */
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* 2nd and 3rd in every group of 4 */
 .fp-projects .project:nth-child(4n+2),
 .fp-projects .project:nth-child(4n+3) {
     flex: 1 1 30%;
-    max-width: 30%;
 }
 
 .project-image {
-    width: 100;
-    height: 400px;
+    width: 100%;
+    height: 450px;
 }
 
 .project-image img {
@@ -116,6 +200,52 @@ section.fp-hero {
     object-fit: cover;
     object-position: center;
 }
+
+
+/*============== SLIDER ================*/
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 8))
+    }
+}
+
+.fp-logo-slider {
+    height: 170px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    background-color: #f9f8f0;
+    padding: 16px 0px;}
+
+    .logo-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(150px * 16);
+    }
+
+    .logo {
+        height: 100px;
+        width: 150px;
+        filter: grayscale(100%);
+    }
+
+    .logo img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        filter: grayscale(100%);
+    }
+
+    .logo:hover {
+        filter: grayscale(0%);
+    }
 
 /*============== RESPONSIVE ================*/
 
