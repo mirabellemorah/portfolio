@@ -206,34 +206,30 @@ section.fp-hero {
 
 
 .fp-logo-slider {
-    margin: 20px 0;
     overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+    width: 100%;
 }
 
 .logo-track {
-    margin: 40px 0;
-    display: inline-block;
-    animation: scroll 10s linear infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0%);
+    0% {
+        transform: translateX(0);
     }
 
-    to {
-        transform: translateX(calc(-100px * 7));
+    100% {
+        transform: translateX(-50%);
     }
 }
 
 .logo {
-    height: 100px;
     width: 100px;
-    display: inline-block;
+    height: 100px;
+    flex: 0 0 auto;
     margin: 0 10px;
 }
 
