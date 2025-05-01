@@ -1,3 +1,5 @@
+/*================ HERO SECTION ================*/
+
 section.fp-hero {
     height: 100vh;
     text-align: center;
@@ -11,7 +13,7 @@ section.fp-hero {
     font-size: clamp(32px, 100vw, 400px);
     margin-bottom: 0;
     font-weight: 100;
-    position: abs;
+    position: relative;
 }
 
 .fp-hero-sub {
@@ -20,14 +22,13 @@ section.fp-hero {
     font-size: clamp(9px, 3vw, 14px);
 }
 
-/*============== SECTION 1 ================*/
+/*================ INTRO SECTION ================*/
 
 .fp-intro {
     position: relative;
     display: flex;
     height: 70vh;
     align-items: center;
-
 }
 
 .fp-intro div {
@@ -38,22 +39,19 @@ section.fp-hero {
     justify-content: space-around;
 }
 
-/*============== SECTION 2 SELECTION ================*/
-
-.fp-project-filter-list::-webkit-scrollbar {
-    display: none;
-    /* For Chrome, Safari, and Opera */
-}
+/*================ PROJECT FILTER ================*/
 
 .fp-project-filter-list {
     display: flex;
     gap: 4px;
     overflow-x: auto;
     padding: 10px 0;
-    scrollbar-width: none;
-    /* For Firefox */
-    -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
+    scrollbar-width: none;         /* Firefox */
+    -ms-overflow-style: none;      /* IE/Edge */
+}
+
+.fp-project-filter-list::-webkit-scrollbar {
+    display: none;                 /* Chrome/Safari */
 }
 
 .round-project-cat-btn,
@@ -67,25 +65,20 @@ section.fp-hero {
     margin: 5px 0 0 5px;
     border: 1px solid var(--color-black);
     cursor: pointer;
-    transition: var(transition-ease-1);
+    transition: var(--transition-ease-1);
 }
 
-.fp-project-filter-list a.selected {
-    background-color: var(--color-black);
-    color: var(--color-offwhite);
-    border: none;
-}
-
+.fp-project-filter-list a.selected,
 .fp-project-filter-list a:hover {
     background-color: var(--color-black);
     color: var(--color-offwhite);
+    border: none;
     scale: 1.05;
 }
 
-/*============== SECTION 2 VIEW ALL ================*/
-
-.available,
-.view-all {
+/*================ VIEW ALL & AVAILABLE ================*/
+.view-all,
+.available {
     width: max-content;
     display: flex;
     align-items: center;
@@ -99,25 +92,7 @@ section.fp-hero {
     color: var(--color-black);
 }
 
-/*============== SECTION 2 AVAILABLE ================*/
-
-.available-circle {
-    width: 15px;
-    height: 15px;
-    background-color: #B6CC15;
-    border-radius: 50%;
-    transition: var(--transition-ease-1);
-    animation: fadePulse 5s ease-in-out infinite;
-}
-
-.available img {
-    width: 20px;
-    height: 20px;
-
-}
-
 .available {
-
     position: sticky;
     top: 80%;
     left: 90%;
@@ -125,53 +100,52 @@ section.fp-hero {
     animation: float 5s ease-in-out infinite;
 }
 
+.available-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #B6CC15;
+    border-radius: 50%;
+    animation: fadePulse 5s ease-in-out infinite;
+}
+
+.available img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Animations */
 @keyframes float {
-    0% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0);
     }
 }
 
 @keyframes fadePulse {
-    0% {
+    0%, 100% {
         opacity: 0.3;
         transform: scale(1);
     }
-
     50% {
         opacity: 1;
         transform: scale(0.9);
     }
-
-    100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
 }
 
-
-/*============== SECTION 2 CARDS ================*/
+/*================ PROJECT CARDS ================*/
 
 .fp-projects {
     display: flex;
     flex-wrap: wrap;
     min-height: 70vh;
     gap: 10px;
-
     justify-items: center;
-
 }
 
 .fp-projects .project {
     flex: 1 1 50%;
-    /* default width for cards */
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
@@ -182,7 +156,6 @@ section.fp-hero {
     margin-bottom: 20px;
 }
 
-/* 2nd and 3rd in every group of 4 */
 .fp-projects .project:nth-child(4n+2),
 .fp-projects .project:nth-child(4n+3) {
     flex: 1 1 30%;
@@ -194,67 +167,69 @@ section.fp-hero {
 }
 
 .project-image img {
-    border-radius: 20px;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
     object-position: center;
 }
 
-
-/*============== SLIDER ================*/
-
+/*================ LOGO SLIDER ================*/
+.fp-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 2em;
+}
 
 .fp-logo-slider {
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    white-space: nowrap;
+    position: relative;
 }
 
 .logo-track {
     display: flex;
-    width: max-content;
-    animation: scroll 30s linear infinite;
+    justify-content: space-between;
+    margin: 40px 0;
+    animation: scroll 10s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
+    from {
+        transform: translateX(0%);
     }
-
-    100% {
-        transform: translateX(-50%);
+    to {
+        transform: translateX(calc(-100px * 8));
     }
 }
 
 .logo {
     width: 100px;
     height: 100px;
-    flex: 0 0 auto;
     margin: 0 10px;
 }
 
 .logo img {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
     filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
 .logo img:hover {
     filter: grayscale(0%);
 }
 
-
-/*============== RESPONSIVE ================*/
-
-/* Responsive Breakpoints */
-
-
+/*================ RESPONSIVE ================*/
 @media screen and (max-width: 768px) {
-
     .fp-hero h2 {
         font-size: 200px;
-
     }
 }
