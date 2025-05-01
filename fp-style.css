@@ -204,48 +204,51 @@ section.fp-hero {
 
 /*============== SLIDER ================*/
 
+
+.fp-logo-slider {
+    margin: 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    margin: 40px 0;
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
+    from {
+        transform: translateX(0%);
     }
 
-    100% {
-        transform: translateX(calc(-150px * 8))
+    to {
+        transform: translateX(calc(-100px * 7));
     }
 }
 
-.fp-logo-slider {
-    height: 170px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    background-color: #f9f8f0;
-    padding: 16px 0px;}
+.logo {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 0 10px;
+}
 
-    .logo-track {
-        animation: scroll 40s linear infinite;
-        display: flex;
-        width: calc(150px * 16);
-    }
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(100%);
+}
 
-    .logo {
-        height: 100px;
-        width: 150px;
-        filter: grayscale(100%);
-    }
+.logo img:hover {
+    filter: grayscale(0%);
+}
 
-    .logo img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
-        filter: grayscale(100%);
-    }
-
-    .logo:hover {
-        filter: grayscale(0%);
-    }
 
 /*============== RESPONSIVE ================*/
 
@@ -258,5 +261,4 @@ section.fp-hero {
         font-size: 200px;
 
     }
-
 }
