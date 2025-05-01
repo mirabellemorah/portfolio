@@ -45,7 +45,7 @@ section.fp-hero {
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    padding: 10px;
+    padding: 10px 0;
     margin-bottom: 80px;
     scrollbar-width: none;
     /* For Firefox */
@@ -60,8 +60,9 @@ section.fp-hero {
     text-transform: uppercase;
     padding: 5px 10px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     margin-bottom: 20px;
+    margin-top: 20px;
     cursor: pointer;
     transition: var(transition-ease-1);
 }
@@ -76,6 +77,44 @@ section.fp-hero {
     background-color: var(--color-black);
     color: var(--color-offwhite);
     scale: 1.05;
+}
+
+/*============== SECTION 2 CARDS ================*/
+
+.fp-projects {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fp-projects .project {
+    flex: 1 1 50%; /* default width for cards */
+    max-width: auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* 2nd and 3rd in every group of 4 */
+.fp-projects .project:nth-child(4n+2),
+.fp-projects .project:nth-child(4n+3) {
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+.project-image {
+    width: 100;
+    height: 400px;
+}
+
+.project-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*============== RESPONSIVE ================*/
