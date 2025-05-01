@@ -21,7 +21,6 @@ body {
     font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 400;
     line-height: 1.7;
-    letter-spacing: 1px;
     color: var(--color-black);
     background-color: var(--color-offwhite);
     margin: 0;
@@ -128,10 +127,9 @@ h4 {
 /*  =========== BUTTONS & CTA ===============*/
 button,
 .btn {
-    font-size: clamp(14px, 1.5vw, 16px);
+    font-size: clamp(9px, 1.5vw, 16px);
     font-weight: 400;
     text-transform: uppercase;
-    /* or capitalize */
     letter-spacing: 1px;
     padding: 5px 10px;
     border-radius: 20px;
@@ -144,7 +142,7 @@ button,
 
 button:hover,
 .btn:hover {
-    transform: scale(0.9);
+    transform: scale(1.05);
 }
 
 /*============== RESPONSIVE ================*/
