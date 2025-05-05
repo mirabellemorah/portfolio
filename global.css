@@ -37,7 +37,7 @@ header {
     padding: var(--padding-universal);
     position: fixed;
     width: 100%;
- 
+
 }
 
 header .logo {
@@ -80,7 +80,6 @@ a:hover {
 main {
     background-color: var(--color-offwhite);
 }
-
 
 /*============== SECTIONS ================*/
 
@@ -131,8 +130,9 @@ button,
 .btn {
 
     font-size: clamp(9px, 1.5vw, 16px);
+    width: fit-content;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     padding: 5px 10px;
     border-radius: 20px;
     margin: 5px 0 0 5px;
@@ -141,6 +141,7 @@ button,
     background-color: var(--color-button-bg);
     color: var(--color-button-text);
     transition: var(--transition-ease-1);
+
 }
 
 button:hover,
@@ -150,6 +151,26 @@ button:hover,
     color: var(--color-offwhite);
 }
 
+/*============== FOOTER ================*/
+
+
+footer section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+.social-link img {
+    max-width: 30px;
+    height: 30px;
+    padding: 5px;
+}
 
 
 
@@ -224,7 +245,7 @@ button:hover,
     header {
         position: relative;
         width: 100%;
-        
+
     }
 
     header nav {
