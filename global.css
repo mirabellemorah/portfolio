@@ -31,10 +31,9 @@ body {
 /*============== HEADER ================*/
 
 header {
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     padding: var(--padding-universal);
     position: fixed;
     width: 100%;
