@@ -8,6 +8,7 @@
     --color-offwhite: #f9f8f0;
     --color-black: #000000;
     --color-link: #000000;
+    --color-link-h: #767171;
     --padding-universal: 30px 80px;
     --padding-mobile: 30px 20px;
     --transition-ease-1: all 0.5s ease;
@@ -30,12 +31,19 @@ body {
 
 /*============== HEADER ================*/
 
+nav .active {
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    border-radius: 20px;
+    padding: 5px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     /*align-items: center;*/
     padding: var(--padding-universal);
-    position: fixed;
+  /*  position: fixed; */
     width: 100%;
 
 }
@@ -69,10 +77,14 @@ a {
     transition: var(--transition-ease-1);
 }
 
-a:hover {
-    color: var(--color-link);
-    text-decoration: none;
+p a {
+    color: var(--color-link-h);
+    text-decoration: underline;
+}
 
+a:hover {
+    color: var(--color-link-h);
+    transition: var(--transition-ease-1);
 }
 
 /*============== MAIN ================*/
@@ -141,7 +153,6 @@ button,
     background-color: var(--color-button-bg);
     color: var(--color-button-text);
     transition: var(--transition-ease-1);
-
 }
 
 button:hover,
@@ -152,7 +163,6 @@ button:hover,
 }
 
 /*============== FOOTER ================*/
-
 
 footer section {
     position: relative;
@@ -172,15 +182,11 @@ footer h3 {
     padding: 5px;
 }
 
-
-
 /*============== RESPONSIVE ================*/
 
 /* Responsive Breakpoints */
 
-/*
-
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     h1 {
         font-size: clamp(28px, 5vw, 40px);
     }
