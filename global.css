@@ -12,7 +12,7 @@
     --padding-universal: 30px 80px;
     --padding-mobile: 30px 20px;
     --transition-ease-1: all 0.5s ease;
-    --transition-ease-2: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    --transition-ease-2: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }
 
 /*============== BODY ================*/
@@ -29,21 +29,24 @@ body {
     scroll-behavior: smooth;
 }
 
-/*============== HEADER ================*/
+/*================ SELECTED ================*/
 
-nav .active {
+.selected {
     background-color: var(--color-black);
     color: var(--color-offwhite);
     border-radius: 20px;
     padding: 5px;
 }
 
+/*============== HEADER ================*/
+
+
 header {
     display: flex;
     justify-content: space-between;
     /*align-items: center;*/
     padding: var(--padding-universal);
-  /*  position: fixed; */
+    /*  position: fixed; */
     width: 100%;
 
 }
