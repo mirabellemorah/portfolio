@@ -36,7 +36,7 @@ section.fp-hero {
     flex-direction: column;
     width: 50%;
     padding: 0 2em;
-    justify-content: space-around;
+   
 }
 
 /*================ PROJECT FILTER ================*/
@@ -140,7 +140,7 @@ section.fp-hero {
 }
 
 .project-image:hover img {
-    transform: scale(0.5);
+    transform: scale(1.1);
 }
 
 
