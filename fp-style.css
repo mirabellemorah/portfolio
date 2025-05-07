@@ -217,6 +217,7 @@ section.fp-hero {
     flex-direction: column;
     justify-content: center;
     height: 50vh;
+    gap: 50px;
 }
 
 .fp-logo-slider {
