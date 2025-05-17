@@ -222,15 +222,20 @@ section.fp-hero {
 }
 
 .fp-logo-slider {
-    width: 100%;
+    width: 880px;
+    /* 8 logos * 110px (100px width + 10px margin) */
+
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
+    background: #f9f8f0;
+    padding: 16px 0;
 }
 
 .logo-track {
     display: flex;
-    width: fit-content;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
+    width: max-content;
 }
 
 @keyframes scroll {
@@ -244,10 +249,10 @@ section.fp-hero {
 }
 
 .feature-logo {
-    flex: 0 0 auto;
-    width: 120px;
+    width: 100px;
     height: 100px;
-    margin: 0 20px;
+    flex: 0 0 auto;
+    margin: 0 5px;
 }
 
 .feature-logo img {
@@ -264,8 +269,112 @@ section.fp-hero {
 }
 
 /*================ RESPONSIVE ================*/
-@media screen and (max-width: 768px) {
+/*================ RESPONSIVE BREAKPOINTS ================*/
+
+/* Large screens (desktops) */
+@media screen and (min-width: 1200px) {
     .fp-hero h2 {
-        font-size: 200px;
+        font-size: clamp(48px, 8vw, 200px);
+    }
+
+    .fp-logo-slider {
+        width: 880px;
+    }
+
+    .feature-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+    .fp-hero h2 {
+        font-size: clamp(32px, 6vw, 120px);
+    }
+
+    .fp-logo-slider {
+        width: 700px;
+    }
+
+    .feature-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .fp-projects .project-image {
+        height: 400px;
+    }
+}
+
+/* Small screens (mobile) */
+@media screen and (max-width: 768px) {
+    section.fp-hero {
+        height: 60vh;
+    }
+
+    .fp-hero h2 {
+        font-size: 60px;
+    }
+
+    .fp-hero-sub {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    .fp-intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fp-intro div {
+        width: 100%;
+        padding: 1em 0;
+    }
+
+    .fp-project-filter,
+    .fp-projects-container {
+        width: 98vw;
+    }
+
+    .fp-logo-slider {
+        width: 98vw;
+        padding: 8px 0;
+    }
+
+    .feature-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .fp-logos {
+        gap: 20px;
+        height: auto;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .fp-hero h2 {
+        font-size: 36px;
+    }
+
+    .fp-logo-slider {
+        width: 100vw;
+        padding: 4px 0;
+    }
+
+    .feature-logo {
+        width: 40px;
+        height: 40px;
+        margin: 0 2px;
+    }
+
+    .fp-projects .project-image {
+        height: 120px;
     }
 }

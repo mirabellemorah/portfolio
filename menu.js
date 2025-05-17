@@ -66,3 +66,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+/* copied */
+
+   document.addEventListener('DOMContentLoaded', function () {
+            const copyBtn = document.getElementById('copy-email-btn');
+            const email = document.getElementById('email-address').textContent.trim();
+            const feedback = document.getElementById('copy-feedback');
+
+            copyBtn.addEventListener('click', function () {
+                navigator.clipboard.writeText(email).then(() => {
+                    feedback.style.display = 'inline';
+                    feedback.style.opacity = 1;
+                    setTimeout(() => {
+                        feedback.style.opacity = 0;
+                        setTimeout(() => {
+                            feedback.style.display = 'none';
+                        }, 400);
+                    }, 1200);
+                });
+            });
+        });
