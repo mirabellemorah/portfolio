@@ -289,7 +289,7 @@ section.fp-hero {
     }
 
     .fp-hero h2 {
-        font-size: clamp(50px, 80vw, 100px);
+        font-size: clamp(40px, 60px, 100px);
 
     }
 
