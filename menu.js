@@ -1,5 +1,5 @@
 const toggleTag = document.querySelector("a.toggle-nav");
-const mainTag = document.querySelector("main");
+const mainTag = document.querySelector("header nav");
 
 toggleTag.addEventListener("click", function (event) {
     event.preventDefault(); // 👈 prevents that annoying scroll-to-top
