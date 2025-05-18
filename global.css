@@ -2,270 +2,297 @@
 
 /* ========== GLOBAL FONT SETTINGS ==============*/
 :root {
-  --color-heading: #000;
-  --color-button-bg: none;
-  --color-button-text: #000;
-  --color-offwhite: #f9f8f0;
-  --color-black: #000;
-  --color-link: #000;
-  --color-link-h: #767171;
-  --padding-universal: 30px 80px;
-  --padding-mobile: 30px 20px;
-  --transition-ease-1: all 0.5s ease;
-  --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    --color-heading: #000;
+    --color-button-bg: none;
+    --color-button-text: #000;
+    --color-offwhite: #f9f8f0;
+    --color-black: #000;
+    --color-link: #000;
+    --color-link-h: #767171;
+    --padding-universal: 30px 80px;
+    --padding-mobile: 30px 20px;
+    --transition-ease-1: all 0.5s ease;
+    --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* ========== BASE STYLES ==============*/
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(14px, 1.5vw, 18px);
-  font-weight: 400;
-  line-height: 1.7;
-  color: var(--color-black);
-  background-color: var(--color-offwhite);
-  margin: 0;
-  cursor: url('https://cdn.jsdelivr.net/gh/nikhilsharma-07/cursor@latest/cursors/nikhilsharma-07.cur'), auto;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-black);
+    background-color: var(--color-offwhite);
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* ========== TEXT ELEMENTS ==============*/
-h1, h2, h3, h4 {
-  color: var(--color-black);
-  margin-bottom: 0.5em;
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-black);
+    margin-bottom: 0.5em;
 }
 
 h1 {
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -1px;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
 }
 
 h2 {
-  font-size: clamp(28px, 4vw, 36px);
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
 }
 
 h3 {
-  font-size: clamp(22px, 3vw, 28px);
-  font-weight: 600;
-  line-height: 1.4;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 h4 {
-  font-size: clamp(20px, 2.5vw, 24px);
-  font-weight: 500;
-  line-height: 1.5;
+    font-size: clamp(20px, 2.5vw, 24px);
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 /* ========== LINKS ==============*/
 a {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: var(--transition-ease-1);
+    color: var(--color-link);
+    text-decoration: none;
+    transition: var(--transition-ease-1);
 }
 
 a:hover {
-  color: var(--color-link-h);
+    color: var(--color-link-h);
 }
 
 p a {
-  color: var(--color-link-h);
-  text-decoration: underline;
+    color: var(--color-link-h);
+    text-decoration: underline;
 }
 
 /* ========== HEADER ==============*/
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--padding-universal);
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-universal);
+    width: 100%;
 }
 
 header .logo {
-  width: 70px;
-  position: relative;
+    width: 70px;
+    position: relative;
 }
 
 header .logo img {
-  width: 100% !important;
-  height: auto;
+    width: 100% !important;
+    height: auto;
 }
 
 header nav a {
-  color: var(--color-link);
+    color: var(--color-link);
     width: max-content;
-  text-decoration: none;
-  margin-right: 15px;
-  margin-bottom: 15px;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 a.toggle-nav {
-  display: none;
+    display: none;
 }
 
 /* ========== NAV ACTIVE STATE ==============*/
 .selected {
-  background-color: var(--color-black);
+    background-color: var(--color-black);
 
-  color: var(--color-offwhite);
-  border-radius: 20px;
-  padding: 5px;
+    color: var(--color-offwhite);
+    border-radius: 20px;
+    padding: 5px;
 }
 
 /* ========== MAIN SECTION ==============*/
 main {
-  background-color: var(--color-offwhite);
+    background-color: var(--color-offwhite);
 }
 
 section {
-  padding: var(--padding-universal);
-  margin: 0 auto;
-  overflow: hidden;
+    padding: var(--padding-universal);
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* ========== BUTTONS ==============*/
 button,
 .btn {
-  font-size: clamp(9px, 1.5vw, 16px);
-  width: fit-content;
-  font-weight: 400;
-  padding: 5px 10px;
-  margin: 5px 0 0 5px;
-  border: 1px solid var(--color-black);
-  border-radius: 20px;
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  cursor: pointer;
-  transition: var(--transition-ease-1);
+    font-size: clamp(9px, 1.5vw, 16px);
+    width: fit-content;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin: 5px 0 0 5px;
+    border: 1px solid var(--color-black);
+    border-radius: 20px;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    cursor: pointer;
+    transition: var(--transition-ease-1);
 }
 
 button:hover,
 .btn:hover {
-  transform: scale(1.05);
-  background-color: var(--color-black);
-  color: var(--color-offwhite);
+    transform: scale(1.05);
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
 }
 
 /* ========== FOOTER ==============*/
 footer section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 25px;
-  z-index: 1;
-  font-size: clamp(9px, 1.5vw, 10px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    z-index: 1;
+    font-size: clamp(9px, 1.5vw, 10px);
 }
 
 footer h4 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 footer h4:hover {
-  color: var(--color-link-h);
-  transition: var(--transition-ease-1);
+    color: var(--color-link-h);
+    transition: var(--transition-ease-1);
 }
 
 .socials {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .social-link img {
-  max-width: 30px;
-  height: 30px;
-  padding: 5px;
+    max-width: 30px;
+    height: 30px;
+    padding: 5px;
 }
 
 /* ========== RESPONSIVE STYLES ==============*/
 @media screen and (max-width: 768px) {
-  section,
-  header {
-    padding: var(--padding-mobile);
-  }
 
-  body {
-    font-size: clamp(12px, 4vw, 16px);
-  }
+    section,
+    header {
+        padding: var(--padding-mobile);
+    }
 
-  h1 { font-size: clamp(24px, 8vw, 32px); }
-  h2 { font-size: clamp(20px, 6vw, 28px); }
-  h3 { font-size: clamp(18px, 5vw, 24px); }
-  h4 { font-size: clamp(16px, 4vw, 20px); }
+    body {
+        font-size: clamp(12px, 4vw, 16px);
+    }
 
-  button,
-  .btn {
-    font-size: clamp(12px, 4vw, 14px);
-    padding: 8px 16px;
-  }
+    h1 {
+        font-size: clamp(24px, 8vw, 32px);
+    }
+
+    h2 {
+        font-size: clamp(20px, 6vw, 28px);
+    }
+
+    h3 {
+        font-size: clamp(18px, 5vw, 24px);
+    }
+
+    h4 {
+        font-size: clamp(16px, 4vw, 20px);
+    }
+
+    button,
+    .btn {
+        font-size: clamp(12px, 4vw, 14px);
+        padding: 8px 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    position: relative;
-    width: 100%;
-  }
+    header {
+        position: relative;
+        width: 100%;
+    }
 
-  header nav {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    width: clamp(100px, 300px, 340px);
-    height: 100vh;
-    padding-left: 20px;
-    background-color: var(--color-black);
-    font-size: 15px;
-    font-weight: 300;
-    z-index: 999;
-    transition: var(--transition-ease-2);
-    transform: translateX(100%);
-  }
+    header nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        width: clamp(100px, 300px, 340px);
+        height: 100vh;
+        height: 100svh;
+        padding-left: 20px;
+        background-color: var(--color-black);
+        font-size: 15px;
+        font-weight: 300;
+        z-index: 999;
+        transition: var(--transition-ease-2);
+        transform: translateX(100%);
+    }
 
-  header nav a {
-    color: var(--color-offwhite);
-  }
+    header nav a {
+        color: var(--color-offwhite);
+    }
 
-  header nav a.selected {
-    background-color: var(--color-offwhite);
-    color: var(--color-black);
-  }
+    header nav a.selected {
+        background-color: var(--color-offwhite);
+        color: var(--color-black);
+    }
 
-  header nav.open {
-    transform: translate(100px, 0);
-  }
+    header nav.open {
+        transform: translate(100px, 0);
+    }
 
-  a.toggle-nav {
-    position: fixed;
-    display: flex;
-    gap: 10px;
-    top: 0;
-    right: 0;
-    padding: 30px 20px;
-    color: var(--color-link);
-    text-decoration: none;
-    z-index: 999;
-  }
+    a.toggle-nav {
+        position: fixed;
+        display: flex;
+        gap: 10px;
+        top: 0;
+        right: 0;
+        padding: 30px 20px;
+        color: var(--color-link);
+        text-decoration: none;
+        z-index: 999;
+    }
 
-  body {
-    font-size: clamp(10px, 4vw, 14px);
-  }
+    body {
+        font-size: clamp(10px, 4vw, 14px);
+    }
 
-  h1 { font-size: clamp(20px, 8vw, 28px); }
-  h2 { font-size: clamp(18px, 6vw, 24px); }
-  h3 { font-size: clamp(16px, 5vw, 20px); }
-  h4 { font-size: clamp(14px, 4vw, 18px); }
+    h1 {
+        font-size: clamp(20px, 8vw, 28px);
+    }
 
-  button,
-  .btn {
-    font-size: clamp(10px, 4vw, 12px);
-    padding: 6px 12px;
-  }
+    h2 {
+        font-size: clamp(18px, 6vw, 24px);
+    }
+
+    h3 {
+        font-size: clamp(16px, 5vw, 20px);
+    }
+
+    h4 {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+
+    button,
+    .btn {
+        font-size: clamp(10px, 4vw, 12px);
+        padding: 6px 12px;
+    }
 }
