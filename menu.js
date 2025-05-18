@@ -1,15 +1,17 @@
 const toggleTag = document.querySelector("a.toggle-nav");
-const mainTag = document.querySelector("header nav");
+const navTag = document.querySelector("header nav");
 
 toggleTag.addEventListener("click", function (event) {
     event.preventDefault(); // 👈 prevents that annoying scroll-to-top
-    mainTag.classList.toggle("open");
+    navTag.classList.toggle("open");
 
-    if (mainTag.classList.contains("open")) {
+    if (navTag.classList.contains("open")) {
         toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Close`;
+        toggleTag.style.color = "var(--color-offwhite)";
     }
     else {
         toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Menu`;
+        toggleTag.style.color = "";
     }
 });
 
@@ -70,21 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* copied */
 
-   document.addEventListener('DOMContentLoaded', function () {
-            const copyBtn = document.getElementById('copy-email-btn');
-            const email = document.getElementById('email-address').textContent.trim();
-            const feedback = document.getElementById('copy-feedback');
+document.addEventListener('DOMContentLoaded', function () {
+    const copyBtn = document.getElementById('copy-email-btn');
+    const email = document.getElementById('email-address').textContent.trim();
+    const feedback = document.getElementById('copy-feedback');
 
-            copyBtn.addEventListener('click', function () {
-                navigator.clipboard.writeText(email).then(() => {
-                    feedback.style.display = 'inline';
-                    feedback.style.opacity = 1;
-                    setTimeout(() => {
-                        feedback.style.opacity = 0;
-                        setTimeout(() => {
-                            feedback.style.display = 'none';
-                        }, 400);
-                    }, 1200);
-                });
-            });
+    copyBtn.addEventListener('click', function () {
+        navigator.clipboard.writeText(email).then(() => {
+            feedback.style.display = 'inline';
+            feedback.style.opacity = 1;
+            setTimeout(() => {
+                feedback.style.opacity = 0;
+                setTimeout(() => {
+                    feedback.style.display = 'none';
+                }, 400);
+            }, 1200);
         });
+    });
+});
