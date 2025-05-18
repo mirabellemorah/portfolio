@@ -226,25 +226,6 @@ footer h4:hover {
         width: 100%;
     }
 
-    header nav {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 0;
-        right: 0;
-        width: clamp(100px, 300px, 340px);
-        height: 100vh;
-        height: 100svh;
-        padding-left: 20px;
-        background-color: var(--color-black);
-        font-size: 15px;
-        font-weight: 300;
-        z-index: 999;
-        transition: var(--transition-ease-2);
-        transform: translateX(100%);
-    }
-
     header nav a {
         color: var(--color-offwhite);
     }
@@ -254,8 +235,27 @@ footer h4:hover {
         color: var(--color-black);
     }
 
-    header nav.open {
-        transform: translate(100px, 0);
+    header nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        height: 100svh;
+        padding-left: 30px;
+        background-color: var(--color-black);
+        font-size: 15px;
+        font-weight: 300;
+        z-index: 999;
+        transition: var(--transition-ease-2);
+        transform: translate(100%, 0);
+    }
+
+    .open {
+        transform: translate(0, 0);
     }
 
     a.toggle-nav {
