@@ -267,7 +267,6 @@ section.fp-hero {
 
   .fp-intro {
     flex-direction: column;
-    height: auto;
   }
 
   .fp-intro div {
@@ -319,7 +318,7 @@ section.fp-hero {
 
   .fp-projects .project:nth-child(4n+2),
   .fp-projects .project:nth-child(4n+3) {
-    flex: 1 1 1;
+    flex: 1 1 auto;
   }
 
   .project-image {
