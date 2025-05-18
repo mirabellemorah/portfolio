@@ -123,7 +123,6 @@ section.fp-hero {
     flex: 1 1 30%;
 }
 
-
 .project-image {
     width: 100%;
     height: 600px;
@@ -330,7 +329,7 @@ section.fp-hero {
     }
 
     .project-image {
-        height: 200px;
+        height: 400px;
     }
 }
 

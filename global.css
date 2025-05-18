@@ -27,6 +27,7 @@ body {
     margin: 0;
     cursor: url ('https://cdn.jsdelivr.net/gh/nikhilsharma-07/cursor@latest/cursors/nikhilsharma-07.cur'), auto;
     scroll-behavior: smooth;
+     overflow-x: hidden;
 }
 
 /*================ SELECTED ================*/
@@ -101,7 +102,7 @@ main {
 section {
     padding: var(--padding-universal);
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*============== HEADINGS ================*/
@@ -178,8 +179,13 @@ footer section {
     font-size: clamp(9px, 1.5vw, 10px);;
 }
 
-footer h3 {
-    margin: 0;
+footer h4 {
+    margin-bottom: 20px;
+}
+
+footer h4:hover {
+    color: var(--color-link-h);
+    transition: var(--transition-ease-1);
 }
 
 .socials {
@@ -268,7 +274,6 @@ footer h3 {
         z-index: 1;
         transform: translate(0, 0);
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
-        overflow-x: hidden;
     }
 
     main.open {
