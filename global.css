@@ -27,7 +27,6 @@ body {
     margin: 0;
     cursor: url ('https://cdn.jsdelivr.net/gh/nikhilsharma-07/cursor@latest/cursors/nikhilsharma-07.cur'), auto;
     scroll-behavior: smooth;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 
 }
@@ -103,6 +102,7 @@ main {
 section {
     padding: var(--padding-universal);
     margin: 0 auto;
+     overflow: hidden;
 
 }
 
