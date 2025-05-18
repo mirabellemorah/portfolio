@@ -260,7 +260,7 @@ section.fp-hero {
   }
 
   .fp-hero-sub {
-    width: 100vw;
+    width: 100%;
     font-size: 16px;
     padding: 10px;
   }
