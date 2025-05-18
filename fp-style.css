@@ -1,328 +1,366 @@
-/*========== HERO SECTION ==========*/
+/*================ HERO SECTION ================*/
+
 section.fp-hero {
-  height: 90vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .fp-hero h2 {
-  font-size: clamp(32px, 100vw, 400px);
-  margin-bottom: 0;
-  font-weight: 100;
-  position: relative;
+    font-size: clamp(32px, 100vw, 400px);
+    margin-bottom: 0;
+    font-weight: 100;
+    position: relative;
 }
 
 .fp-hero-sub {
-  width: 60vw;
-  margin-top: 0.5em;
+    width: 60vw;
+    margin-top: 0.5em;
+    /* font-size: clamp(9px, 3vw, 14px); */
 }
 
-/*========== INTRO SECTION ==========*/
+/*================ INTRO SECTION ================*/
+
 .fp-intro {
-  position: relative;
-  display: flex;
-  height: 70vh;
-  align-items: center;
+    position: relative;
+    display: flex;
+    height: 70vh;
+    align-items: center;
 }
 
 .fp-intro div {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 2em;
+
 }
 
-/*========== PROJECT FILTER ==========*/
+/*================ PROJECT FILTER ================*/
+
 .fp-project-filter-list {
-  display: flex;
-  gap: 4px;
-  padding: 10px 0;
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
 }
 
 .fp-project-filter-list::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+    display: none;
+    /* Chrome/Safari */
 }
 
 .fp-project-filter-list a {
-  flex: 0 0 auto;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin: 5px 0 0 5px;
-  border: 1px solid var(--color-black);
-  cursor: pointer;
-  transition: var(--transition-ease-1);
+    flex: 0 0 auto;
+    /* font-size: clamp(9px, 1.5vw, 16px);
+    font-weight: 400;
+    text-transform: none;  */
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px 0 0 5px;
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+    transition: var(--transition-ease-1);
 }
 
 .fp-project-filter-list a:hover {
-  background-color: var(--color-black);
-  color: var(--color-offwhite);
-  scale: 1.05;
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    scale: 1.05;
 }
 
 .round-project-cat-btn {
-  font-size: clamp(10px, 1.1vw, 12px);
-  text-transform: none;
-  white-space: nowrap;
+    font-size: clamp(10px, 1.1vw, 12px);
+    text-transform: none;
+    white-space: nowrap;
+    /* flex: 0 0 auto; */
 }
 
-/*========== PROJECT CARDS ==========*/
+/*================ PROJECT CARDS ================*/
+
 .fp-project-filter,
 .fp-projects-container {
-  width: 90vw;
+    width: 90vw;
 }
 
 .fp-projects {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 70vh;
-  gap: 10px;
-  justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    gap: 10px;
+    justify-items: center;
 }
 
 .fp-projects .project {
-  flex: 1 1 50%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  opacity: 1;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+    flex: 1 1 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .fp-projects .project.hidden {
-  opacity: 0;
-  transform: scale(0.9);
-  pointer-events: none;
-  position: absolute;
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    position: absolute;
 }
 
 .fp-projects .project:nth-child(4n+2),
 .fp-projects .project:nth-child(4n+3) {
-  flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
+
 .project-image {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 20px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  object-position: center;
-  transition: var(--transition-ease-2);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition-ease-2);
 }
 
 .project-image:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-/*========== VIEW ALL & AVAILABLE ==========*/
+
+/*================ VIEW ALL & AVAILABLE ================*/
 .view-all,
 .available {
-  width: max-content;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: var(--color-black);
-  color: var(--color-offwhite);
-  font: inherit;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    font: inherit;
 }
 
 .available {
-  position: sticky;
-  top: 80%;
-  left: 90%;
-  z-index: 1000;
-  animation: float 5s ease-in-out infinite;
+    position: sticky;
+    top: 80%;
+    left: 90%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
 }
 
 .available-circle {
-  width: 15px;
-  height: 15px;
-  background-color: #B6CC15;
-  border-radius: 50%;
-  animation: fadePulse 5s ease-in-out infinite;
+    width: 15px;
+    height: 15px;
+    background-color: #B6CC15;
+    border-radius: 50%;
+    animation: fadePulse 5s ease-in-out infinite;
 }
 
 .available img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .view-all:hover,
 .available:hover {
-  background-color: var(--color-offwhite);
-  color: var(--color-black);
+    background-color: var(--color-offwhite);
+    color: var(--color-black);
 }
 
-/*========== ANIMATIONS ==========*/
+/* Animations */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 @keyframes fadePulse {
-  0%, 100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(0.9);
-  }
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
 }
 
-/*========== LOGO SLIDER ==========*/
+/*================ LOGO SLIDER ================*/
+
 .fp-logos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    gap: 50px;
 }
 
 .fp-logo-slider {
-  width: 880px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  background: #f9f8f0;
-  padding: 16px 0;
+    width: 880px;
+    /* 8 logos * 110px (100px width + 10px margin) */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: #f9f8f0;
+    padding: 16px 0;
 }
 
 .logo-track {
-  display: flex;
-  animation: scroll 30s linear infinite;
-  width: max-content;
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: max-content;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .feature-logo {
-  width: 100px;
-  height: 100px;
-  flex: 0 0 auto;
-  margin: 0 5px;
+    width: 100px;
+    height: 100px;
+    flex: 0 0 auto;
+    margin: 0 5px;
 }
 
 .feature-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: grayscale(100%);
-  transition: var(--transition-ease-1);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: var(--transition-ease-1);
 }
 
 .feature-logo img:hover {
-  filter: grayscale(0%);
-  scale: 0.9;
+    filter: grayscale(0%);
+    scale: 0.9;
 }
 
-/*========== RESPONSIVE BREAKPOINTS ==========*/
+/*================ RESPONSIVE BREAKPOINTS ================*/
+
+
+/* Medium screens (tablets) */
 @media screen and (max-width: 1199px) and (min-width: 769px) {
-  .fp-projects .project-image {
-    height: 400px;
-  }
+
+    .fp-logo-slider {
+        width: 700px;
+    }
+
+    .fp-projects .project-image {
+        height: 400px;
+    }
 }
 
+/* Small screens (mobile) */
 @media screen and (max-width: 768px) {
-  section.fp-hero {
-    height: 80vh;
-  }
+    section.fp-hero {
+        height: 80vh;
+    }
 
-  .fp-hero h2 {
-    font-size: clamp(40px, 60px, 100px);
-  }
+    .fp-hero h2 {
+        font-size: clamp(50px, 80vw, 100px);
 
-  .fp-hero-sub {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-  }
+    }
 
-  .fp-intro {
-    flex-direction: column;
-    height: auto;
-  }
+    .fp-hero-sub {
+        width: 100vw;
+        font-size: 16px;
+        padding: 10px;
+    }
 
-  .fp-intro div {
-    width: 100%;
-    padding: 1em 0;
-  }
+    .fp-intro {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .fp-project-filter,
-  .fp-projects-container {
-    width: 100%;
-  }
+    .fp-intro div {
+        width: 100%;
+        padding: 1em 0;
+    }
 
-  .fp-logo-slider {
-    width: 100%;
-    padding: 8px 0;
-  }
+    .fp-project-filter,
+    .fp-projects-container {
+        width: 100%;
+    }
 
-  .feature-logo {
-    width: 60px;
-    height: 60px;
-  }
+    .fp-logo-slider {
+        width: 100%;
+        padding: 8px 0;
+    }
 
-  .fp-logos {
-    gap: 20px;
-    height: auto;
-  }
+    .feature-logo {
+        width: 60px;
+        height: 60px;
+    }
 
-  .project-image {
-    height: 400px;
-  }
+    .fp-logos {
+        gap: 20px;
+        height: auto;
+    }
+
+    .project-image {
+        height: 200px;
+    }
 }
 
+/* Extra small screens */
 @media screen and (max-width: 480px) {
-  .fp-logo-slider {
-    width: 100vw;
-    padding: 4px 0;
-  }
 
-  .feature-logo {
-    width: 70px;
-    height: 70px;
-    margin: 0 2px;
-  }
+    .fp-logo-slider {
+        width: 100vw;
+        padding: 4px 0;
+    }
 
-  .fp-projects {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .feature-logo {
+        width: 70px;
+        height: 70px;
+        margin: 0 2px;
+    }
 
-  .fp-projects .project:nth-child(4n+2),
-  .fp-projects .project:nth-child(4n+3) {
-    flex: 1 1 1;
-  }
+    .fp-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .project-image {
-    height: 350px;
-  }
+    .fp-projects .project:nth-child(4n+2),
+    .fp-projects .project:nth-child(4n+3) {
+        flex: 1 1 1;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 400px;
+    }
 }
