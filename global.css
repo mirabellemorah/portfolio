@@ -25,7 +25,6 @@ body {
     background-color: var(--color-offwhite);
     margin: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 /* ========== TEXT ELEMENTS ==============*/
@@ -191,6 +190,7 @@ footer h4:hover {
     section,
     header {
         padding: var(--padding-mobile);
+        margin: 0 auto;
     }
 
     body {
@@ -243,8 +243,7 @@ footer h4:hover {
         top: 0;
         right: 0;
         width: 50vw;
-        height: 100vh;
-        height: 100svh;
+        min-height: 100vh;
         padding-left: 30px;
         background-color: var(--color-black);
         font-size: 15px;
