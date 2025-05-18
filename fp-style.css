@@ -39,7 +39,6 @@ section.fp-hero {
 .fp-project-filter-list {
   display: flex;
   gap: 4px;
-  overflow-x: auto;
   padding: 10px 0;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */

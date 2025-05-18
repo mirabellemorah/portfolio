@@ -25,7 +25,7 @@ body {
     background-color: var(--color-offwhite);
     margin: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* ========== TEXT ELEMENTS ==============*/
