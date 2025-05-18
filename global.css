@@ -27,7 +27,9 @@ body {
     margin: 0;
     cursor: url ('https://cdn.jsdelivr.net/gh/nikhilsharma-07/cursor@latest/cursors/nikhilsharma-07.cur'), auto;
     scroll-behavior: smooth;
-     overflow-x: hidden;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+
 }
 
 /*================ SELECTED ================*/
@@ -41,7 +43,6 @@ body {
 
 /*============== HEADER ================*/
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +50,7 @@ header {
     padding: var(--padding-universal);
     /*  position: fixed; */
     width: 100%;
+
 
 }
 
@@ -102,7 +104,7 @@ main {
 section {
     padding: var(--padding-universal);
     margin: 0 auto;
-    overflow-x: hidden;
+
 }
 
 /*============== HEADINGS ================*/
@@ -176,7 +178,8 @@ footer section {
     align-items: flex-start;
     gap: 25px;
     z-index: 999;
-    font-size: clamp(9px, 1.5vw, 10px);;
+    font-size: clamp(9px, 1.5vw, 10px);
+    ;
 }
 
 footer h4 {
@@ -191,7 +194,7 @@ footer h4:hover {
 .socials {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+
 }
 
 
@@ -199,7 +202,7 @@ footer h4:hover {
     max-width: 30px;
     height: 30px;
     padding: 5px;
- 
+
 }
 
 /*============== RESPONSIVE ================*/
@@ -274,6 +277,7 @@ footer h4:hover {
         z-index: 1;
         transform: translate(0, 0);
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+
     }
 
     main.open {

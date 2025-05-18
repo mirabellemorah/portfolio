@@ -272,10 +272,6 @@ section.fp-hero {
 /* Medium screens (tablets) */
 @media screen and (max-width: 1199px) and (min-width: 769px) {
 
-    .fp-logo-slider {
-        width: 700px;
-    }
-
     .fp-projects .project-image {
         height: 400px;
     }
@@ -360,6 +356,6 @@ section.fp-hero {
 
     .project-image {
         width: 100%;
-        height: 400px;
+        height: 350px;
     }
 }
