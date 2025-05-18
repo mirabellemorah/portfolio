@@ -90,3 +90,32 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Night/Dark Mode Toggle
+const starToggle = document.getElementById('star-toggle');
+
+// Logo swap for night/dark mode
+const logoImg = document.getElementById('header-logo');
+function updateLogoForMode() {
+    if (document.body.classList.contains('night-mode')) {
+        logoImg.src = logoImg.getAttribute('data-dark');
+    } else {
+        logoImg.src = logoImg.getAttribute('data-light');
+    }
+}
+
+starToggle.addEventListener('click', function () {
+    document.body.classList.toggle('night-mode');
+    // Swap CSS variables for offwhite and black
+    if (document.body.classList.contains('night-mode')) {
+        document.documentElement.style.setProperty('--color-offwhite', '#000');
+        document.documentElement.style.setProperty('--color-black', '#f9f8f0');
+    } else {
+        document.documentElement.style.setProperty('--color-offwhite', '#f9f8f0');
+        document.documentElement.style.setProperty('--color-black', '#000');
+    }
+    updateLogoForMode();
+});
+
+// On page load, set correct logo
+updateLogoForMode();

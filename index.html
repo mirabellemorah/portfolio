@@ -17,7 +17,9 @@
     <!-- Header -->
     <header>
         <a class="logo" href="index.html">
-            <img src="assets/home-page-assets/Main-Logo-black.svg" alt="logo" loading="lazy" />
+            <img src="assets/home-page-assets/Main-Logo-black.svg" alt="logo" loading="lazy" id="header-logo"
+                data-light="assets/home-page-assets/Main-Logo-black.svg"
+                data-dark="assets/home-page-assets/Main-Logo-white.svg" />
         </a>
 
         <nav class="menu">
@@ -31,6 +33,13 @@
         <!-- MENU BAR-->
 
         <a href="#" class="toggle-nav"> <img src="assets/home-page-assets/menu.svg" alt="menu" /> Menu</a>
+
+        <!-- Star Toggle Button for Night/Dark Mode -->
+        <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
+            </svg>
+        </button>
 
     </header>
 
@@ -46,44 +55,52 @@
 
         <!-- Hero -->
         <section class="fp-hero">
-
             <h2>Mirabelle</h2>
-
+            <!--
             <p class="fp-hero-sub">
-
                 I build motion design systems and growth-communication
                 strategies that
                 help
                 impact-driven startups and social enterprises scale their missions and revenue.
             </p>
-
+            -->
         </section>
 
-        <!-- Introduction -->
-        <section class="fp-intro">
-            <div>
-                <h4>
-                    “One of the smartest persons I’ve ever met. Critical thinker and storytelling master, Mirabelle is
-                    really one of a kind.” ⏤
-                    US
-                    Department of State
-                </h4>
+        <!-- Text Loop Section -->
+        <section class="fp-text-loop-section">
+            <div class="fp-text-loop">
+                <div class="fp-text-loop-inner">
+                    <span>Communications strategy</span>
+                    <span class="diamond">◆</span>
+                    <span>Marketing growth</span>
+                    <span class="diamond">◆</span>
+                    <span>Motion design</span>
+                    <span class="diamond">◆</span>
+                    <span>Front-end development</span>
+                    <span class="diamond">◆</span>
+                    <span>Communications strategy</span>
+                    <span class="diamond">◆</span>
+                    <span>Marketing growth</span>
+                    <span class="diamond">◆</span>
+                    <span>Motion design</span>
+                    <span class="diamond">◆</span>
+                    <span>Front-end development</span>
+                    <span class="diamond">◆</span>
+                </div>
             </div>
+        </section>
 
-            <div>
-
-            </div>
-
-            <div>
-
-                <h3>Expertise</h3>
-                <p>
-                    Communications strategy<br />
-                    Marketing growth<br />
-                    Motion design<br />
-                    Front-end development<br />
-                </p>
-
+        <!-- Second Text Loop Section (Quote, reverse direction) -->
+        <section class="fp-text-loop-section fp-text-loop-section-reverse">
+            <div class="fp-text-loop fp-text-loop-reverse">
+                <div class="fp-text-loop-inner fp-text-loop-inner-reverse">
+                    <span>"One of the smartest persons I've ever met. Critical thinker and storytelling master,
+                        Mirabelle is really one of a kind." ⏤ US Department of State</span>
+                    <span class="diamond">◆</span>
+                    <span>"One of the smartest persons I've ever met. Critical thinker and storytelling master,
+                        Mirabelle is really one of a kind." ⏤ US Department of State</span>
+                    <span class="diamond">◆</span>
+                </div>
             </div>
         </section>
 
