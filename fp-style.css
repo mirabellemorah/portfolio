@@ -264,11 +264,15 @@ section.fp-hero {
 
 @media screen and (max-width: 768px) {
     section.fp-hero {
-        height: 80vh;
+        height: auto;
+        min-height: 60vh;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .fp-hero h2 {
-        font-size: clamp(40px, 60px, 100px);
+        font-size: clamp(32px, 10vw, 60px);
     }
 
     .fp-hero-sub {
@@ -279,6 +283,9 @@ section.fp-hero {
 
     .fp-intro {
         flex-direction: column;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .fp-intro div {
@@ -289,11 +296,15 @@ section.fp-hero {
     .fp-project-filter,
     .fp-projects-container {
         width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .fp-logo-slider {
         width: 100%;
         padding: 8px 0;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .feature-logo {
@@ -307,7 +318,10 @@ section.fp-hero {
     }
 
     .project-image {
-        height: 400px;
+        height: 300px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 }
 
@@ -315,25 +329,37 @@ section.fp-hero {
     .fp-logo-slider {
         width: 100%;
         padding: 4px 0;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .feature-logo {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         margin: 0 2px;
     }
 
     .fp-projects {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .fp-projects .project:nth-child(4n+2),
-    .fp-projects .project:nth-child(4n+3) {
+    .fp-projects .project:nth-child(4n+3),
+    .fp-projects .project {
         flex: 1 1 auto;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .project-image {
-        height: 350px;
+        height: 220px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 }
