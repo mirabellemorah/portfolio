@@ -2,7 +2,6 @@
 
 /* ========== GLOBAL FONT SETTINGS ==============*/
 :root {
-    --color-heading: #000;
     --color-button-bg: none;
     --color-button-text: #000;
     --color-offwhite: #f9f8f0;
@@ -13,6 +12,7 @@
     --padding-mobile: 30px 20px;
     --transition-ease-1: all 0.5s ease;
     --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    scroll-behavior: smooth;
 }
 
 /* ========== BASE STYLES ==============*/
@@ -84,7 +84,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: var(--padding-universal);
-    position: fixed;
+    position: relative;
     width: 100%;
 }
 
@@ -102,8 +102,8 @@ header nav a {
     color: var(--color-link);
     width: max-content;
     text-decoration: none;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -114,7 +114,6 @@ a.toggle-nav {
 /* ========== NAV ACTIVE STATE ==============*/
 .selected {
     background-color: var(--color-black);
-
     color: var(--color-offwhite);
     border-radius: 20px;
     padding: 5px;
@@ -143,7 +142,7 @@ button,
     border: 1px solid var(--color-black);
     border-radius: 20px;
     background-color: var(--color-button-bg);
-    color: var(--color-button-text);
+    color: var(--color-black);
     cursor: pointer;
     transition: var(--transition-ease-1);
 }
@@ -176,15 +175,10 @@ footer h4:hover {
     transition: var(--transition-ease-1);
 }
 
-.socials {
-    display: flex;
-    flex-direction: row;
-}
-
 .social-link img {
-    max-width: 30px;
+    width: 30px;
     height: 30px;
-    padding: 5px;
+    padding: 3px;
 }
 
 /* ========== RESPONSIVE STYLES ==============*/
@@ -193,158 +187,102 @@ footer h4:hover {
     section,
     header {
         padding: var(--padding-mobile);
-        margin: 0 auto;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
+
     }
 
-    body {
-        font-size: clamp(12px, 4vw, 16px);
-        overflow-x: hidden;
-    }
+    @media screen and (max-width: 480px) {
+        header {
+            position: relative;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
 
-    h1 {
-        font-size: clamp(24px, 8vw, 32px);
-    }
+        section {
+            width: 100%;
+            max-width: 100vw;
+            padding: var(--padding-mobile);
+            overflow-x: hidden;
+        }
 
-    h2 {
-        font-size: clamp(20px, 6vw, 28px);
-    }
 
-    h3 {
-        font-size: clamp(18px, 5vw, 24px);
-    }
+        header nav {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            width: 70vw;
+            min-height: 100vh;
+            padding-left: 30px;
+            background-color: var(--color-black);
+            font-size: 15px;
+            font-weight: 300;
+            z-index: 999;
+            transition: var(--transition-ease-2);
+            transform: translate(100%, 0);
+            opacity: 0;
+            pointer-events: none;
+        }
 
-    h4 {
-        font-size: clamp(16px, 4vw, 20px);
-    }
+        header nav.open {
+            transform: translate(0, 0);
+            opacity: 1;
+            pointer-events: auto;
+        }
 
-    button,
-    .btn {
-        font-size: clamp(12px, 4vw, 14px);
-        padding: 8px 16px;
-    }
-}
+        header nav a {
+            color: var(--color-offwhite);
+        }
 
-@media screen and (max-width: 480px) {
-    header {
-        position: relative;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
+        header nav a.selected {
+            background-color: var(--color-offwhite);
+            color: var(--color-black);
+        }
 
-    section {
-        width: 100%;
-        max-width: 100vw;
-        padding: var(--padding-mobile);
-        overflow-x: hidden;
-    }
+        a.toggle-nav {
+            position: fixed;
+            display: flex;
+            gap: 10px;
+            top: 0;
+            right: 0;
+            padding: 20px 20px;
+            color: var(--color-link);
+            text-decoration: none;
+            z-index: 1000;
+        }
 
-    .fp-logo-slider {
-        width: 100%;
-        padding: 4px 0;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
+        /*
+        body {
+            font-size: clamp(10px, 4vw, 14px);
+        }
 
-    .fp-projects {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
+        h1 {
+            font-size: clamp(20px, 8vw, 28px);
+        }
 
-    .fp-projects .project {
-        flex: 1 1 auto;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
+        h2 {
+            font-size: clamp(18px, 6vw, 24px);
+        }
 
-    .project-image {
-        height: 350px;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
+        h3 {
+            font-size: clamp(16px, 5vw, 20px);
+        }
 
-    header nav {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 0;
-        right: 0;
-        width: 70vw;
-        min-height: 100vh;
-        padding-left: 30px;
-        background-color: var(--color-black);
-        font-size: 15px;
-        font-weight: 300;
-        z-index: 999;
-        transition: var(--transition-ease-2);
-        transform: translate(100%, 0);
-        opacity: 0;
-        pointer-events: none;
-    }
+        h4 {
+            font-size: clamp(14px, 4vw, 18px);
+        }
 
-    header nav.open {
-        transform: translate(0, 0);
-        opacity: 1;
-        pointer-events: auto;
+        button,
+        .btn {
+            font-size: clamp(10px, 4vw, 12px);
+            padding: 6px 12px;
+        }
     }
-
-    header nav a {
-        color: var(--color-offwhite);
+*/
+        * {
+            box-sizing: border-box;
+        }
     }
-
-    header nav a.selected {
-        background-color: var(--color-offwhite);
-        color: var(--color-black);
-    }
-
-    a.toggle-nav {
-        position: fixed;
-        display: flex;
-        gap: 10px;
-        top: 0;
-        right: 0;
-        padding: 20px 20px;
-        color: var(--color-link);
-        text-decoration: none;
-        z-index: 1000;
-    }
-
-    body {
-        font-size: clamp(10px, 4vw, 14px);
-    }
-
-    h1 {
-        font-size: clamp(20px, 8vw, 28px);
-    }
-
-    h2 {
-        font-size: clamp(18px, 6vw, 24px);
-    }
-
-    h3 {
-        font-size: clamp(16px, 5vw, 20px);
-    }
-
-    h4 {
-        font-size: clamp(14px, 4vw, 18px);
-    }
-
-    button,
-    .btn {
-        font-size: clamp(10px, 4vw, 12px);
-        padding: 6px 12px;
-    }
-}
-
-* {
-    box-sizing: border-box;
 }

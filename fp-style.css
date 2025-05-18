@@ -1,11 +1,15 @@
 /*========== HERO SECTION ==========*/
+
+
+
 section.fp-hero {
-    height: 90vh;
+    height: 70vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .fp-hero h2 {
@@ -18,21 +22,6 @@ section.fp-hero {
 .fp-hero-sub {
     width: 60vw;
     margin-top: 0.5em;
-}
-
-/*========== INTRO SECTION ==========*/
-.fp-intro {
-    position: relative;
-    display: flex;
-    height: 70vh;
-    align-items: center;
-}
-
-.fp-intro div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 0 2em;
 }
 
 /*========== PROJECT FILTER ==========*/
@@ -75,11 +64,11 @@ section.fp-hero {
 }
 
 /*========== PROJECT CARDS ==========*/
+
 .fp-project-filter,
 .fp-projects-container {
-    width: 100%;
-    max-width: 90vw;
-    margin-top: 2em;
+    width: 90%;
+    margin-top: 0;
 }
 
 .fp-projects {
@@ -201,182 +190,15 @@ section.fp-hero {
     }
 }
 
-/*========== LOGO SLIDER ==========*/
-.fp-logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    max-width: 100vw;
-    gap: 50px;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.fp-logo-slider {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    background: #f9f8f0;
-    padding: 16px 0;
-}
-
-.logo-track {
-    display: flex;
-    animation: scroll 30s linear infinite;
-    width: max-content;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.feature-logo {
-    width: 100px;
-    height: 100px;
-    flex: 0 0 auto;
-    margin: 0 5px;
-}
-
-.feature-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: var(--transition-ease-1);
-}
-
-.feature-logo img:hover {
-    filter: grayscale(0%);
-    scale: 0.9;
-}
-
-/*========== RESPONSIVE BREAKPOINTS ==========*/
-@media screen and (max-width: 1199px) and (min-width: 769px) {
-    .fp-projects .project-image {
-        height: 400px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    section.fp-hero {
-        justify-content: space-around;
-        height: auto;
-        min-height: 60vh;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .fp-hero h2 {
-        font-size: clamp(32px, 10vw, 60px);
-    }
-
-    .fp-hero-sub {
-        width: 100%;
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .fp-intro {
-        flex-direction: column;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .fp-intro div {
-        width: 100%;
-        padding: 1em 0;
-    }
-
-    .fp-project-filter,
-    .fp-projects-container {
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .fp-logo-slider {
-        width: 100%;
-        padding: 8px 0;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .feature-logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .fp-logos {
-        gap: 20px;
-        height: auto;
-    }
-
-    .project-image {
-        height: 300px;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .fp-logo-slider {
-        width: 100%;
-        padding: 4px 0;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .feature-logo {
-        width: 50px;
-        height: 50px;
-        margin: 0 2px;
-    }
-
-    .fp-projects {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .fp-projects .project:nth-child(4n+2),
-    .fp-projects .project:nth-child(4n+3),
-    .fp-projects .project {
-        flex: 1 1 auto;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-
-    .project-image {
-        height: 220px;
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-}
 
 /*========== TEXT LOOP SECTION ==========*/
 .fp-text-loop-section {
+
     width: 100vw;
     overflow: hidden;
     background: var(--color-offwhite);
     padding: 0;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 20vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,43 +237,62 @@ section.fp-hero {
     }
 }
 
-/*========== REVERSE TEXT LOOP SECTION ==========*/
-.fp-text-loop-section-reverse {
-    background: var(--color-offwhite);
-    margin-bottom: 2em;
-}
 
-.fp-text-loop-reverse {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
+/* ========== MOBILE RESPONSIVENESS ========== */
 
-.fp-text-loop-inner-reverse {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: clamp(16px, 2vw, 28px);
-    font-weight: 500;
-    color: var(--color-black);
-    gap: 1.5em;
-    animation: text-loop-scroll-reverse 22s linear infinite;
-}
-
-@keyframes text-loop-scroll-reverse {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+    .project-image {
+        height: 500px;
     }
 }
 
-/*========== MOBILE RESPONSIVENESS ==========*/
 @media screen and (max-width: 768px) {
-    .fp-hero {
+    section.fp-hero {
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        width: 100%;
+        overflow-x: hidden;
+        transform: translateY(0);
         margin-bottom: 1.5em;
+    }
+
+    .fp-hero h2 {
+        font-size: clamp(32px, 10vw, 60px);
+        font-weight: 500;
+    }
+
+    .fp-hero-sub {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .fp-project-filter,
+    .fp-projects-container {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .fp-projects {
+
+        gap: 10px;
+        max-width: 100vw;
+    }
+
+    .fp-projects .project,
+    .fp-projects .project:nth-child(4n+2),
+    .fp-projects .project:nth-child(4n+3) {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .project-image {
+        height: 400px;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .fp-text-loop-section {
@@ -459,13 +300,7 @@ section.fp-hero {
         min-height: 40px;
     }
 
-    .fp-text-loop-section-reverse {
-        margin-bottom: 1.5em;
-        min-height: 40px;
-    }
-
-    .fp-text-loop-inner,
-    .fp-text-loop-inner-reverse {
+    .fp-text-loop-inner {
         font-size: clamp(13px, 4vw, 18px);
         gap: 0.7em;
     }
@@ -477,18 +312,25 @@ section.fp-hero {
 }
 
 @media screen and (max-width: 480px) {
-    .fp-hero {
+    section.fp-hero {
         margin-bottom: 1em;
     }
 
-    .fp-text-loop-section,
-    .fp-text-loop-section-reverse {
+    .fp-projects {
+        flex-direction: column;
+
+    }
+
+    .project-image {
+        height: 420px;
+    }
+
+    .fp-text-loop-section {
         margin: 0 auto 0.7em auto;
         min-height: 32px;
     }
 
-    .fp-text-loop-inner,
-    .fp-text-loop-inner-reverse {
+    .fp-text-loop-inner {
         font-size: 12px;
         gap: 0.4em;
     }
@@ -497,142 +339,4 @@ section.fp-hero {
         font-size: 0.9em;
         margin: 0 0.2em;
     }
-}
-
-/*========== STAR TOGGLE BUTTON ==========*/
-#star-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.3em;
-    border-radius: 50%;
-    transition: background 0.3s, box-shadow 0.3s;
-    color: var(--color-black);
-    font-size: 1.5em;
-    outline: none;
-    box-shadow: 0 0 0 0 transparent;
-}
-
-#star-toggle:focus,
-#star-toggle:hover {
-    background: var(--color-offwhite);
-    box-shadow: 0 0 0 2px var(--color-black);
-    color: var(--color-black);
-}
-
-body.night-mode #star-toggle {
-    color: var(--color-offwhite);
-    background: var(--color-offwhite);
-    box-shadow: 0 0 0 2px var(--color-black);
-}
-
-body.night-mode #star-toggle:focus,
-body.night-mode #star-toggle:hover {
-    background: var(--color-offwhite);
-    color: var(--color-black);
-    box-shadow: 0 0 0 2px var(--color-black);
-}
-
-@media screen and (max-width: 768px) {
-    #star-toggle {
-        margin-left: 0.5em;
-        font-size: 1.2em;
-    }
-}
-
-/* ========== DARK/LIGHT MODE OPTIMIZATION ========== */
-body.night-mode .fp-project-filter-list a {
-    background: var(--color-black);
-    color: var(--color-offwhite);
-    border: 1px solid var(--color-offwhite);
-}
-
-body.night-mode .fp-project-filter-list a.selected,
-body.night-mode .fp-project-filter-list a:hover {
-    background: var(--color-offwhite);
-    color: var(--color-black);
-}
-
-body.night-mode nav.menu a {
-    color: var(--color-offwhite) !important;
-    border-color: var(--color-offwhite) !important;
-}
-
-body.night-mode nav.menu a.selected,
-body.night-mode nav.menu a:hover {
-    background: var(--color-offwhite) !important;
-    color: var(--color-black) !important;
-}
-
-body.night-mode button,
-body.night-mode .btn,
-body.night-mode .round-project-cat-btn {
-    background: var(--color-black);
-    color: var(--color-offwhite);
-    border: 1px solid var(--color-offwhite);
-}
-
-body.night-mode button:hover,
-body.night-mode .btn:hover,
-body.night-mode .round-project-cat-btn:hover {
-    background: var(--color-offwhite);
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
-}
-
-/* Ensure default mode uses variables */
-.fp-project-filter-list a {
-    background: var(--color-offwhite);
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
-}
-
-.fp-project-filter-list a.selected,
-.fp-project-filter-list a:hover {
-    background: var(--color-black);
-    color: var(--color-offwhite);
-}
-
-nav.menu a {
-    color: var(--color-black);
-    border-color: var(--color-black);
-}
-
-nav.menu a.selected,
-nav.menu a:hover {
-    background: var(--color-black);
-    color: var(--color-offwhite);
-}
-
-button,
-.btn,
-.round-project-cat-btn {
-    background: var(--color-offwhite);
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
-}
-
-button:hover,
-.btn:hover,
-.round-project-cat-btn:hover {
-    background: var(--color-black);
-    color: var(--color-offwhite);
-    border: 1px solid var(--color-offwhite);
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5em;
-}
-
-nav.menu {
-    display: flex;
-    align-items: center;
-    gap: 1em;
 }

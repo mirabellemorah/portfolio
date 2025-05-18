@@ -110,9 +110,13 @@ starToggle.addEventListener('click', function () {
     if (document.body.classList.contains('night-mode')) {
         document.documentElement.style.setProperty('--color-offwhite', '#000');
         document.documentElement.style.setProperty('--color-black', '#f9f8f0');
+        document.documentElement.style.setProperty('--color-link', '#f9f8f0');
+
     } else {
         document.documentElement.style.setProperty('--color-offwhite', '#f9f8f0');
         document.documentElement.style.setProperty('--color-black', '#000');
+        document.documentElement.style.setProperty('--color-link', '#000');
+
     }
     updateLogoForMode();
 });
