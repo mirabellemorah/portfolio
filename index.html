@@ -1,5 +1,9 @@
+<!--##################  ##################-->
+
 <!DOCTYPE html>
 <html lang="en">
+
+<!--################## HEAD ##################-->
 
 <head>
     <meta charset="UTF-8" />
@@ -14,7 +18,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!--################## Header ##################-->
 
     <header>
         <a class="logo" href="index.html">
@@ -32,40 +36,68 @@
         </nav>
 
         <!-- MENU BAR-->
-
         <a href="#" class="toggle-nav"> <img src="assets/home-page-assets/menu.svg" alt="menu" /> Menu</a>
 
     </header>
 
+    <!--##################  AVAILABILITY / STAR  ##################-->
+
+    <a href="#footer">
+        <button class="round-project-cat-btn available">
+            <div class="available-circle"> </div> Available
+            <img src="assets/home-page-assets/availableHead.svg" alt="availability">
+        </button>
+    </a>
+
     <!-- Star Toggle Button for Night/Dark Mode -->
+
     <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
         </svg>
     </button>
 
+    <!--################## MAIN ##################-->
+
     <main>
 
-        <!-- AVAILABILITY -->
+        <!--################## HERO SECTION ##################-->
 
-        <a href="#footer"> <button class="round-project-cat-btn available">
-                <div class="available-circle"> </div> Available<img src="assets/home-page-assets/availableHead.svg"
-                    alt="availability">
-            </button></a>
-
-
-        <!-- Hero -->
         <section class="fp-hero">
+
+            <!-- Hero Images -->
+
+            <div class="content">
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="img/8.jpg" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" />
+
+            </div>
+
             <h2>Mirabelle</h2>
 
             <p class="fp-hero-sub">
-                I'm a growth and communications strategists who also designs. I help
-                impact-driven startups and businesses grow.
+                I help businesses and impact organisations develop their growth and communications strategies. I also
+                design.
             </p>
 
         </section>
 
-        <!-- Text Loop Section -->
+
+        <!--################## TEXT LOOP ##################-->
+
         <section class="fp-text-loop-section">
             <div class="fp-text-loop">
                 <div class="fp-text-loop-inner">
@@ -89,7 +121,7 @@
             </div>
         </section>
 
-        <!-- Project Filters -->
+        <!--##################  PROJECT FILTERS  ##################-->
 
         <section class="fp-project-filter">
 
@@ -104,7 +136,7 @@
             </nav>
         </section>
 
-        <!-- Projects -->
+        <!--################## ALL FEATURED PROJECTS ##################-->
 
         <section class="fp-projects-container">
 
@@ -267,7 +299,7 @@
 
             </div>
 
-            <!-- view all projects 9 
+            <!-- view ALL PROJECTS 
 
             <a href="portfolio.html"> <button class="round-project-cat-btn view-all"> View all projects
                     <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +323,9 @@
 
         </section>-->
 
-            <!-- Logos 
+        </section>
+
+        <!-- Logos 
 
             <Section class="fp-logos">
               
@@ -379,7 +413,10 @@
                     </div>
                 </div>
             </Section>-->
+
     </main>
+
+    <!--################## FOOTER ##################-->
 
     <footer id="footer">
 
@@ -392,10 +429,10 @@
                 <button id="copy-email-btn">Copy email address</button>
                 <span id="copy-feedback"
                     style="display:none; margin-left:10px; color: var(--color-black); transition:opacity 0.4s;">Copied!</span>
-
             </div>
 
             <div class="socials">
+
                 <!-- LinkedIn-->
 
                 <a href="https://www.Linkedin.com/in/mirabellemorah" class="social-link" aria-label="LinkedIn"
@@ -445,9 +482,15 @@
                 </p>
             </div>
         </section>
+
     </footer>
 
+    <!--################## SCRIPTS ##################-->
+
+    <script src="imagesloaded.pkgd.min.js"></script>
     <script src="menu.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="demo.js"></script>
 
 </body>
 

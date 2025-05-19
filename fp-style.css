@@ -1,30 +1,61 @@
+/*========== GLOBAL STYLES ==========*/
+/*
+* {
+    outline: solid rgb(31, 2, 2);
+}
+*/
+
+.content {
+    height: 300px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+}
+
+.content__img {
+    max-width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    will-change: transform;
+    filter: none;
+
+}
+
 /*========== HERO SECTION ==========*/
 
-
-
 section.fp-hero {
-    height: 70vh;
+    position: relative;
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+
 }
 
 .fp-hero h2 {
-    font-size: clamp(32px, 100vw, 400px);
+    font-size: clamp(32px, 70vw, 300px);
     margin-bottom: 0;
     font-weight: 100;
     position: relative;
+
 }
 
 .fp-hero-sub {
+     position: relative;
     width: 60vw;
     margin-top: 0.5em;
 }
 
 /*========== PROJECT FILTER ==========*/
+
 .fp-project-filter-list {
     display: flex;
     gap: 4px;
@@ -125,6 +156,8 @@ section.fp-hero {
 }
 
 /*========== VIEW ALL & AVAILABLE ==========*/
+
+
 .view-all,
 .available {
     width: max-content;
@@ -136,10 +169,18 @@ section.fp-hero {
     font: inherit;
 }
 
+#star-toggle {
+    position: fixed;
+    top: 75%;
+    right: 1%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
+}
+
 .available {
-    position: sticky;
+    position: fixed;
     top: 80%;
-    left: 90%;
+    right: 1%;
     z-index: 1000;
     animation: float 5s ease-in-out infinite;
 }
@@ -190,7 +231,6 @@ section.fp-hero {
     }
 }
 
-
 /*========== TEXT LOOP SECTION ==========*/
 .fp-text-loop-section {
 
@@ -238,7 +278,8 @@ section.fp-hero {
 }
 
 
-/* ========== MOBILE RESPONSIVENESS ========== */
+/* ========== 🪜🪜🪜 MOBILE RESPONSIVENESS 🪜🪜🪜 ========== */
+
 
 @media screen and (max-width: 1199px) and (min-width: 769px) {
     .project-image {
@@ -250,7 +291,7 @@ section.fp-hero {
     section.fp-hero {
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 80vh;
         width: 100%;
         overflow-x: hidden;
         transform: translateY(0);
@@ -312,6 +353,8 @@ section.fp-hero {
 }
 
 @media screen and (max-width: 480px) {
+
+
     section.fp-hero {
         margin-bottom: 1em;
     }
@@ -338,5 +381,10 @@ section.fp-hero {
     .fp-text-loop .diamond {
         font-size: 0.9em;
         margin: 0 0.2em;
+    }
+
+    .content {
+        height: 100vh;
+        /*overflow: hidden; */
     }
 }
