@@ -32,7 +32,7 @@
 
 section.fp-hero {
     position: relative;
-    height: 93vh;
+    min-height: 93vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@ section.fp-hero {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
     margin-bottom: 20px;
     opacity: 1;
@@ -165,82 +165,6 @@ section.fp-hero {
 
 .project-image:hover img {
     transform: scale(1.1);
-}
-
-/*========== VIEW ALL & AVAILABLE ==========*/
-
-
-.view-all,
-.available {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--color-black);
-    color: var(--color-offwhite);
-    font: inherit;
-}
-
-#star-toggle {
-    position: fixed;
-    top: 75%;
-    right: 1%;
-    z-index: 1000;
-    animation: float 5s ease-in-out infinite;
-}
-
-.available {
-    position: fixed;
-    top: 80%;
-    right: 1%;
-    z-index: 1000;
-    animation: float 5s ease-in-out infinite;
-}
-
-.available-circle {
-    width: 15px;
-    height: 15px;
-    background-color: #B6CC15;
-    border-radius: 50%;
-    animation: fadePulse 5s ease-in-out infinite;
-}
-
-.available img {
-    width: 20px;
-    height: 20px;
-}
-
-.view-all:hover,
-.available:hover {
-    background-color: var(--color-offwhite);
-    color: var(--color-black);
-}
-
-/*========== ANIMATIONS ==========*/
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes fadePulse {
-
-    0%,
-    100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(0.9);
-    }
 }
 
 /*========== TEXT LOOP SECTION ==========*/
@@ -310,7 +234,7 @@ section.fp-hero {
     section.fp-hero {
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        min-height: 70vh;
         width: 100%;
         overflow-x: hidden;
         transform: translateY(0);

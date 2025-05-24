@@ -64,6 +64,17 @@ h4 {
     line-height: 1.5;
 }
 
+p {
+
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+
 /* ========== LINKS ==============*/
 a {
     color: var(--color-link);
@@ -76,7 +87,7 @@ a:hover {
 }
 
 p a {
-    color: var(--color-link-h);
+
     text-decoration: underline;
 }
 
@@ -161,6 +172,83 @@ button:hover,
     color: var(--color-offwhite);
 }
 
+/*========== VIEW ALL & AVAILABLE ==========*/
+
+
+.view-all,
+.available {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
+    font: inherit;
+}
+
+#star-toggle {
+    position: fixed;
+    top: 75%;
+    right: 1%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
+}
+
+.available {
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
+}
+
+.available-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #B6CC15;
+    border-radius: 50%;
+    animation: fadePulse 5s ease-in-out infinite;
+}
+
+.available img {
+    width: 20px;
+    height: 20px;
+}
+
+.view-all:hover,
+.available:hover {
+    background-color: var(--color-offwhite);
+    color: var(--color-black);
+}
+
+/*========== ANIMATIONS ==========*/
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadePulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+
 /* ========== FOOTER ==============*/
 footer section {
     position: relative;
@@ -189,20 +277,23 @@ footer h4:hover {
 }
 
 /* ========== RESPONSIVE STYLES ==============*/
+
 @media screen and (max-width: 768px) {
 
     section,
     header {
         padding: var(--padding-mobile);
+        position: relative;
 
     }
 
     @media screen and (max-width: 480px) {
         header {
-            /*position: relative; */
+            position: relative;
             width: 100%;
             max-width: 100vw;
             overflow-x: hidden;
+            border-bottom: 0;
         }
 
         section {
@@ -257,6 +348,14 @@ footer h4:hover {
             color: var(--color-link);
             text-decoration: none;
             z-index: 1000;
+        }
+
+        #star-toggle {
+            top: 74%;
+        }
+
+        .bottom {
+            border-bottom: 0;
         }
 
         /*

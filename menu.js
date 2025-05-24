@@ -127,3 +127,52 @@ starToggle.addEventListener('click', function () {
 
 // On page load, set correct logo
 updateLogoForMode();
+
+
+
+
+
+// images in about page
+
+const slideArea = document.querySelector("div.slides");
+const images = slideArea.querySelectorAll(".showcase-imgs");
+
+let currentSlide = 0;
+let z = 1;
+
+//when I click on slide area, change slide based on z-index
+
+slideArea.addEventListener("click", function () {
+
+    currentSlide = currentSlide + 1;
+
+    if (currentSlide > images.length - 1) {
+        currentSlide = 0;
+    }
+
+    z = z + 1;
+
+    images.forEach(image => {
+        image.style.animation = "";
+    });
+
+    images[currentSlide].style.zIndex = z;
+    images[currentSlide].style.animation = "fade cubic-bezier(0.075, 0.82, 0.165, 1) 3s";
+
+});
+
+slideArea.addEventListener("mouseover", function () {
+    images.forEach(image => {
+        const x = 25 * (Math.floor(Math.random() * 5)) - 50;
+        const y = 25 * (Math.floor(Math.random() * 5)) - 50;
+
+        image.style.transform = `translate(${x}px, ${y}px)`;
+    });
+});
+
+slideArea.addEventListener("mouseout", function () {
+    images.forEach(image => {
+
+        image.style.transform = ``;
+    });
+});
