@@ -5,14 +5,15 @@
     --color-button-bg: none;
     --color-button-text: #000;
     --color-offwhite: #f9f8f0;
-    --color-black: #000;
-    --color-link: #000;
+    --color-black: #4f30da;
+    --color-link: var(--color-black);
     --color-link-h: #767171;
     --padding-universal: 30px 80px;
     --padding-mobile: 30px 20px;
     --transition-ease-1: all 0.5s ease;
     --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     scroll-behavior: smooth;
+    --border: 0.5px solid var(--color-black);
 }
 
 /* ========== BASE STYLES ==============*/
@@ -87,11 +88,13 @@ header {
     position: absolute;
     width: 100%;
     z-index: 999;
+    border: var(--border);
 
 }
 
 header .logo {
     width: 70px;
+
 }
 
 header .logo img {
@@ -124,6 +127,7 @@ a.toggle-nav {
 /* ========== MAIN SECTION ==============*/
 main {
     background-color: var(--color-offwhite);
+
 }
 
 section {
@@ -131,6 +135,7 @@ section {
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
+    border: var(--border);
 }
 
 /* ========== BUTTONS ==============*/

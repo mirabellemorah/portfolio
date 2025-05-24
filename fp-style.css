@@ -1,9 +1,11 @@
-/*========== GLOBAL STYLES ==========*/
+/*==========  STYLES ==========*/
 /*
 * {
     outline: solid rgb(31, 2, 2);
 }
 */
+
+/*========== Moving images ==========*/
 
 .content {
     height: 300px;
@@ -30,12 +32,14 @@
 
 section.fp-hero {
     position: relative;
-    height: 100vh;
+    height: 93vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-bottom: 0;
+    /* BORDER MAGIC ✨ to avoid double bottoms - Remove border for the filter section */
 
 
 }
@@ -49,7 +53,7 @@ section.fp-hero {
 }
 
 .fp-hero-sub {
-     position: relative;
+    position: relative;
     width: 60vw;
     margin-top: 0.5em;
 }
@@ -65,11 +69,13 @@ section.fp-hero {
     /* Firefox */
     -ms-overflow-style: none;
     /* IE/Edge */
+    border: var(--border);
 }
 
 .fp-project-filter-list::-webkit-scrollbar {
     display: none;
     /* Chrome/Safari */
+
 }
 
 .fp-project-filter-list a {
@@ -100,6 +106,9 @@ section.fp-hero {
 .fp-projects-container {
     width: 90%;
     margin-top: 0;
+    border-bottom: 0;
+    /* BORDER MAGIC ✨ to avoid double bottoms - Remove border for the filter section */
+
 }
 
 .fp-projects {
@@ -121,6 +130,8 @@ section.fp-hero {
     margin-bottom: 20px;
     opacity: 1;
     transition: opacity 0.4s ease, transform 0.4s ease;
+    border: var(--border);
+
 }
 
 .fp-projects .project.hidden {
@@ -140,6 +151,7 @@ section.fp-hero {
     height: 600px;
     overflow: hidden;
     border-radius: 20px;
+    border: var(--border);
 }
 
 .project-image img {
@@ -288,6 +300,13 @@ section.fp-hero {
 }
 
 @media screen and (max-width: 768px) {
+
+    .content__img {
+        max-width: 50px;
+
+
+    }
+
     section.fp-hero {
         justify-content: center;
         align-items: center;

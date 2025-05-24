@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/* copied */
+/* copy email js*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const copyBtn = document.getElementById('copy-email-btn');
@@ -91,7 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 // Night/Dark Mode Toggle
+
 const starToggle = document.getElementById('star-toggle');
 
 // Logo swap for night/dark mode
@@ -112,7 +114,9 @@ starToggle.addEventListener('click', function () {
         document.documentElement.style.setProperty('--color-black', '#f9f8f0');
         document.documentElement.style.setProperty('--color-link', '#f9f8f0');
 
-    } else {
+    }
+
+    else {
         document.documentElement.style.setProperty('--color-offwhite', '#f9f8f0');
         document.documentElement.style.setProperty('--color-black', '#000');
         document.documentElement.style.setProperty('--color-link', '#000');
