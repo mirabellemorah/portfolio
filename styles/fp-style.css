@@ -41,7 +41,6 @@ section.fp-hero {
     border-bottom: 0;
     /* BORDER MAGIC ✨ to avoid double bottoms - Remove border for the filter section */
 
-
 }
 
 .fp-hero h2 {
@@ -167,52 +166,6 @@ section.fp-hero {
     transform: scale(1.1);
 }
 
-/*========== TEXT LOOP SECTION ==========*/
-.fp-text-loop-section {
-
-    width: 100vw;
-    overflow: hidden;
-    background: var(--color-offwhite);
-    padding: 0;
-    margin: 0 auto 20vh auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fp-text-loop {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
-
-.fp-text-loop-inner {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: clamp(16px, 2vw, 28px);
-    font-weight: 500;
-    color: var(--color-black);
-    gap: 1.5em;
-    animation: text-loop-scroll 18s linear infinite;
-}
-
-.fp-text-loop .diamond {
-    color: #B6CC15;
-    font-size: 1.2em;
-    margin: 0 0.7em;
-}
-
-@keyframes text-loop-scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 
 /* ========== 🪜🪜🪜 MOBILE RESPONSIVENESS 🪜🪜🪜 ========== */
 
@@ -248,24 +201,8 @@ section.fp-hero {
 
     .fp-hero-sub {
         width: 100%;
-        font-size: 16px;
+        /* font-size: 16px; */
         padding: 10px;
-    }
-
-
-    .fp-text-loop-section {
-        margin: 0 auto 1.5em auto;
-        min-height: 40px;
-    }
-
-    .fp-text-loop-inner {
-        font-size: clamp(13px, 4vw, 18px);
-        gap: 0.7em;
-    }
-
-    .fp-text-loop .diamond {
-        font-size: 1em;
-        margin: 0 0.4em;
     }
 
     .fp-project-filter,
@@ -311,21 +248,6 @@ section.fp-hero {
 
     .project-image {
         height: 420px;
-    }
-
-    .fp-text-loop-section {
-        margin: 0 auto 0.7em auto;
-        min-height: 32px;
-    }
-
-    .fp-text-loop-inner {
-        font-size: 12px;
-        gap: 0.4em;
-    }
-
-    .fp-text-loop .diamond {
-        font-size: 0.9em;
-        margin: 0 0.2em;
     }
 
     .content {

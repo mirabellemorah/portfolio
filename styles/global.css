@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 
-/* ========== GLOBAL FONT SETTINGS ==============*/
+/* ========== GLOBAL VAR SETTINGS ==============*/
 :root {
     --color-button-bg: none;
     --color-button-text: #000;
@@ -14,6 +14,7 @@
     --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     scroll-behavior: smooth;
     --border: 0.5px solid var(--color-black);
+    --fontybody: clamp(14px, 1.5vw, 18px);
 }
 
 /* ========== BASE STYLES ==============*/
@@ -73,8 +74,6 @@ strong {
     font-weight: 600;
 }
 
-
-
 /* ========== LINKS ==============*/
 a {
     color: var(--color-link);
@@ -89,6 +88,7 @@ a:hover {
 p a {
 
     text-decoration: dashed underline;
+    font-weight: 600;
 
 }
 
@@ -130,12 +130,64 @@ a.toggle-nav {
 }
 
 /* ========== NAV ACTIVE STATE ==============*/
+
 .selected {
     background-color: var(--color-black);
     color: var(--color-offwhite);
     border-radius: 20px;
     padding: 5px;
 }
+
+
+/*========== TEXT LOOP SECTION ==========*/
+
+
+.fp-text-loop-section {
+
+    width: 100vw;
+    overflow: hidden;
+    background: var(--color-offwhite);
+    padding: 0;
+    margin: 0 auto 20vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fp-text-loop {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.fp-text-loop-inner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    /*font-size: clamp(16px, 2vw, 28px); */
+    font-size: var(--fontybody);
+    font-weight: 500;
+    color: var(--color-black);
+    gap: 1.5em;
+    animation: text-loop-scroll 18s linear infinite;
+}
+
+.fp-text-loop .diamond {
+    color: #B6CC15;
+    font-size: 1.2em;
+    margin: 0 0.7em;
+}
+
+@keyframes text-loop-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 
 /* ========== MAIN SECTION ==============*/
 main {
@@ -224,6 +276,7 @@ button:hover,
 }
 
 /*========== ANIMATIONS ==========*/
+
 @keyframes float {
 
     0%,
@@ -251,7 +304,15 @@ button:hover,
 }
 
 
+/* ========== FILTER ==============*/
+
+.filter {
+    filter: invert(14%) sepia(95%) saturate(6961%) hue-rotate(255deg) brightness(92%) contrast(85%);
+}
+
+
 /* ========== FOOTER ==============*/
+
 footer section {
     position: relative;
     display: flex;
@@ -292,6 +353,24 @@ footer h4:hover {
     header {
         border-bottom: 0;
     }
+
+
+    .fp-text-loop-section {
+        margin: 0 auto 1.5em auto;
+        min-height: 40px;
+    }
+
+    .fp-text-loop-inner {
+        gap: 0.7em;
+    }
+
+    .fp-text-loop .diamond {
+        font-size: 1em;
+        margin: 0 0.4em;
+    }
+
+
+
 
     @media screen and (max-width: 480px) {
         header {
@@ -359,7 +438,20 @@ footer h4:hover {
             top: 74%;
         }
 
+        .fp-text-loop-section {
+            margin: 0 auto 0.7em auto;
+            min-height: 32px;
+        }
 
+        .fp-text-loop-inner {
+            font-size: 12px;
+            gap: 0.4em;
+        }
+
+        .fp-text-loop .diamond {
+            font-size: 0.9em;
+            margin: 0 0.2em;
+        }
 
         /*
         body {

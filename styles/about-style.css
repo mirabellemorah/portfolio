@@ -15,7 +15,7 @@
 
   .showcase-imgs {
       position: absolute;
-   
+
       transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -81,14 +81,12 @@
       max-width: 140px;
       max-height: 48px;
       object-fit: contain;
-      filter: invert(14%) sepia(95%) saturate(6961%) hue-rotate(255deg) brightness(92%) contrast(85%);
   }
 
   .feature-logo img:hover {
       opacity: 1;
       transform: scale(1.07);
-            filter: none;
-
+      filter: none;
   }
 
   /* Responsive adjustments */
