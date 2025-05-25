@@ -103,6 +103,7 @@ function updateLogoForMode() {
         logoImg.src = logoImg.getAttribute('data-dark');
     } else {
         logoImg.src = logoImg.getAttribute('data-light');
+        logoImg.style.filter = 'none'; // Reset filter for light mode
     }
 }
 

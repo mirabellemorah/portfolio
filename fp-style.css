@@ -32,7 +32,7 @@
 
 section.fp-hero {
     position: relative;
-    min-height: 93vh;
+    min-height: 92vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -228,7 +228,6 @@ section.fp-hero {
     .content__img {
         max-width: 50px;
 
-
     }
 
     section.fp-hero {
@@ -239,6 +238,7 @@ section.fp-hero {
         overflow-x: hidden;
         transform: translateY(0);
         margin-bottom: 1.5em;
+        border-bottom: var(--border);
     }
 
     .fp-hero h2 {
@@ -250,6 +250,22 @@ section.fp-hero {
         width: 100%;
         font-size: 16px;
         padding: 10px;
+    }
+
+
+    .fp-text-loop-section {
+        margin: 0 auto 1.5em auto;
+        min-height: 40px;
+    }
+
+    .fp-text-loop-inner {
+        font-size: clamp(13px, 4vw, 18px);
+        gap: 0.7em;
+    }
+
+    .fp-text-loop .diamond {
+        font-size: 1em;
+        margin: 0 0.4em;
     }
 
     .fp-project-filter,
@@ -279,20 +295,6 @@ section.fp-hero {
         overflow-x: hidden;
     }
 
-    .fp-text-loop-section {
-        margin: 0 auto 1em auto;
-        min-height: 40px;
-    }
-
-    .fp-text-loop-inner {
-        font-size: clamp(13px, 4vw, 18px);
-        gap: 0.7em;
-    }
-
-    .fp-text-loop .diamond {
-        font-size: 1em;
-        margin: 0 0.4em;
-    }
 }
 
 @media screen and (max-width: 480px) {
