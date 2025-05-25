@@ -310,6 +310,10 @@ button:hover,
     filter: invert(14%) sepia(95%) saturate(6961%) hue-rotate(255deg) brightness(92%) contrast(85%);
 }
 
+.filter:hover {
+    filter: none;
+}
+
 
 /* ========== FOOTER ==============*/
 
