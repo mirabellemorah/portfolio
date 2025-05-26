@@ -8,7 +8,7 @@
     --color-black: #4f30da;
     --color-link: var(--color-black);
     --color-link-h: #767171;
-    --padding-universal: 30px 80px;
+    --padding-universal: 30px 30px;
     --padding-mobile: 30px 20px;
     --transition-ease-1: all 0.5s ease;
     --transition-ease-2: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);

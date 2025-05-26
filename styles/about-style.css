@@ -111,12 +111,15 @@
 
       .about-text-container {
           flex-direction: column;
-          gap: 20px;
+          gap: 10px;
       }
+
 
       .about-text-1,
       .about-text-2 {
           width: 100%;
+          padding: 10px;
+          align-self: auto;
       }
   }
 
