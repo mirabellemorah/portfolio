@@ -27,20 +27,18 @@
       padding: 20px 0 15px 0;
   }
 
-  .post-images-container {
+  .post-image-container {
       margin: 0 auto;
-      width: 70vw;
+      width: 50%;
+
   }
 
   .post-image {
+      object-fit: cover;
       margin-top: 30px;
       display: flex;
       justify-content: center;
       width: 100%;
-  }
-
-  .post-image img {
-      border-radius: 20px;
   }
 
 
@@ -55,6 +53,12 @@
       .post-cover-image {
           /* width: 100%; */
           height: 350px;
+      }
+
+      .post-image-container {
+          margin: 0 auto;
+          width: 100%;
+
       }
 
   }
