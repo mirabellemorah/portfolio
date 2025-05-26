@@ -5,7 +5,7 @@
     --color-button-bg: none;
     --color-button-text: #000;
     --color-offwhite: #f9f8f0;
-    --color-black: #4f30da;
+    --color-black: #5d46e2;
     --color-link: var(--color-black);
     --color-link-h: #767171;
     --padding-universal: 30px 30px;
@@ -228,7 +228,6 @@ button:hover,
 
 /*========== VIEW ALL & AVAILABLE ==========*/
 
-
 .view-all,
 .available {
     width: max-content;
@@ -243,6 +242,14 @@ button:hover,
 #star-toggle {
     position: fixed;
     top: 75%;
+    right: 1%;
+    z-index: 1000;
+    animation: float 5s ease-in-out infinite;
+}
+
+.view-all {
+    position: fixed;
+    top: 85%;
     right: 1%;
     z-index: 1000;
     animation: float 5s ease-in-out infinite;

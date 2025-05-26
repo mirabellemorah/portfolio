@@ -55,6 +55,35 @@
       padding: 20px;
   }
 
+  /*========== PLAY CARDS ==========*/
+
+  .play-projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+  }
+
+  .play-image-container {
+      margin: 0 auto;
+      width: 50%;
+  }
+
+  .post-image {
+      object-fit: cover;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+
+  iframe {
+      width: 100%;
+      height: 400px;
+  }
+
+
+
   /* Logo Showcase Section */
 
   .fp-logos {
