@@ -371,7 +371,6 @@ footer h4:hover {
 
 
 
-
     @media screen and (max-width: 480px) {
         header {
             position: relative;
@@ -451,6 +450,11 @@ footer h4:hover {
         .fp-text-loop .diamond {
             font-size: 0.9em;
             margin: 0 0.2em;
+        }
+
+        .sav {
+            position: fixed;
+            top: 75%;
         }
 
         /*
