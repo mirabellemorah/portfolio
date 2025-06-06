@@ -75,9 +75,12 @@ div.slides {
 .post-image {
     object-fit: cover;
     margin-top: 30px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
 }
 
 iframe {
@@ -160,9 +163,23 @@ iframe {
         gap: 18px 10px;
     }
 
+    .play-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .play-image-container {
+
+        width: 90%;
+    }
+
     .feature-logo img {
         height: 28px;
         max-width: 70px;
         max-height: 28px;
     }
+
+
 }
