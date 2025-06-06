@@ -247,7 +247,7 @@ section.fp-hero {
     }
 
     .project-image {
-        height: 420px;
+        height: auto;
     }
 
     .content {

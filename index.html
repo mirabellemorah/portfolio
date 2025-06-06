@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--################## HEAD ##################-->
+<!--========== HEAD ==========-->
 
 <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <!--################## Header ##################-->
+
+    <!--========== Header ==========-->
 
     <header>
         <a class="logo" href="index.html">
@@ -35,32 +36,38 @@
         </nav>
 
         <!-- MENU BAR-->
-        <a href="#" class="toggle-nav"> <img src="assets/home-page-assets/menu.svg" alt="menu" /> Menu</a>
+        <a href="#" class="toggle-nav"> <!--<img src="assets/home-page-assets/menu.svg" alt="menu" /> --> Menu</a>
 
     </header>
 
-    <!--##################  AVAILABILITY / STAR  ##################-->
+    <!-- ======== STAR / AVAILABILITY / VIEW ALL ========-->
 
-    <a href="#footer">
-        <button class="round-project-cat-btn available">
-            <div class="available-circle"> </div> Available
-            <img src="assets/home-page-assets/availableHead.svg" alt="availability">
+    <div class="sav">
+
+        <!-- Star Toggle Button for Night/Dark Mode -->
+
+        <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
+            <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
+            </svg>
         </button>
-    </a>
 
-    <!-- Star Toggle Button for Night/Dark Mode -->
+        <!-- Availability Button -->
 
-    <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
-        <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
-        </svg>
-    </button>
+        <a href="#footer">
+            <button class="round-project-cat-btn available">
+                <div class="available-circle"> </div> Available
+                <img src="assets/home-page-assets/availableHead.svg" alt="availability">
+            </button>
+        </a>
 
-    <!--################## MAIN ##################-->
+    </div>
+
+    <!--========== MAIN ==========-->
 
     <main>
 
-        <!--################## HERO SECTION ##################-->
+        <!--========== HERO SECTION ==========-->
 
         <section class="fp-hero">
 
@@ -87,13 +94,16 @@
             <h2>Mirabelle</h2>
 
             <p class="fp-hero-sub">
-                I help businesses and impact organisations develop their growth and communications strategies. I also
-                design.
+                I’m a fast-moving problem solver and growth strategist who designs. I like fun experiments 👀. I care
+                about
+                purpose-led ideas. And I blend tech, design, strategy and business together. Now get over here let's
+                build some
+                creative and innovative stuff together!
             </p>
 
         </section>
 
-        <!--################## TEXT LOOP ##################-->
+        <!--========== TEXT LOOP ==========-->
 
         <section class="fp-text-loop-section">
             <div class="fp-text-loop">
@@ -118,7 +128,7 @@
             </div>
         </section>
 
-        <!--##################  PROJECT FILTERS  ##################-->
+        <!--==========  PROJECT FILTERS  ==========-->
 
         <section class="fp-project-filter">
 
@@ -133,7 +143,7 @@
             </nav>
         </section>
 
-        <!--################## ALL FEATURED PROJECTS ##################-->
+        <!--========== ALL FEATURED PROJECTS ==========-->
 
         <section class="fp-projects-container">
 
@@ -295,32 +305,8 @@
                 </div>
 
             </div>
-
-            <!-- view ALL PROJECTS 
-
-            <a href="work.html"> <button class="round-project-cat-btn view-all"> View all projects
-                    <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                        <path class="fp-p-view-eye"
-                            d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z"
-                            fill="#F9F8F0" />
-
-                        <path
-                            d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
-                            fill="#F9F8F0" />
-
-                        <path d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z"
-                            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-
-                        <path
-                            d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
-                            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button></a>
-
-        </section>-->
-
         </section>
+
 
         <!-- Logos 
 
@@ -413,7 +399,7 @@
 
     </main>
 
-    <!--################## FOOTER ##################-->
+    <!--========== FOOTER ==========-->
 
     <footer id="footer">
 
@@ -481,7 +467,7 @@
 
     </footer>
 
-    <!--################## SCRIPTS ##################-->
+    <!--========== SCRIPTS ==========-->
 
     <script src="scripts/imagesloaded.pkgd.min.js"></script>
     <script src="scripts/menu.js"></script>

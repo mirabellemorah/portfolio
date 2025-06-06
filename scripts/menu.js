@@ -6,12 +6,15 @@ toggleTag.addEventListener("click", function (event) {
     navTag.classList.toggle("open");
 
     if (navTag.classList.contains("open")) {
-        toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Close`;
+        //  toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Close`;
+        toggleTag.innerHTML = `Close`;
         toggleTag.style.color = "var(--color-offwhite)";
     }
     else {
-        toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Menu`;
+        // toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Menu`;
+        toggleTag.innerHTML = `Menu`;
         toggleTag.style.color = "";
+
     }
 });
 

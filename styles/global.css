@@ -229,6 +229,18 @@ button:hover,
 
 /*========== VIEW ALL & AVAILABLE ==========*/
 
+.sav {
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    animation: float 5s ease-in-out infinite;
+}
+
 .view-all,
 .available {
     width: max-content;
@@ -238,30 +250,6 @@ button:hover,
     background-color: var(--color-black);
     color: var(--color-offwhite);
     font: inherit;
-}
-
-#star-toggle {
-    position: fixed;
-    top: 75%;
-    right: 1%;
-    z-index: 1000;
-    animation: float 5s ease-in-out infinite;
-}
-
-.view-all {
-    position: fixed;
-    top: 85%;
-    right: 1%;
-    z-index: 1000;
-    animation: float 5s ease-in-out infinite;
-}
-
-.available {
-    position: fixed;
-    top: 80%;
-    right: 1%;
-    z-index: 1000;
-    animation: float 5s ease-in-out infinite;
 }
 
 .available-circle {
