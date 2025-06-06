@@ -100,10 +100,9 @@ p a {
 header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 30px;
     position: absolute;
-    width: 100%;
-
     z-index: 999;
     border: var(--border);
 
