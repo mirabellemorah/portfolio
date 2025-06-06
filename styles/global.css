@@ -96,7 +96,10 @@ p a {
 header {
     display: flex;
     justify-content: space-between;
-    padding: var(--padding-universal);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+     padding-bottom: 30px;
     position: absolute;
     width: 100%;
     z-index: 999;
