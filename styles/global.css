@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 
+* {
+    outline: 1px solid red;
+}
+
 /* ========== GLOBAL VAR SETTINGS ==============*/
 :root {
     --color-button-bg: none;
@@ -96,12 +100,10 @@ p a {
 header {
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-     padding-bottom: 30px;
+    padding: 30px;
     position: absolute;
     width: 100%;
+
     z-index: 999;
     border: var(--border);
 
