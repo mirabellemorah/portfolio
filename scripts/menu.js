@@ -98,41 +98,55 @@ document.addEventListener('DOMContentLoaded', function () {
 // Night/Dark Mode Toggle
 
 const starToggle = document.getElementById('star-toggle');
-
-// Logo swap for night/dark mode
 const logoImg = document.getElementById('header-logo');
+
+// List of theme modes
+const themes = ['light', 'night', 'peach'];
+
 function updateLogoForMode() {
     if (document.body.classList.contains('night-mode')) {
         logoImg.src = logoImg.getAttribute('data-dark');
+    } else if (document.body.classList.contains('peach-mode')) {
+        logoImg.src = logoImg.getAttribute('data-light'); // Or use a custom logo if you want
     } else {
         logoImg.src = logoImg.getAttribute('data-light');
-        logoImg.style.filter = 'none'; // Reset filter for light mode
+        logoImg.style.filter = 'none';
     }
 }
 
-starToggle.addEventListener('click', function () {
-    document.body.classList.toggle('night-mode');
-    // Swap CSS variables for offwhite and black
-    if (document.body.classList.contains('night-mode')) {
+function applyThemeFromStorage() {
+    const mode = localStorage.getItem('theme-mode') || 'light';
+    document.body.classList.remove('night-mode', 'peach-mode');
+    if (mode === 'night') {
+        document.body.classList.add('night-mode');
         document.documentElement.style.setProperty('--color-offwhite', '#000');
         document.documentElement.style.setProperty('--color-black', '#f9f8f0');
         document.documentElement.style.setProperty('--color-link', '#f9f8f0');
-
-    }
-
-    else {
+    } else if (mode === 'peach') {
+        document.body.classList.add('peach-mode');
+        document.documentElement.style.setProperty('--color-offwhite', '#ecebf4');
+        document.documentElement.style.setProperty('--color-black', '#5d46e2');
+        document.documentElement.style.setProperty('--color-link', '#5d46e2');
+    } else {
+        document.body.classList.remove('night-mode', 'peach-mode');
         document.documentElement.style.setProperty('--color-offwhite', '#f9f8f0');
         document.documentElement.style.setProperty('--color-black', '#000');
         document.documentElement.style.setProperty('--color-link', '#000');
-
     }
     updateLogoForMode();
+}
+
+// On page load, set correct theme and logo
+applyThemeFromStorage();
+
+starToggle.addEventListener('click', function () {
+    // Get current mode and find the next one
+    const current = localStorage.getItem('theme-mode') || 'light';
+    const idx = themes.indexOf(current);
+    const next = themes[(idx + 1) % themes.length];
+    localStorage.setItem('theme-mode', next);
+    applyThemeFromStorage();
 });
-
-// On page load, set correct logo
-updateLogoForMode();
-
-
 
 
 
