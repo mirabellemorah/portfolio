@@ -195,8 +195,8 @@ section.fp-hero {
     }
 
     .fp-hero h2 {
-        font-size: clamp(32px, 10vw, 60px);
-        font-weight: 500;
+        font-size: clamp(40px, 20vw, 60px);
+        font-weight: 200;
     }
 
     .fp-hero-sub {
