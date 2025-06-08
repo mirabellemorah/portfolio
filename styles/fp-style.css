@@ -85,6 +85,7 @@ section.fp-hero {
     border: 1px solid var(--color-black);
     cursor: pointer;
     transition: var(--transition-ease-1);
+    text-decoration: none;
 }
 
 .fp-project-filter-list a:hover {

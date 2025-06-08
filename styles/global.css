@@ -7,7 +7,7 @@
     --color-button-bg: none;
     --color-button-text: #000;
     --color-offwhite: #f9f8f0;
-    --color-black: #5d46e2;
+    --color-black: #000;
     --color-link: var(--color-black);
     --color-link-h: #adadad;
     --padding-universal: 30px 30px;
@@ -79,8 +79,8 @@ strong {
 /* ========== LINKS ==============*/
 a {
     color: var(--color-link);
-    text-decoration: none;
     transition: var(--transition-ease-1);
+    text-decoration: underline;
 }
 
 a:hover {
@@ -89,7 +89,7 @@ a:hover {
 
 p a {
 
-    text-decoration: dashed underline;
+    text-decoration: underline;
     font-weight: 600;
 
 }
@@ -125,6 +125,7 @@ header nav a {
     margin-right: 10px;
     margin-bottom: 10px;
     overflow: hidden;
+    font-weight: inherit;
 }
 
 a.toggle-nav {
@@ -313,6 +314,13 @@ button:hover,
 
 
 /* ========== FOOTER ==============*/
+
+footer  a{
+    color: var(--color-link);
+    text-decoration: none;
+    transition: var(--transition-ease-1);
+}
+
 
 footer section {
     position: relative;

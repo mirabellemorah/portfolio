@@ -7,12 +7,12 @@ toggleTag.addEventListener("click", function (event) {
 
     if (navTag.classList.contains("open")) {
         //  toggleTag.innerHTML = `<img src="./assets/home-page-assets/close.svg"> Close`;
-        toggleTag.innerHTML = `Close`;
+        toggleTag.innerHTML = `CLOSE`;
         toggleTag.style.color = "var(--color-offwhite)";
     }
     else {
         // toggleTag.innerHTML = `<img src="./assets/home-page-assets/menu.svg"> Menu`;
-        toggleTag.innerHTML = `Menu`;
+        toggleTag.innerHTML = `MENU`;
         toggleTag.style.color = "";
 
     }
@@ -101,14 +101,22 @@ const starToggle = document.getElementById('star-toggle');
 const logoImg = document.getElementById('header-logo');
 
 // List of theme modes
-const themes = ['light', 'night', 'peach'];
+const themes = ['light', 'night', 'nude', 'dark-green'];
 
 function updateLogoForMode() {
     if (document.body.classList.contains('night-mode')) {
         logoImg.src = logoImg.getAttribute('data-dark');
-    } else if (document.body.classList.contains('peach-mode')) {
+
+    } else if (document.body.classList.contains('nude-mode')) {
         logoImg.src = logoImg.getAttribute('data-dark'); // Or use a custom logo if you want
-    } else {
+    }
+
+    else if (document.body.classList.contains('dark-green')) {
+        logoImg.src = logoImg.getAttribute('data-light');
+        logoImg.style.filter = 'invert(1)'; // Invert colors for dark green mode
+    }
+
+    else {
         logoImg.src = logoImg.getAttribute('data-light');
         logoImg.style.filter = 'none';
     }
@@ -116,19 +124,29 @@ function updateLogoForMode() {
 
 function applyThemeFromStorage() {
     const mode = localStorage.getItem('theme-mode') || 'light';
-    document.body.classList.remove('night-mode', 'peach-mode');
+    document.body.classList.remove('night-mode', 'nude-mode', 'dark-green');
     if (mode === 'night') {
         document.body.classList.add('night-mode');
-        document.documentElement.style.setProperty('--color-offwhite', '#012622');
+        document.documentElement.style.setProperty('--color-offwhite', '#000');
         document.documentElement.style.setProperty('--color-black', '#f9f8f0');
         document.documentElement.style.setProperty('--color-link', '#f9f8f0');
-    } else if (mode === 'peach') {
-        document.body.classList.add('peach-mode');
+
+    } else if (mode === 'nude') {
+        document.body.classList.add('nude-mode');
         document.documentElement.style.setProperty('--color-offwhite', '#6c847c');
         document.documentElement.style.setProperty('--color-black', '#dffff0');
         document.documentElement.style.setProperty('--color-link', '#dffff0');
-    } else {
-        document.body.classList.remove('night-mode', 'peach-mode');
+    }
+
+    else if (mode === 'dark-green') {
+        document.body.classList.add('dark-green');
+        document.documentElement.style.setProperty('--color-offwhite', '#5d46e2');
+        document.documentElement.style.setProperty('--color-black', '#dffff0');
+        document.documentElement.style.setProperty('--color-link', '#dffff0');
+    }
+
+    else {
+        document.body.classList.remove('night-mode', 'nude-mode', 'dark-green');
         document.documentElement.style.setProperty('--color-offwhite', '#f9f8f0');
         document.documentElement.style.setProperty('--color-black', '#012622');
         document.documentElement.style.setProperty('--color-link', '#012622');
