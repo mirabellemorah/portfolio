@@ -123,7 +123,8 @@ function updateLogoForMode() {
 }
 
 function applyThemeFromStorage() {
-    const mode = localStorage.getItem('theme-mode') || 'nude-mode';
+    const mode = sessionStorage.getItem('theme-mode') || 'nude';
+    //const mode = localStorage.getItem('theme-mode') || 'nude-mode';
 
     document.body.classList.remove('night-mode', 'nude-mode', 'dark-green');
     if (mode === 'night') {
@@ -160,10 +161,13 @@ applyThemeFromStorage();
 
 starToggle.addEventListener('click', function () {
     // Get current mode and find the next one
-    const current = localStorage.getItem('theme-mode') || 'nude-mode';
+    const current = sessionStorage.getItem('theme-mode') || 'mode';
+
+    //const current = localStorage.getItem('theme-mode') || 'nude-mode';
     const idx = themes.indexOf(current);
     const next = themes[(idx + 1) % themes.length];
-    localStorage.setItem('theme-mode', next);
+    sessionStorage.setItem('theme-mode', next);
+    // localStorage.setItem('theme-mode', next);
     applyThemeFromStorage();
 });
 
