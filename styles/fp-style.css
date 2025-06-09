@@ -55,6 +55,8 @@ section.fp-hero {
     position: relative;
     width: 60vw;
     margin-top: 0.5em;
+    font-size: clamp(11px, 1.5vw, 18px);
+
 }
 
 /*========== PROJECT FILTER ==========*/
