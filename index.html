@@ -1,448 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--========== HEAD ==========-->
 
-<!--========== HEAD ==========-->
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-FMCL0LW4XQ');
+      gtag("config", "G-FMCL0LW4XQ");
     </script>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Mirabelle Morah</title>
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/fp-style.css" />
     <link rel="stylesheet" href="styles/page-style.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!--========== Header ==========-->
 
     <header>
-        <a class="logo" href="index.html">
-            <img src="assets/home-page-assets/Main-Logo-black.svg" alt="logo" loading="lazy" id="header-logo"
-                data-light="assets/home-page-assets/Main-Logo-black.svg"
-                data-dark="assets/home-page-assets/Main-Logo-white.svg" />
-        </a>
+      <a class="logo" href="index.html">
+        <img
+          src="assets/home-page-assets/Main-Logo-black.svg"
+          alt="logo"
+          loading="lazy"
+          id="header-logo"
+          data-light="assets/home-page-assets/Main-Logo-black.svg"
+          data-dark="assets/home-page-assets/Main-Logo-white.svg"
+        />
+      </a>
 
-        <nav class="menu">
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
-            <a href="play.html">Play</a>
-            <a href="https://medium.com/@mirabellemorah" target="_blank">Blog</a>
-            <a href="#footer">Contact</a>
-        </nav>
+      <nav class="menu">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="play.html">Play</a>
+        <a href="https://medium.com/@mirabellemorah" target="_blank">Blog</a>
+        <a href="#footer">Contact</a>
+      </nav>
 
-        <!-- MENU BAR-->
-        <a href="#" class="toggle-nav"> <!--<img src="assets/home-page-assets/menu.svg" alt="menu" /> --> MENU</a>
-
+      <!-- MENU BAR-->
+      <a href="#" class="toggle-nav">
+        <!--<img src="assets/home-page-assets/menu.svg" alt="menu" /> -->
+        MENU</a
+      >
     </header>
 
     <!-- ======== STAR / AVAILABILITY / VIEW ALL ========-->
 
     <div class="sav">
+      <!-- Star Toggle Button for Night/Dark Mode -->
 
-        <!-- Star Toggle Button for Night/Dark Mode -->
+      <button id="star-toggle" aria-label="Toggle Night/Dark Mode">🔆</button>
 
-        <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
-            <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
-            </svg>
+      <!-- Availability Button -->
+
+      <a href="#footer">
+        <button class="round-project-cat-btn available">
+          <div class="available-circle"></div>
+          Not too available
+          <img
+            src="/assets/home-page-assets/availableHead.svg"
+            alt="availability"
+          />
         </button>
-
-        <!-- Availability Button -->
-
-        <a href="#footer">
-            <button class="round-project-cat-btn available">
-                <div class="available-circle"> </div> Available
-                <img src="assets/home-page-assets/availableHead.svg" alt="availability">
-            </button>
-        </a>
-
+      </a>
     </div>
 
     <!--========== MAIN ==========-->
 
     <main>
+      <!--========== HERO SECTION ==========-->
 
-        <!--========== HERO SECTION ==========-->
+      <section class="fp-hero">
+        <!-- Hero Images -->
 
-        <section class="fp-hero">
+        <div class="content">
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+          <img
+            class="content__img"
+            src="assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG"
+            alt="Some image"
+            loading="lazy"
+          />
+        </div>
 
-            <!-- Hero Images -->
+        <h2>Mirabelle</h2>
 
-            <div class="content">
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
-                <img class="content__img" src="assets/home-page-assets/boom.PNG" alt="Some image" loading="lazy" />
+        <p class="fp-hero-sub">
+          With me, growth strategy meets motion design and code. I build for
+          social impact and design with community, users and revenue growth in
+          mind. As a social innovator and problem solver, I’ve scaled platforms
+          from 0-100k web users. I care about purpose and I love fun
+          experiments. Now get over here let's build something creative and
+          innovative together!
+        </p>
+      </section>
 
+      <!--========== TEXT LOOP ==========-->
+
+      <section class="fp-text-loop-section">
+        <div class="fp-text-loop">
+          <div class="fp-text-loop-inner">
+            <span>Communications strategy</span>
+            <span class="diamond">◆</span>
+            <span>Marketing growth</span>
+            <span class="diamond">◆</span>
+            <span>Motion design</span>
+            <span class="diamond">◆</span>
+            <span>Front-end development</span>
+            <span class="diamond">◆</span>
+            <span>Communications strategy</span>
+            <span class="diamond">◆</span>
+            <span>Marketing growth</span>
+            <span class="diamond">◆</span>
+            <span>Motion design</span>
+            <span class="diamond">◆</span>
+            <span>Front-end development</span>
+            <span class="diamond">◆</span>
+          </div>
+        </div>
+      </section>
+
+      <!--==========  PROJECT FILTERS  ==========-->
+
+      <section class="fp-project-filter">
+        <h3>🔥 Selected solutions</h3>
+
+        <nav class="fp-project-filter-list">
+          <a href="all.html" data-filter=".project" class="selected">All</a>
+          <a href="strategy.html" data-filter=".strategy">Strategy</a>
+          <a href="motion.html" data-filter=".motion">Motion Design</a>
+          <a href="web.html" data-filter=".web">Web dev</a>
+          <a href="play.html" data-filter=".play">Play</a>
+        </nav>
+      </section>
+
+      <!--========== ALL FEATURED PROJECTS ==========-->
+
+      <section class="fp-projects-container">
+        <div class="fp-projects">
+          <!-- individual Project 1 -->
+
+          <div class="project strategy">
+            <div class="project-image">
+              <picture>
+                <source
+                  srcset="assets/home-page-assets/PPF.png"
+                  type="image/avif"
+                />
+                <a
+                  href="https://medium.com/@mirabellemorah/i-worked-on-a-global-campaign-strategy-and-crushed-the-email-marketing-benchmarks-75-open-rate-b0f70d1cd68d"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/home-page-assets/PPF.png"
+                    target="_blank"
+                    alt="project1"
+                    loading="lazy"
+                /></a>
+              </picture>
             </div>
 
-            <h2>Mirabelle</h2>
-
-            <p class="fp-hero-sub">
-
-                With me, growth strategy meets motion design and code. I build for social impact and design with community, users and revenue growth in mind. As a social innovator and problem solver, I’ve scaled platforms from 0-100k web users. I care about purpose and I love fun experiments. Now get over
-                here let's build something creative and innovative together!
-            </p>
-
-        </section>
-
-        <!--========== TEXT LOOP ==========-->
-
-        <section class="fp-text-loop-section">
-            <div class="fp-text-loop">
-                <div class="fp-text-loop-inner">
-                    <span>Communications strategy</span>
-                    <span class="diamond">◆</span>
-                    <span>Marketing growth</span>
-                    <span class="diamond">◆</span>
-                    <span>Motion design</span>
-                    <span class="diamond">◆</span>
-                    <span>Front-end development</span>
-                    <span class="diamond">◆</span>
-                    <span>Communications strategy</span>
-                    <span class="diamond">◆</span>
-                    <span>Marketing growth</span>
-                    <span class="diamond">◆</span>
-                    <span>Motion design</span>
-                    <span class="diamond">◆</span>
-                    <span>Front-end development</span>
-                    <span class="diamond">◆</span>
-                </div>
+            <div>
+              <h4>People and Planet First</h4>
+              <button class="round-project-cat-btn">Strategy</button>
+              <button class="round-project-cat-btn">Motion design</button>
+              <button class="round-project-cat-btn">Campaign</button>
             </div>
-        </section>
+          </div>
 
-        <!--==========  PROJECT FILTERS  ==========-->
+          <!-- individual Project 2 -->
 
-        <section class="fp-project-filter">
-
-            <h3>🔥 Selected solutions</h3>
-
-            <nav class="fp-project-filter-list">
-                <a href="all.html" data-filter=".project" class="selected">All</a>
-                <a href="strategy.html" data-filter=".strategy">Strategy</a>
-                <a href="motion.html" data-filter=".motion">Motion Design</a>
-                <a href="web.html" data-filter=".web">Web dev</a>
-                <a href="play.html" data-filter=".play">Play</a>
-            </nav>
-        </section>
-
-        <!--========== ALL FEATURED PROJECTS ==========-->
-
-        <section class="fp-projects-container">
-
-            <div class="fp-projects">
-
-                <!-- individual Project 1 -->
-
-                <div class="project strategy">
-                    <div class="project-image">
-                        <picture>
-                            <source srcset="assets/home-page-assets/PPF.png" type="image/avif">
-                            <a href="https://medium.com/@mirabellemorah/i-worked-on-a-global-campaign-strategy-and-crushed-the-email-marketing-benchmarks-75-open-rate-b0f70d1cd68d"
-                                target="_blank">
-                                <img src="assets/home-page-assets/PPF.png" target="_blank" alt="project1"
-                                    loading="lazy"></a>
-                        </picture>
-                    </div>
-
-                    <div>
-                        <h4>People and Planet First</h4>
-                        <button class="round-project-cat-btn">Strategy</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-                        <button class="round-project-cat-btn">Campaign</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 2 -->
-
-                <div class="project play motion">
-                    <div class="project-image">
-
-                        <picture>
-                            <a href="play.html"><img src="assets/home-page-assets/boom.avifs" alt="project2"
-                                    loading="lazy" /></a>
-                            <source srcset="assets/home-page-assets/boom.PNG" type="image/avifs">
-                        </picture>
-
-                    </div>
-
-                    <div class="project-details">
-                        <h4>Boombox</h4>
-                        <button class="round-project-cat-btn">Play</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 3 -->
-
-                <div class="project strategy motion web">
-                    <div class="project-image">
-                        <picture>
-
-                            <a href="https://www.grohwie.com/fellowship" target="_blank"> <img
-                                    src="assets/home-page-assets/Grohwiefellowship.avifs" alt="project3"
-                                    loading="lazy"></a>
-                            <source srcset="assets/home-page-assets/Grohwie blk whit.png" type="image/avifs">
-                        </picture>
-                    </div>
-
-                    <div>
-                        <h4>Grohwie</h4>
-                        <button class="round-project-cat-btn">Strategy</button>
-                        <button class="round-project-cat-btn">Growth</button>
-                        <button class="round-project-cat-btn">Campaign</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 4 -->
-
-                <div class="project web">
-
-                    <div class="project-image">
-                        <a href="https://github.com/mirabellemorah/kish" target="_blank"><img
-                                src="assets/home-page-assets/kish1.png" alt="project 4" loading="lazy" /></a>
-                    </div>
-
-                    <div>
-                        <h4>Kish</h4>
-                        <button class="round-project-cat-btn">Web dev</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 5 -->
-
-                <div class="project play motion">
-
-                    <div class="project-image">
-
-                        <picture>
-                            <a href="https://medium.com/@mirabellemorah/case-study-whatsapp-ask-your-friends-for-money-e1b3555a4d74"
-                                target="_blank"><img src="assets/home-page-assets/Whatsapp.avifs" alt="project5"
-                                    loading="lazy"></a>
-                            <source srcset="assets/home-page-assets/Whatsapp.png" type="image/avifs">
-                        </picture>
-                    </div>
-
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <button class="round-project-cat-btn">Play</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 6 -->
-
-                <div class="project play motion">
-
-                    <div class="project-image">
-                        <a href="javascript:void(0);"><img src="assets/home-page-assets/Joannwingsblueshowcase.avif"
-                                alt="freedom" loading="lazy" /></a>
-                    </div>
-
-                    <div>
-                        <h4>Freedom</h4>
-                        <button class="round-project-cat-btn">Play</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 7 -->
-
-                <div class="project motion">
-                    <div class="project-image">
-
-
-                        <a href="https://www.grohwie.com/work/rabatta" target="_blank">
-                            <img src="assets/home-page-assets/rabatta.png" alt="project7" loading="lazy">
-                        </a>
-                    </div>
-
-                    <div>
-                        <h4>Rabatta</h4>
-                        <button class="round-project-cat-btn">Campaign</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-
-                    </div>
-                </div>
-
-                <!-- individual Project 8 -->
-
-                <div class="project strategy motion">
-
-                    <div class="project-image">
-                        <a href="https://www.grohwie.com/work/atta-breastmilk-community" target="_blank"><img
-                                src="assets/home-page-assets/ATTA.avifs" alt="project 8" loading="lazy" /></a>
-                    </div>
-
-                    <div>
-                        <h4>ATTA Breastmilk Community</h4>
-                        <button class="round-project-cat-btn">Strategy</button>
-                        <button class="round-project-cat-btn">Motion design</button>
-                    </div>
-                </div>
-
-                <!-- individual Project 9 -->
-
-                <div class="project strategy motion">
-
-                    <div class="project-image">
-                        <a href="javascript:void(0);"><img src="assets/home-page-assets/state.avifs" alt="project 9"
-                                loading="lazy" /></a>
-                    </div>
-
-                    <div>
-                        <h4>State</h4>
-                        <button class="round-project-cat-btn">Strategy</button>
-                        <button class="round-project-cat-btn">Growth</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- LOGOS -->
-
-        <section class="fp-logos">
-
-            <!--   <h3 class="logos-title">As featured in</h3> -->
-
-            <div class="logo-track">
-
-                <a href="https://www.bbc.co.uk/programmes/p08j41v4" target="_blank" class="feature-logo">
-                    <img src="assets/home-page-assets/logos/BBC_Logo.png" alt="BBC" loading="lazy" />
-                </a>
-
-                <a href="https://businessday.ng/bd-weekender/article/meet-mirabelle-morah-winner-of-1000-grant-for-grohwie-and-recipient-of-edinburgh-award/"
-                    target="_blank" class="feature-logo">
-                    <img src="assets/home-page-assets/logos/business-day-logo-png_seeklogo-482933.png"
-                        alt="Business Day" loading="lazy" />
-                </a>
-                <a href="https://www.hernetwork.co/designing-the-future-mastercard-foundation-grant-backs-mirabelle-morahs-ambitiousgrohwie-startup/"
-                    target="_blank" class="feature-logo">
-                    <img src="assets/home-page-assets/logos/Her-Network-Logo-Black-scaled.png" alt="Her Network"
-                        loading="lazy" />
-                </a>
-                <a href="https://assembly.malala.org/stories/the-stories-of-young-african-writers" target="_blank"
-                    class="feature-logo">
-                    <img src="assets/home-page-assets/logos/MalalaPrimaryLogo_Small.svg" alt="Malala" loading="lazy" />
-                </a>
-                <a href="https://skoll.org/attendee/mirabelle-morah/" target="_blank" class="feature-logo">
-                    <img src="assets/home-page-assets/logos/skoll-logo-vector-1510x1093.png" alt="Skoll"
-                        loading="lazy" />
-                </a>
-                <a href="https://www.britishcouncil.org.ng/blog/thanks-you-mirabelle-morah" target="_blank"
-                    class="feature-logo">
-                    <img src="assets/home-page-assets/logos/British_Council_logo.svg.png" alt="BC" loading="lazy" />
-                </a>
-                <a href="https://exchanges.state.gov/non-us/program/study-us-institutes-student-leaders/spotlight/susi-2017-alum-mirabelle-morah-named-2018-global-teen-leader"
-                    target="_blank" class="feature-logo">
-                    <img src="assets/home-page-assets/logos/U.S._Department_of_State_official_seal.svg.png" alt="US"
-                        loading="lazy" />
-                </a>
-                <a href="https://www.wearefamilyfoundation.org/gtl-2018/mirabelle-morah" target="_blank"
-                    class="feature-logo">
-                    <img src="assets/home-page-assets/logos/We_Are_Family_Foundation_logo,_2018.png" alt="WAFF"
-                        loading="lazy" />
-                </a>
+          <div class="project play motion">
+            <div class="project-image">
+              <picture>
+                <a href="play.html"
+                  ><img
+                    src="assets/home-page-assets/boom.avifs"
+                    alt="project2"
+                    loading="lazy"
+                /></a>
+                <source
+                  srcset="
+                    assets/home-page-assets/0B823019-47F8-4EED-9F2E-8BD422855C05.PNG
+                  "
+                  type="image/avifs"
+                />
+              </picture>
             </div>
 
-        </section>
+            <div class="project-details">
+              <h4>Boombox</h4>
+              <button class="round-project-cat-btn">Play</button>
+              <button class="round-project-cat-btn">Motion design</button>
+            </div>
+          </div>
 
+          <!-- individual Project 3 -->
+
+          <div class="project strategy motion web">
+            <div class="project-image">
+              <picture>
+                <a href="https://www.grohwie.com/fellowship" target="_blank">
+                  <img
+                    src="assets/home-page-assets/Grohwiefellowship.avifs"
+                    alt="project3"
+                    loading="lazy"
+                /></a>
+                <source
+                  srcset="assets/home-page-assets/Grohwie blk whit.png"
+                  type="image/avifs"
+                />
+              </picture>
+            </div>
+
+            <div>
+              <h4>Grohwie</h4>
+              <button class="round-project-cat-btn">Strategy</button>
+              <button class="round-project-cat-btn">Growth</button>
+              <button class="round-project-cat-btn">Campaign</button>
+            </div>
+          </div>
+
+          <!-- individual Project 4 -->
+
+          <div class="project web">
+            <div class="project-image">
+              <a href="https://github.com/mirabellemorah/kish" target="_blank"
+                ><img
+                  src="assets/home-page-assets/kish1.png"
+                  alt="project 4"
+                  loading="lazy"
+              /></a>
+            </div>
+
+            <div>
+              <h4>Kish</h4>
+              <button class="round-project-cat-btn">Web dev</button>
+            </div>
+          </div>
+
+          <!-- individual Project 5 -->
+
+          <div class="project play motion">
+            <div class="project-image">
+              <picture>
+                <a
+                  href="https://medium.com/@mirabellemorah/case-study-whatsapp-ask-your-friends-for-money-e1b3555a4d74"
+                  target="_blank"
+                  ><img
+                    src="assets/home-page-assets/Whatsapp.avifs"
+                    alt="project5"
+                    loading="lazy"
+                /></a>
+                <source
+                  srcset="assets/home-page-assets/Whatsapp.png"
+                  type="image/avifs"
+                />
+              </picture>
+            </div>
+
+            <div>
+              <h4>WhatsApp</h4>
+              <button class="round-project-cat-btn">Play</button>
+              <button class="round-project-cat-btn">Motion design</button>
+            </div>
+          </div>
+
+          <!-- individual Project 6 -->
+
+          <div class="project play motion">
+            <div class="project-image">
+              <a href="javascript:void(0);"
+                ><img
+                  src="assets/home-page-assets/Joannwingsblueshowcase.avif"
+                  alt="freedom"
+                  loading="lazy"
+              /></a>
+            </div>
+
+            <div>
+              <h4>Freedom</h4>
+              <button class="round-project-cat-btn">Play</button>
+              <button class="round-project-cat-btn">Motion design</button>
+            </div>
+          </div>
+
+          <!-- individual Project 7 -->
+
+          <div class="project motion">
+            <div class="project-image">
+              <a href="https://www.grohwie.com/work/rabatta" target="_blank">
+                <img
+                  src="assets/home-page-assets/rabatta.png"
+                  alt="project7"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h4>Rabatta</h4>
+              <button class="round-project-cat-btn">Campaign</button>
+              <button class="round-project-cat-btn">Motion design</button>
+            </div>
+          </div>
+
+          <!-- individual Project 8 -->
+
+          <div class="project strategy motion">
+            <div class="project-image">
+              <a
+                href="https://www.grohwie.com/work/atta-breastmilk-community"
+                target="_blank"
+                ><img
+                  src="assets/home-page-assets/ATTA.avifs"
+                  alt="project 8"
+                  loading="lazy"
+              /></a>
+            </div>
+
+            <div>
+              <h4>ATTA Breastmilk Community</h4>
+              <button class="round-project-cat-btn">Strategy</button>
+              <button class="round-project-cat-btn">Motion design</button>
+            </div>
+          </div>
+
+          <!-- individual Project 9 -->
+
+          <div class="project strategy motion">
+            <div class="project-image">
+              <a href="javascript:void(0);"
+                ><img
+                  src="assets/home-page-assets/state.avifs"
+                  alt="project 9"
+                  loading="lazy"
+              /></a>
+            </div>
+
+            <div>
+              <h4>State</h4>
+              <button class="round-project-cat-btn">Strategy</button>
+              <button class="round-project-cat-btn">Growth</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGOS -->
+
+      <section class="fp-logos">
+        <!--   <h3 class="logos-title">As featured in</h3> -->
+
+        <div class="logo-track">
+          <a
+            href="https://www.bbc.co.uk/programmes/p08j41v4"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/BBC_Logo.png"
+              alt="BBC"
+              loading="lazy"
+            />
+          </a>
+
+          <a
+            href="https://businessday.ng/bd-weekender/article/meet-mirabelle-morah-winner-of-1000-grant-for-grohwie-and-recipient-of-edinburgh-award/"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/business-day-logo-png_seeklogo-482933.png"
+              alt="Business Day"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.hernetwork.co/designing-the-future-mastercard-foundation-grant-backs-mirabelle-morahs-ambitiousgrohwie-startup/"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/Her-Network-Logo-Black-scaled.png"
+              alt="Her Network"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://assembly.malala.org/stories/the-stories-of-young-african-writers"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/MalalaPrimaryLogo_Small.svg"
+              alt="Malala"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://skoll.org/attendee/mirabelle-morah/"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/skoll-logo-vector-1510x1093.png"
+              alt="Skoll"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.britishcouncil.org.ng/blog/thanks-you-mirabelle-morah"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/British_Council_logo.svg.png"
+              alt="BC"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://exchanges.state.gov/non-us/program/study-us-institutes-student-leaders/spotlight/susi-2017-alum-mirabelle-morah-named-2018-global-teen-leader"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/U.S._Department_of_State_official_seal.svg.png"
+              alt="US"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.wearefamilyfoundation.org/gtl-2018/mirabelle-morah"
+            target="_blank"
+            class="feature-logo"
+          >
+            <img
+              src="assets/home-page-assets/logos/We_Are_Family_Foundation_logo,_2018.png"
+              alt="WAFF"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
     </main>
 
     <!--========== FOOTER ==========-->
 
     <footer id="footer">
+      <section>
+        <div>
+          <a href="mailto:mirabelle@grohwie.com">
+            <h4 id="email-address">mirabelle@grohwie.com</h4>
+          </a>
+          <button id="copy-email-btn">Copy email address</button>
+          <span
+            id="copy-feedback"
+            style="
+              display: none;
+              margin-left: 10px;
+              color: var(--color-black);
+              transition: opacity 0.4s;
+            "
+            >Copied!</span
+          >
+        </div>
 
-        <section>
-            <div>
+        <div class="socials">
+          <!-- LinkedIn-->
 
-                <a href="mailto:mirabelle@grohwie.com">
-                    <h4 id="email-address">mirabelle@grohwie.com</h4>
-                </a>
-                <button id="copy-email-btn">Copy email address</button>
-                <span id="copy-feedback"
-                    style="display:none; margin-left:10px; color: var(--color-black); transition:opacity 0.4s;">Copied!</span>
-            </div>
+          <a
+            href="https://www.Linkedin.com/in/mirabellemorah"
+            class="social-link"
+            aria-label="LinkedIn"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Linkedin.svg"
+              alt="LinkedIn"
+              loading="lazy"
+            />
+          </a>
 
-            <div class="socials">
+          <!-- Instagram-->
 
-                <!-- LinkedIn-->
+          <a
+            href="https://www.instagram.com/mirabellemorah/"
+            class="social-link"
+            aria-label="Instagram"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Instagram.svg"
+              alt="Instagram"
+              loading="lazy"
+            />
+          </a>
 
-                <a href="https://www.Linkedin.com/in/mirabellemorah" class="social-link" aria-label="LinkedIn"
-                    target="_blank">
-                    <img src="assets/home-page-assets/logos/Linkedin.svg" alt="LinkedIn" loading="lazy" />
-                </a>
+          <!-- Twitter-->
 
-                <!-- Instagram-->
+          <a
+            href="https://www.twitter.com/mirabellemorah"
+            class="social-link"
+            aria-label="Twitter"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Twitter.svg"
+              alt="Twitter"
+              loading="lazy"
+            />
+          </a>
 
-                <a href="https://www.instagram.com/mirabellemorah/" class="social-link" aria-label="Instagram"
-                    target="_blank">
-                    <img src="assets/home-page-assets/logos/Instagram.svg" alt="Instagram" loading="lazy" />
-                </a>
+          <!-- Facebook-->
 
-                <!-- Twitter-->
+          <a
+            href="https://www.facebook.com/bellemorah"
+            class="social-link"
+            aria-label="Facebook"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Facebook.svg"
+              alt="Facebook"
+              loading="lazy"
+            />
+          </a>
 
-                <a href="https://www.twitter.com/mirabellemorah" class="social-link" aria-label="Twitter"
-                    target="_blank">
-                    <img src="assets/home-page-assets/logos/Twitter.svg" alt="Twitter" loading="lazy" />
-                </a>
+          <!-- GitHub-->
 
-                <!-- Facebook-->
+          <a
+            href="https://github.com/mirabellemorah"
+            class="social-link"
+            aria-label="GitHub"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Github.svg"
+              alt="GitHub"
+              loading="lazy"
+            />
+          </a>
 
-                <a href="https://www.facebook.com/bellemorah" class="social-link" aria-label="Facebook" target="_blank">
-                    <img src="assets/home-page-assets/logos/Facebook.svg" alt="Facebook" loading="lazy" />
-                </a>
+          <!-- YouTube-->
 
-                <!-- GitHub-->
+          <a
+            href="https://www.youtube.com/@MirabelleMorah"
+            class="social-link"
+            aria-label="YouTube"
+            target="_blank"
+          >
+            <img
+              src="assets/home-page-assets/logos/Youtube.svg"
+              alt="youtube"
+              loading="lazy"
+            />
+          </a>
+        </div>
 
-                <a href="https://github.com/mirabellemorah" class="social-link" aria-label="GitHub" target="_blank">
-                    <img src="assets/home-page-assets/logos/Github.svg" alt="GitHub" loading="lazy" />
-                </a>
-
-                <!-- YouTube-->
-
-                <a href="https://www.youtube.com/@MirabelleMorah" class="social-link" aria-label="YouTube"
-                    target="_blank">
-                    <img src="assets/home-page-assets/logos/Youtube.svg" alt="youtube" loading="lazy" />
-                </a>
-            </div>
-
-            <div>
-                <p>
-                    2025 &copy; Developed with
-                    <span style="color: red;">&#10084;&#65039;</span> HTML, CSS and JavaScript by Mirabelle Morah.
-                </p>
-            </div>
-        </section>
-
+        <div>
+          <p>
+            2025 &copy; Developed with
+            <span style="color: red">&#10084;&#65039;</span> HTML, CSS and
+            JavaScript by Mirabelle Morah.
+          </p>
+        </div>
+      </section>
     </footer>
 
     <!--========== SCRIPTS ==========-->
@@ -451,7 +668,5 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/TweenMax.min.js"></script>
     <script src="scripts/demo.js"></script>
-
-</body>
-
+  </body>
 </html>
