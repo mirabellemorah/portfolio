@@ -137,8 +137,8 @@ function applyThemeFromStorage() {
   } else {
     document.body.classList.remove("night-mode", "nude-mode", "dark-green");
     document.documentElement.style.setProperty("--color-offwhite", "#f9f8f0");
-    document.documentElement.style.setProperty("--color-black", "#012622");
-    document.documentElement.style.setProperty("--color-link", "#012622");
+    document.documentElement.style.setProperty("--color-black", "#000");
+    document.documentElement.style.setProperty("--color-link", "#000");
   }
   updateLogoForMode();
 }
