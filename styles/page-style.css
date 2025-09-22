@@ -136,7 +136,7 @@ iframe {
 
 .fp-logos {
     text-align: center;
-    border-bottom: 0;
+    border-bottom: 1px solid;
 }
 
 .logo-track {

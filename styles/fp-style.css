@@ -101,7 +101,7 @@ section.fp-hero {
 
 .fp-project-filter,
 .fp-projects-container {
-  width: 90%;
+  width: 70%;
   margin-top: 0;
   border-bottom: 0;
   /* BORDER MAGIC ✨ to avoid double bottoms - Remove border for the filter section */
