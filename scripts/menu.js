@@ -115,7 +115,7 @@ function updateLogoForMode() {
 }
 
 function applyThemeFromStorage() {
-  const mode = sessionStorage.getItem("theme-mode") || "nude-mode";
+  const mode = sessionStorage.getItem("theme-mode") || "night";
   //const mode = localStorage.getItem('theme-mode') || 'nude-mode';
 
   document.body.classList.remove("night-mode", "nude-mode", "dark-green");
