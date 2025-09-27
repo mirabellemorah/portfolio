@@ -1,341 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-FMCL0LW4XQ");
-    </script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <title>Template page</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/fp-style.css" />
-    <link rel="stylesheet" href="styles/post-style.css" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </head>
+    gtag("config", "G-FMCL0LW4XQ");
+  </script>
 
-  <body>
-    <!--======== Header ========-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Template page</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/fp-style.css" />
+  <link rel="stylesheet" href="styles/post-style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
-    <header>
-      <a class="logo" href="index.html">
-        <img
-          src="assets/home-page-assets/Main-Logo-black.svg"
-          alt="logo"
-          loading="lazy"
-          id="header-logo"
-          data-light="assets/home-page-assets/Main-Logo-black.svg"
-          data-dark="assets/home-page-assets/Main-Logo-white.svg"
-        />
-      </a>
+<body>
+  <!--======== Header ========-->
 
-      <nav class="menu">
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="play.html">Play</a>
-        <a href="https://medium.com/@mirabellemorah" target="_blank">Blog</a>
-        <a href="#footer">Contact</a>
-      </nav>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="assets/home-page-assets/Main-Logo-black.svg" alt="logo" loading="lazy" id="header-logo"
+        data-light="assets/home-page-assets/Main-Logo-black.svg"
+        data-dark="assets/home-page-assets/Main-Logo-white.svg" />
+    </a>
 
-      <!-- MENU BAR-->
-      <a href="#" class="toggle-nav">
-        <!--<img src="assets/home-page-assets/menu.svg" alt="menu" /> -->
-        MENU</a
-      >
-    </header>
+    <nav class="menu">
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="play.html">Play</a>
+      <a href="https://medium.com/@mirabellemorah" target="_blank">Blog</a>
+      <a href="#footer">Contact</a>
+    </nav>
 
-    <!-- ======== STAR / AVAILABILITY / VIEW ALL ========-->
+    <!-- MENU BAR-->
+    <a href="#" class="toggle-nav">
+      <!--<img src="assets/home-page-assets/menu.svg" alt="menu" /> -->
+      MENU</a>
+  </header>
 
-    <div class="sav">
-      <!-- Star Toggle Button for Night/Dark Mode -->
+  <!-- ======== STAR / AVAILABILITY / VIEW ALL ========-->
 
-      <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polygon
-            points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12"
-            fill="currentColor"
-          />
+  <div class="sav">
+    <!-- Star Toggle Button for Night/Dark Mode -->
+
+    <button id="star-toggle" aria-label="Toggle Night/Dark Mode">
+      <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="currentColor" />
+      </svg>
+    </button>
+
+    <!-- Availability Button -->
+
+    <a href="#footer">
+      <button class="round-project-cat-btn available">
+        <div class="available-circle"></div>
+        Available
+        <img src="assets/home-page-assets/availableHead.svg" alt="availability" />
+      </button>
+    </a>
+
+    <!--- view ALL PROJECTS --->
+
+    <a href="work.html">
+      <button class="round-project-cat-btn view-all">
+        View all projects
+        <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="fp-p-view-eye" d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z"
+            fill="#F9F8F0" />
+
+          <path
+            d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
+            fill="#F9F8F0" />
+
+          <path d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z" stroke="#1E1E1E"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+          <path
+            d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
+            stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
+    </a>
+  </div>
 
-      <!-- Availability Button -->
+  <!--======== MAIN ========-->
 
-      <a href="#footer">
-        <button class="round-project-cat-btn available">
-          <div class="available-circle"></div>
-          Available
-          <img
-            src="assets/home-page-assets/availableHead.svg"
-            alt="availability"
-          />
-        </button>
-      </a>
+  <main>
+    <!--======== HERO SECTION ========-->
 
-      <!--- view ALL PROJECTS --->
+    <section class="fp-hero">
+      <div class="post-cover-image">
+        <img src="assets/home-page-assets/kish1.png" alt="cover-image" loading="lazy" />
+      </div>
+    </section>
 
-      <a href="work.html">
-        <button class="round-project-cat-btn view-all">
-          View all projects
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              class="fp-p-view-eye"
-              d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z"
-              fill="#F9F8F0"
-            />
+    <!--========  post content ========-->
 
-            <path
-              d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
-              fill="#F9F8F0"
-            />
+    <section class="post-title-container">
+      <h2>Boombox</h2>
+    </section>
 
-            <path
-              d="M2 24C2 24 10 8 24 8C38 8 46 24 46 24C46 24 38 40 24 40C10 40 2 24 2 24Z"
-              stroke="#1E1E1E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+    <section class="post-text-container">
+      <div>
+        <p class="post-intro-text">
+          ATTA Breastmilk Community is dedicated to making screened, donated
+          breastmilk equitably accessible to all fragile newborns who need it,
+          especially those who are sick or born preterm.
+        </p>
 
-            <path
-              d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z"
-              stroke="#1E1E1E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </a>
-    </div>
+        <p>
+          To get a clearer sense of how I'll collaborate with you and support
+          your work, feel free to explore. To get a clearer sense of how I'll
+          collaborate with you and support your work, feel free to explore. To
+          get a clearer sense of how I'll collaborate with you and support
+          your work, feel free to explore. To get a clearer sense of how I'll
+          collaborate with you and support your work, feel free to explore. To
+          get a clearer sense of how I'll collaborate with you and support
+          your work, feel free to explore. To get a clearer sense of how I'll
+          collaborate with you and support your work, feel free to explore.
+        </p>
+      </div>
 
-    <!--======== MAIN ========-->
+      <div class="post-image-container">
+        <img class="post-image" src="assets/home-page-assets/Joannwingsblueshowcase.avif" alt="image" loading="lazy" />
 
-    <main>
-      <!--======== HERO SECTION ========-->
+        <img class="post-image" src="assets/home-page-assets/boom.PNG" alt="image" loading="lazy" />
 
-      <section class="fp-hero">
-        <div class="post-cover-image">
-          <img
-            src="assets/home-page-assets/kish1.png"
-            alt="cover-image"
-            loading="lazy"
-          />
-        </div>
-      </section>
+        <img class="post-image" src="assets/home-page-assets/state.avifs" alt="image" loading="lazy" />
 
-      <!--========  post content ========-->
+        <img class="post-image" src="assets/home-page-assets/PPF.png" alt="image" loading="lazy" />
+      </div>
+    </section>
+  </main>
 
-      <section class="post-title-container">
-        <h2>Boombox</h2>
-      </section>
+  <!--======== FOOTER ========-->
 
-      <section class="post-text-container">
-        <div>
-          <p class="post-intro-text">
-            ATTA Breastmilk Community is dedicated to making screened, donated
-            breastmilk equitably accessible to all fragile newborns who need it,
-            especially those who are sick or born preterm.
-          </p>
-
-          <p>
-            To get a clearer sense of how I'll collaborate with you and support
-            your work, feel free to explore. To get a clearer sense of how I'll
-            collaborate with you and support your work, feel free to explore. To
-            get a clearer sense of how I'll collaborate with you and support
-            your work, feel free to explore. To get a clearer sense of how I'll
-            collaborate with you and support your work, feel free to explore. To
-            get a clearer sense of how I'll collaborate with you and support
-            your work, feel free to explore. To get a clearer sense of how I'll
-            collaborate with you and support your work, feel free to explore.
-          </p>
-        </div>
-
-        <div class="post-image-container">
-          <img
-            class="post-image"
-            src="assets/home-page-assets/Joannwingsblueshowcase.avif"
-            alt="image"
-            loading="lazy"
-          />
-
-          <img
-            class="post-image"
-            src="assets/home-page-assets/boom.PNG"
-            alt="image"
-            loading="lazy"
-          />
-
-          <img
-            class="post-image"
-            src="assets/home-page-assets/state.avifs"
-            alt="image"
-            loading="lazy"
-          />
-
-          <img
-            class="post-image"
-            src="assets/home-page-assets/PPF.png"
-            alt="image"
-            loading="lazy"
-          />
-        </div>
-      </section>
-    </main>
-
-    <!--======== FOOTER ========-->
-
-    <footer id="footer">
-      <section>
-        <div>
-          <a href="mailto:mirabelle@grohwie.com">
-            <h4 id="email-address">mirabelle@grohwie.com</h4>
-          </a>
-          <button id="copy-email-btn">Copy email address</button>
-          <span
-            id="copy-feedback"
-            style="
+  <footer id="footer">
+    <section>
+      <div>
+        <a href="mailto:mirabelle@grohwie.com">
+          <h4 id="email-address">mirabelle@grohwie.com</h4>
+        </a>
+        <button id="copy-email-btn">Copy email address</button>
+        <span id="copy-feedback" style="
               display: none;
               margin-left: 10px;
               color: var(--color-black);
               transition: opacity 0.4s;
-            "
-            >Copied!</span
-          >
-        </div>
+            ">Copied!</span>
+      </div>
 
-        <div class="socials">
-          <!-- LinkedIn-->
+      <div class="socials">
+        <!-- LinkedIn-->
 
-          <a
-            href="https://www.Linkedin.com/in/mirabellemorah"
-            class="social-link"
-            aria-label="LinkedIn"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Linkedin.svg"
-              alt="LinkedIn"
-              loading="lazy"
-            />
-          </a>
+        <a href="https://www.Linkedin.com/in/mirabellemorah" class="social-link" aria-label="LinkedIn" target="_blank">
+          <img src="assets/home-page-assets/logos/Linkedin.svg" alt="LinkedIn" loading="lazy" />
+        </a>
 
-          <!-- Instagram-->
+        <!-- Instagram-->
 
-          <a
-            href="https://www.instagram.com/mirabellemorah/"
-            class="social-link"
-            aria-label="Instagram"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Instagram.svg"
-              alt="Instagram"
-              loading="lazy"
-            />
-          </a>
+        <a href="https://www.instagram.com/mirabellemorah/" class="social-link" aria-label="Instagram" target="_blank">
+          <img src="assets/home-page-assets/logos/Instagram.svg" alt="Instagram" loading="lazy" />
+        </a>
 
-          <!-- Twitter-->
+        <!-- Twitter-->
 
-          <a
-            href="https://www.twitter.com/mirabellemorah"
-            class="social-link"
-            aria-label="Twitter"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Twitter.svg"
-              alt="Twitter"
-              loading="lazy"
-            />
-          </a>
+        <a href="https://www.twitter.com/mirabellemorah" class="social-link" aria-label="Twitter" target="_blank">
+          <img src="assets/home-page-assets/logos/Twitter.svg" alt="Twitter" loading="lazy" />
+        </a>
 
-          <!-- Facebook-->
+        <!-- Facebook-->
 
-          <a
-            href="https://www.facebook.com/bellemorah"
-            class="social-link"
-            aria-label="Facebook"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Facebook.svg"
-              alt="Facebook"
-              loading="lazy"
-            />
-          </a>
+        <a href="https://www.facebook.com/bellemorah" class="social-link" aria-label="Facebook" target="_blank">
+          <img src="assets/home-page-assets/logos/Facebook.svg" alt="Facebook" loading="lazy" />
+        </a>
 
-          <!-- GitHub-->
+        <!-- GitHub-->
 
-          <a
-            href="https://github.com/mirabellemorah"
-            class="social-link"
-            aria-label="GitHub"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Github.svg"
-              alt="GitHub"
-              loading="lazy"
-            />
-          </a>
+        <a href="https://github.com/mirabellemorah" class="social-link" aria-label="GitHub" target="_blank">
+          <img src="assets/home-page-assets/logos/Github.svg" alt="GitHub" loading="lazy" />
+        </a>
 
-          <!-- YouTube-->
+        <!-- YouTube-->
 
-          <a
-            href="https://www.youtube.com/@MirabelleMorah"
-            class="social-link"
-            aria-label="YouTube"
-            target="_blank"
-          >
-            <img
-              src="assets/home-page-assets/logos/Youtube.svg"
-              alt="youtube"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <a href="https://www.youtube.com/@MirabelleMorah" class="social-link" aria-label="YouTube" target="_blank">
+          <img src="assets/home-page-assets/logos/Youtube.svg" alt="youtube" loading="lazy" />
+        </a>
+      </div>
 
-        <div>
-          <p>
-            2025 &copy; Developed with
-            <span style="color: red">&#10084;&#65039;</span> HTML, CSS and
-            JavaScript by Mirabelle Morah.
-          </p>
-        </div>
-      </section>
-    </footer>
+      <div>
+        <p>
+          2025 &copy; Developed with
+          <span style="color: red">&#10084;&#65039;</span> HTML, CSS and
+          JavaScript by Mirabelle Morah.
+        </p>
+      </div>
+    </section>
+  </footer>
 
-    <!--======== SCRIPTS ========-->
+  <!--======== SCRIPTS ========-->
 
-    <script src="scripts/imagesloaded.pkgd.min.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/TweenMax.min.js"></script>
-    <script src="scripts/demo.js"></script>
-  </body>
+  <script src="scripts/imagesloaded.pkgd.min.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/TweenMax.min.js"></script>
+  <script src="scripts/demo.js"></script>
+</body>
+
 </html>
