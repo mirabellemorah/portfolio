@@ -59,6 +59,7 @@ section.fp-hero {
 
 .fp-project-filter-list {
   display: flex;
+  justify-content: space-evenly;
   gap: 4px;
   padding: 10px 0;
   overflow-x: auto;
