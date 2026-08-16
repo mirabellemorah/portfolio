@@ -126,7 +126,9 @@ section.fp-hero {
   padding: 10px;
   margin-bottom: 20px;
   opacity: 1;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
   border: var(--border);
 }
 
