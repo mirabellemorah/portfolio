@@ -25,16 +25,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
-      - name: Collect only the website files
-        run: |
-          mkdir _site
-          rsync -a ./ _site/ \
-            --exclude='_site' --exclude='.git' --exclude='.github' \
-            --exclude='node_modules' --exclude='templates' --exclude='content' \
-            --exclude='HIDDEN-FILES-visible-copies' --exclude='.pages.yml' \
-            --exclude='package.json' --exclude='package-lock.json' \
-            --exclude='BLOG-*.md' --exclude='.gitignore' --exclude='.DS_Store'
+      - name: Build blog, add shared components, collect website files
+        run: npm run site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

@@ -19,6 +19,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { expandIncludes } from "./lib/components.mjs";
 
 // ---------- Settings you may want to change ----------
 const SITE_URL = "https://www.mirabellemorah.com";
@@ -95,15 +96,10 @@ marked.use({
 });
 
 // ---------- Templates ----------
-const partials = {
-  header: read("templates", "partials", "header.html"),
-  footer: read("templates", "partials", "footer.html"),
-};
-
+// The menu, header, buttons and footer live in the components/ folder.
+// The templates pull them in with lines like <!-- @include navbar current="blog" -->.
 function render(templateName, vars) {
-  let html = read("templates", templateName)
-    .replaceAll("{{header}}", partials.header)
-    .replaceAll("{{footer}}", partials.footer);
+  let html = expandIncludes(read("templates", templateName), { root: vars.root });
   return html.replace(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!(key in vars)) throw new Error(`Template ${templateName} uses {{${key}}} but the build has no value for it.`);
     return vars[key];

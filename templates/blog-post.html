@@ -50,7 +50,13 @@
 </head>
 
 <body class="blog-post">
-  {{header}}
+  <!-- @include navbar current="blog" -->
+
+  <div class="sav">
+    <!-- @include star-toggle -->
+    <!-- @include availability text="Available" -->
+    <!-- @include view-all -->
+  </div>
 
   <main>
     <article class="blog-article">
@@ -84,7 +90,7 @@
     </article>
   </main>
 
-  {{footer}}
+  <!-- @include footer -->
 
   <script src="{{root}}scripts/menu.js"></script>
   <script src="{{root}}scripts/blog.js"></script>

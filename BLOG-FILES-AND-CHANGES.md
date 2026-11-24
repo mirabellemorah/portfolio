@@ -84,3 +84,10 @@ Generated on every build, not stored in the repo: the `blog/` folder, `sitemap.x
 - **Note:** the page numbers work in the visitor's browser. Every post is in the list's code, and the page shows 10 at a time. That is fine for hundreds of posts.
 
 If you saved any earlier files, the zip replaces them.
+
+### Components folder (24 Nov 2026)
+
+- The menu, top bar, footer and the three round buttons are now files in `components/`. Pages use a line like `<!-- @include navbar current="about" -->`. See `components/README.md`.
+- The build is now `npm run site` (`scripts/build-site.mjs`). The old `templates/partials` folder was removed.
+- The Blog link in the menu now goes to `blog/`. To point it back at Medium, change that one line in `components/menu.html`.
+- The Studio link now shows on every page (it was missing on some).
