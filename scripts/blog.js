@@ -33,6 +33,16 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
 
   // Search box: looks inside every post. The text of the posts is loaded the first time you use it.
   var searchBox = document.getElementById("blog-search-input");
+  var searchForm = document.querySelector(".blog-search");
+  var searchToggle = document.querySelector(".blog-search-toggle");
+
+  function setSearchOpen(open) {
+    if (!searchForm) return;
+    searchForm.classList.toggle("is-open", open);
+    searchToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    searchBox.tabIndex = open ? 0 : -1;
+    if (open) searchBox.focus();
+  }
   var searchStatus = document.querySelector(".blog-search-status");
   var texts = {}; // post address -> all its words in lower case
   var indexState = "idle"; // idle, loading, ready, failed
@@ -184,6 +194,14 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
         : "";
     }
     buildPager(total);
+    // After tapping a page number, show the first post of that page (not the bottom of it).
+    if (scroll) {
+      var listTop = document.querySelector(".blog-tools") || document.querySelector(".blog-items");
+      if (listTop) {
+        var y = listTop.getBoundingClientRect().top + window.pageYOffset - 90;
+        window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+      }
+    }
   }
 
   function go(slug, page, push) {
@@ -198,7 +216,14 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     state.slug = params.get("category") || "all";
     state.page = parseInt(params.get("page"), 10) || 1;
     state.q = params.get("q") || "";
-    if (searchBox) searchBox.value = state.q;
+    if (searchBox) {
+      searchBox.value = state.q;
+      if (state.q && searchForm) {
+        searchForm.classList.add("is-open");
+        searchToggle.setAttribute("aria-expanded", "true");
+        searchBox.tabIndex = 0;
+      }
+    }
   }
 
   filters.forEach(function (b) {
@@ -209,6 +234,31 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
 
   if (searchBox) {
     var timer;
+    searchToggle.addEventListener("click", function () {
+      var open = !searchForm.classList.contains("is-open");
+      setSearchOpen(open);
+      if (open) loadIndex();
+      else if (state.q) {
+        state.q = "";
+        state.page = 1;
+        searchBox.value = "";
+        history.replaceState(null, "", addressFor(state.slug, 1));
+        render(false);
+      }
+    });
+    searchBox.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        searchBox.value = "";
+        searchBox.dispatchEvent(new Event("input"));
+        setSearchOpen(false);
+        searchToggle.focus();
+      }
+    });
+    searchBox.addEventListener("blur", function () {
+      setTimeout(function () {
+        if (!searchBox.value && document.activeElement !== searchBox && document.activeElement !== searchToggle) setSearchOpen(false);
+      }, 150);
+    });
     searchBox.addEventListener("focus", loadIndex);
     searchBox.addEventListener("input", function () {
       loadIndex();

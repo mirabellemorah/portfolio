@@ -58,17 +58,26 @@
       <h1>Writing</h1>
       <p class="blog-list-intro">Notes, lessons and stories.</p>
 
-      <form class="blog-search" role="search" onsubmit="return false">
-        <label for="blog-search-input">Search posts</label>
-        <input id="blog-search-input" type="search" placeholder="Search titles and posts" autocomplete="off"
-          data-index="{{root}}blog/search-index.json" />
-        <p class="blog-search-status" aria-live="polite"></p>
-      </form>
+      <div class="blog-tools">
+        <form class="blog-search" role="search" onsubmit="return false">
+          <button type="button" class="blog-search-toggle" aria-label="Search posts" aria-expanded="false"
+            aria-controls="blog-search-input">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <line x1="15.5" y1="15.5" x2="21" y2="21" />
+            </svg>
+          </button>
+          <input id="blog-search-input" type="search" placeholder="Search posts" aria-label="Search posts"
+            autocomplete="off" data-index="{{root}}blog/search-index.json" tabindex="-1" />
+        </form>
 
-      <div class="blog-filters" aria-label="Filter posts by category">
-        <button type="button" class="selected" data-filter="all">All</button>
-        {{category_filters}}
+        <div class="blog-filters" aria-label="Filter posts by category">
+          <button type="button" class="selected" data-filter="all">All</button>
+          {{category_filters}}
+        </div>
       </div>
+      <p class="blog-search-status" aria-live="polite"></p>
 
       <ol class="blog-items">
         {{post_list}}

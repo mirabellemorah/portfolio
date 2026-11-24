@@ -264,41 +264,105 @@
   margin-bottom: 1.6em;
 }
 
-.blog-search {
-  margin-bottom: 18px;
+/* Search: a small round magnifier that opens into a search bar beside the category buttons */
+.blog-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
-.blog-search label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+/* The category buttons flow in the same row as the magnifier */
+.blog-tools .blog-filters {
+  display: contents;
+}
+
+.blog-search {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border: 1px solid var(--color-black);
+  border-radius: 24px;
+  height: 34px;
+  box-sizing: border-box;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  transition: width 0.25s ease, background-color 0.2s ease;
+  width: 34px;
+}
+
+.blog-search .blog-search-toggle {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent !important;
+  color: var(--color-black);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.blog-search .blog-search-toggle:hover {
+  transform: rotate(-12deg);
 }
 
 .blog-search input {
+  flex: 1 1 auto;
+  min-width: 0;
   width: 100%;
-  max-width: 420px;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 10px 16px;
-  border: 1px solid var(--blog-line);
-  border-radius: 24px;
+  height: 100%;
+  border: 0;
+  outline: 0;
   background: transparent;
   color: var(--color-black);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0 14px 0 2px;
 }
 
-.blog-search input:focus {
+.blog-search input::placeholder {
+  color: var(--blog-soft);
+}
+
+.blog-search.is-open {
+  width: 240px;
+}
+
+.blog-search:focus-within {
   outline: 2px solid var(--color-black);
   outline-offset: 2px;
 }
 
+.blog-search:not(.is-open) input {
+  visibility: hidden;
+}
+
 .blog-search-status {
-  margin: 8px 0 0;
+  margin: -8px 0 14px;
   min-height: 1.2em;
   font-size: 0.9rem;
   color: var(--blog-soft);
+}
+
+@media (max-width: 768px) {
+  /* On phones the open search bar takes its own row, so it never squeezes the category buttons */
+  .blog-search.is-open {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-search {
+    transition: none;
+  }
+  .blog-search .blog-search-toggle:hover {
+    transform: none;
+  }
 }
 
 .blog-filters {
