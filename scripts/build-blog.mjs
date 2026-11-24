@@ -158,7 +158,14 @@ for (const file of fs.readdirSync(POSTS_DIR)) {
     continue;
   }
 
-  const category = String(Array.isArray(data.category) ? data.category[0] ?? "" : data.category ?? "").trim();
+  // "category" can be one name (older posts) or a list of names (Pages CMS "choose one or more").
+  const rawCategories = Array.isArray(data.category) ? data.category : data.category ? [data.category] : [];
+  const categories = [];
+  for (const c of rawCategories) {
+    const name = String(c ?? "").trim();
+    const slug = slugify(name);
+    if (name && slug && !categories.some((x) => x.slug === slug)) categories.push({ name, slug });
+  }
   const summary =
     String(data.summary ?? "").trim() ||
     plainText(content).replace(/\s+/g, " ").trim().slice(0, 160);
@@ -168,8 +175,7 @@ for (const file of fs.readdirSync(POSTS_DIR)) {
     title: String(data.title).trim(),
     date,
     summary,
-    category,
-    categorySlug: category ? slugify(category) : "",
+    categories,
     cover: data.cover ? String(data.cover) : "",
     coverAlt: data.cover_alt ? String(data.cover_alt) : "",
     seoTitle: String(data.seo_title ?? "").trim(),
@@ -198,8 +204,10 @@ posts.forEach((post, i) => {
   const cover = post.cover
     ? `<figure class="blog-cover"><img src="${esc(assetUrl(post.cover))}" alt="${esc(post.coverAlt)}" /></figure>`
     : "";
-  const pill = post.category
-    ? `<p class="blog-tags"><a href="${ROOT_PREFIX}blog/?category=${post.categorySlug}">${esc(post.category)}</a></p>`
+  const pill = post.categories.length
+    ? `<p class="blog-tags">${post.categories
+        .map((c) => `<a href="${ROOT_PREFIX}blog/?category=${c.slug}">${esc(c.name)}</a>`)
+        .join(" ")}</p>`
     : "";
 
   // Optional SEO boxes: fall back to the normal title and summary when left empty.
@@ -228,7 +236,9 @@ posts.forEach((post, i) => {
       author: authorLd,
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       url,
-      ...(post.category ? { articleSection: post.category } : {}),
+      ...(post.categories.length
+        ? { articleSection: post.categories.length === 1 ? post.categories[0].name : post.categories.map((c) => c.name) }
+        : {}),
       wordCount: post.words,
       timeRequired: `PT${post.minutes}M`,
       inLanguage: "en",
@@ -247,8 +257,8 @@ posts.forEach((post, i) => {
 });
 
 // List page (text only)
-const categories = [...new Map(posts.filter((p) => p.category).map((p) => [p.categorySlug, p.category])).entries()].sort(
-  (a, b) => a[1].localeCompare(b[1]),
+const categories = [...new Map(posts.flatMap((p) => p.categories.map((c) => [c.slug, c.name]))).entries()].sort((a, b) =>
+  a[1].localeCompare(b[1]),
 );
 
 const listHtml = render("blog-list.html", {
@@ -275,9 +285,9 @@ const listHtml = render("blog-list.html", {
     .join("\n        "),
   post_list: posts
     .map(
-      (p) => `<li class="blog-item" data-category="${p.categorySlug}">
+      (p) => `<li class="blog-item" data-category="${p.categories.map((c) => c.slug).join(" ")}">
           <a href="${esc(p.slug)}">
-            <div class="blog-item-meta">${[p.category && esc(p.category), fmt(p.date, "short"), `${p.minutes} min read`]
+            <div class="blog-item-meta">${[p.categories.length && esc(p.categories.map((c) => c.name).join(", ")), fmt(p.date, "short"), `${p.minutes} min read`]
               .filter(Boolean)
               .join(" &middot; ")}</div>
             <h2>${esc(p.title)}</h2>

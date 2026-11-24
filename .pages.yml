@@ -45,10 +45,11 @@ content:
         type: date
         required: true
       - name: category
-        label: Category
+        label: Categories (choose one or more)
         type: reference
         options:
           collection: categories
+          multiple: true
           search: "name"
           value: "{fields.name}"
           label: "{fields.name}"

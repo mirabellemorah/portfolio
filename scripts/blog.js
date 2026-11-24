@@ -29,7 +29,8 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
       b.classList.toggle("selected", b.getAttribute("data-filter") === slug);
     });
     items.forEach(function (li) {
-      var match = slug === "all" || li.getAttribute("data-category") === slug;
+      var cats = (li.getAttribute("data-category") || "").split(" ");
+      var match = slug === "all" || cats.indexOf(slug) !== -1;
       li.hidden = !match;
       if (match) shown++;
     });

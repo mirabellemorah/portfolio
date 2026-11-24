@@ -67,4 +67,10 @@ Generated on every build, not stored in the repo: the `blog/` folder, `sitemap.x
 
 - **What changed:** the round "M" from the header logo, on a white rounded square, is now the tab icon on every page. Files: `assets/home-page-assets/favicon.svg`, `assets/home-page-assets/apple-touch-icon.png` and `favicon.ico` in the main folder. The `<link>` lines are in the `<head>` of each page and of the two blog templates.
 
+### Several categories per post (24 Nov 2026)
+
+- **What changed:** the Category box in Pages CMS now lets you choose one or more categories (`multiple: true` in `.pages.yml`). Older posts with a single category keep working.
+- **On the site:** a post shows one pill per category, appears under each matching filter button on the blog list, and lists all its categories in the structured data.
+- **Where:** `.pages.yml`, `scripts/build-blog.mjs`, `scripts/blog.js` and `styles/blog-style.css`.
+
 If you saved any earlier files, the zip replaces them.
