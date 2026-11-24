@@ -1,0 +1,20 @@
+WHY THIS FOLDER EXISTS
+Three files in this zip start with a dot: .github, .gitignore and .pages.yml.
+Macs, zip tools and the GitHub upload page often hide or skip files that start
+with a dot, so they can go missing without any warning. That is what happened
+the first time. These are visible copies so you can see them and paste them in.
+
+WHAT TO DO (on the GitHub website, branch "main")
+For each one: Add file > Create new file, type the new file name exactly (typing
+a slash makes a folder), paste the contents, then Commit changes.
+
+  1. deploy.yml    ->  new file called   .github/workflows/deploy.yml
+  2. gitignore.txt ->  new file called   .gitignore
+  3. pages.yml     ->  your existing, empty .pages.yml: open it, click the
+                       pencil icon, paste everything, commit.
+
+Then in GitHub: Settings > Pages > Source > choose "GitHub Actions".
+Then open the Actions tab and wait for the green tick.
+
+TIP: to see hidden files in Finder, press Command + Shift + . (full stop).
+You can delete this folder afterwards. Do not upload it to your website repo.
