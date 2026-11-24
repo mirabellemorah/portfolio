@@ -72,3 +72,6 @@ content:
       - name: body
         label: Post
         type: rich-text
+        options:
+          format: markdown
+          switcher: true
