@@ -293,7 +293,8 @@
   border-top: 1px solid var(--blog-line);
 }
 
-.blog-item:last-child {
+.blog-item:last-child,
+.blog-item.is-last {
   border-bottom: 1px solid var(--blog-line);
 }
 
@@ -352,5 +353,110 @@
 
   .blog-list-wrap {
     padding: 36px 20px 40px;
+  }
+}
+
+
+/* Page numbers under the blog list */
+.blog-pager {
+  margin: 36px 0 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-pager-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.blog-pager a,
+.blog-pager .gap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-pager a {
+  border: 1px solid var(--blog-line);
+}
+
+.blog-pager a:hover {
+  border-color: var(--color-black);
+}
+
+.blog-pager a.current {
+  background-color: var(--color-black);
+  color: var(--color-offwhite);
+  border-color: var(--color-black);
+}
+
+.blog-pager a.disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.blog-pager .gap {
+  min-width: 20px;
+  padding: 0;
+}
+
+.blog-pager-jump {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.blog-pager-jump input {
+  width: 84px;
+  height: 36px;
+  margin-left: 6px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--blog-line);
+  border-radius: 18px;
+}
+
+.blog-pager-jump button {
+  height: 36px;
+  margin: 0;
+  padding: 0 16px;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--blog-line);
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.blog-pager-jump button:hover {
+  border-color: var(--color-black);
+}
+
+.blog-pager-status {
+  margin: 14px 0 0;
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+@media (max-width: 768px) {
+  .blog-pager a {
+    padding: 0 10px;
   }
 }

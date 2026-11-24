@@ -23,6 +23,7 @@ import { marked } from "marked";
 // ---------- Settings you may want to change ----------
 const SITE_URL = "https://www.mirabellemorah.com";
 const WORDS_PER_MINUTE = 225;
+const POSTS_PER_PAGE = 10; // how many posts the blog list shows on one page
 const DEFAULT_SHARE_IMAGE = "/assets/home-page-assets/kish1.png";
 const AUTHOR = "Mirabelle Morah";
 // -----------------------------------------------------
@@ -263,6 +264,7 @@ const categories = [...new Map(posts.flatMap((p) => p.categories.map((c) => [c.s
 
 const listHtml = render("blog-list.html", {
   root: ROOT_PREFIX,
+  per_page: String(POSTS_PER_PAGE),
   url: `${SITE_URL}/blog/`,
   og_image: esc(absoluteUrl(DEFAULT_SHARE_IMAGE)),
   og_image_alt: esc(`${AUTHOR}, writing`),

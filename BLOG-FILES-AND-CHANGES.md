@@ -73,4 +73,13 @@ Generated on every build, not stored in the repo: the `blog/` folder, `sitemap.x
 - **On the site:** a post shows one pill per category, appears under each matching filter button on the blog list, and lists all its categories in the structured data.
 - **Where:** `.pages.yml`, `scripts/build-blog.mjs`, `scripts/blog.js` and `styles/blog-style.css`.
 
+### Page numbers on the blog list (24 Nov 2026)
+
+- **What it does:** the blog list shows 10 posts per page. Under the list there is a row with Previous, page numbers (for example 1 ... 4 5 6 ... 10) and Next. When there are more than 6 pages, a "Go to page" box lets visitors jump to any page, and a line says "Page 5 of 9". With 10 posts or fewer, no page numbers appear.
+- **Addresses:** `blog/?page=3`, or with a category, `blog/?category=reflections&page=2`. Visitors can share these and the back button works.
+- **Categories:** each category has its own page count.
+- **To change how many posts show per page:** open `scripts/build-blog.mjs` and change the number in `const POSTS_PER_PAGE = 10;`, then save and commit.
+- **Where:** `scripts/build-blog.mjs`, `scripts/blog.js`, `templates/blog-list.html` and `styles/blog-style.css`.
+- **Note:** the page numbers work in the visitor's browser. Every post is in the list's code, and the page shows 10 at a time. That is fine for hundreds of posts.
+
 If you saved any earlier files, the zip replaces them.
