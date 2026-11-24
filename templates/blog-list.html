@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-FMCL0LW4XQ");
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Writing | Mirabelle Morah</title>
+  <meta name="description" content="Writing by Mirabelle Morah." />
+  <link rel="canonical" href="{{url}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Writing | Mirabelle Morah" />
+  <meta property="og:description" content="Writing by Mirabelle Morah." />
+  <meta property="og:image" content="{{og_image}}" />
+  <meta property="og:image:alt" content="{{og_image_alt}}" />
+  <meta property="og:url" content="{{url}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Writing | Mirabelle Morah" />
+  <meta name="twitter:description" content="Writing by Mirabelle Morah." />
+  <meta name="twitter:image" content="{{og_image}}" />
+  <meta name="twitter:image:alt" content="{{og_image_alt}}" />
+  <meta name="author" content="Mirabelle Morah" />
+
+  <!-- Structured data for search engines -->
+  {{json_ld}}
+
+  <link rel="stylesheet" href="{{root}}styles/base.css" />
+  <link rel="stylesheet" href="{{root}}styles/global.css" />
+  <link rel="stylesheet" href="{{root}}styles/fp-style.css" />
+  <link rel="stylesheet" href="{{root}}styles/blog-style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="blog-list-page">
+  {{header}}
+
+  <main>
+    <div class="blog-list-wrap">
+      <h1>Writing</h1>
+      <p class="blog-list-intro">Notes, lessons and stories.</p>
+
+      <div class="blog-filters" aria-label="Filter posts by category">
+        <button type="button" class="selected" data-filter="all">All</button>
+        {{category_filters}}
+      </div>
+
+      <ol class="blog-items">
+        {{post_list}}
+      </ol>
+
+      <p class="blog-empty" hidden>No posts in this category yet.</p>
+    </div>
+  </main>
+
+  {{footer}}
+
+  <script src="{{root}}scripts/menu.js"></script>
+  <script src="{{root}}scripts/blog.js"></script>
+</body>
+
+</html>

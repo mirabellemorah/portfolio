@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCL0LW4XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-FMCL0LW4XQ");
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{page_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  <meta name="author" content="Mirabelle Morah" />
+  <link rel="canonical" href="{{url}}" />
+
+  <!-- What shows up when this post is shared -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mirabelle Morah" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{meta_description}}" />
+  <meta property="og:image" content="{{og_image}}" />
+  <meta property="og:image:alt" content="{{og_image_alt}}" />
+  <meta property="og:url" content="{{url}}" />
+  <meta property="article:published_time" content="{{date_iso}}" />
+  <meta property="article:author" content="Mirabelle Morah" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{title}}" />
+  <meta name="twitter:description" content="{{meta_description}}" />
+  <meta name="twitter:image" content="{{og_image}}" />
+  <meta name="twitter:image:alt" content="{{og_image_alt}}" />
+
+  <!-- Structured data for search engines -->
+  {{json_ld}}
+
+  <link rel="stylesheet" href="{{root}}styles/base.css" />
+  <link rel="stylesheet" href="{{root}}styles/global.css" />
+  <link rel="stylesheet" href="{{root}}styles/fp-style.css" />
+  <link rel="stylesheet" href="{{root}}styles/blog-style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="blog-post">
+  {{header}}
+
+  <main>
+    <article class="blog-article">
+      <div class="blog-article-head">
+        <h1>{{title}}</h1>
+        <p class="blog-subtitle">{{summary}}</p>
+        <p class="blog-byline">
+          <span class="blog-byline-name">Mirabelle Morah</span>
+          <span class="blog-byline-meta">{{read_time}} min read &middot; <time datetime="{{date_iso}}">{{date_display}}</time></span>
+        </p>
+      </div>
+
+      {{share}}
+
+      {{cover}}
+
+      <div class="blog-body">
+        {{content}}
+      </div>
+
+      {{category_pill}}
+
+      {{share}}
+
+      <nav class="blog-nav" aria-label="More posts">
+        {{prev}}
+        {{next}}
+      </nav>
+
+      <p class="blog-back"><a class="btn" href="{{root}}blog/">&larr; Back to all posts</a></p>
+    </article>
+  </main>
+
+  {{footer}}
+
+  <script src="{{root}}scripts/menu.js"></script>
+  <script src="{{root}}scripts/blog.js"></script>
+</body>
+
+</html>
