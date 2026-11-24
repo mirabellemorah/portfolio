@@ -49,8 +49,9 @@ content:
         type: reference
         options:
           collection: categories
-          value: "{primary}"
-          label: "{primary}"
+          search: "name"
+          value: "{fields.name}"
+          label: "{fields.name}"
       - name: summary
         label: Short summary (shown on the blog list and when shared)
         type: text
