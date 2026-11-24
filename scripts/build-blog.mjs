@@ -5,6 +5,9 @@
 // Run it with:  npm run build
 // GitHub runs it automatically every time you (or Pages CMS) save a change.
 //
+// Post links have no ".html" on purpose (clean addresses). To put ".html" back,
+// add ".html" right after "slug" wherever a post address is built (search for ".slug").
+//
 // What it works out for you:
 //   - reading time (word count divided by WORDS_PER_MINUTE)
 //   - previous / next links (by publish date)

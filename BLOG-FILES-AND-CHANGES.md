@@ -56,4 +56,15 @@ Generated on every build, not stored in the repo: the `blog/` folder, `sitemap.x
 - **Extra tags:** an author tag, and the Twitter title, description, image and image description tags, plus an image description tag for social previews. Image descriptions come from the "Header image description" box, falling back to the post title.
 - **Not added:** an RSS feed.
 
+### Clean post addresses (no .html), 24 Nov 2026
+
+- **What changed:** post links now look like `https://www.mirabellemorah.com/blog/why-small-motion-matters` instead of ending in `.html`. The files themselves still end in `.html` on disk. Only the links changed.
+- **Where:** `scripts/build-blog.mjs`, in five places: the Previous / Next links, the post's own address (share buttons, canonical link, Copy link), the structured data address, the links on the blog list, and the sitemap.
+- **To put `.html` back:** in each of those five places, add `.html` straight after `slug`. For example, change `${post.slug}` to `${post.slug}.html` and `${p.slug}` to `${p.slug}.html`. Search the file for `.slug` to find all five. Then save and commit, and the next build puts it back.
+- **Note:** GitHub Pages opens a post at both the clean address and the `.html` address, but it does not redirect one to the other.
+
+### Favicon (24 Nov 2026)
+
+- **What changed:** the round "M" from the header logo, on a white rounded square, is now the tab icon on every page. Files: `assets/home-page-assets/favicon.svg`, `assets/home-page-assets/apple-touch-icon.png` and `favicon.ico` in the main folder. The `<link>` lines are in the `<head>` of each page and of the two blog templates.
+
 If you saved any earlier files, the zip replaces them.
