@@ -118,7 +118,6 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     });
     if (empty) empty.hidden = list.length !== 0;
     buildPager(total);
-    if (scroll && top) top.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function go(slug, page, push) {

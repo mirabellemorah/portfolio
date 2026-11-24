@@ -30,7 +30,7 @@ content:
     exclude: ["README.md"]
     view:
       primary: title
-      fields: [date, category, draft]
+      fields: [title, date, category, draft]
       sort: [date, title]
       default:
         sort: date
