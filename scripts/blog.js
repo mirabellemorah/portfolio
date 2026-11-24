@@ -28,7 +28,7 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
   if (!items.length) return;
 
   var perPage = parseInt(pager && pager.getAttribute("data-per-page"), 10) || 10;
-  var PAGES_AHEAD = 3; // page numbers shown after the current one
+  var PAGES_AHEAD = 2; // page numbers shown right after the current one (then "..." and the last two pages)
   var state = { slug: "all", page: 1 };
 
   function matching() {
@@ -82,10 +82,29 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     row.className = "blog-pager-row";
     row.appendChild(pageLink("← Previous", state.page - 1, { disabled: state.page <= 1, aria: "Previous page" }));
 
-    // Show the current page and the next few page numbers (PAGES_AHEAD, set at the top).
-    for (var n = state.page; n <= Math.min(total, state.page + PAGES_AHEAD); n++) {
+    // Show the current page and the next PAGES_AHEAD pages, then "...", then the last two pages.
+    var wanted = {};
+    for (var n = state.page; n <= Math.min(total, state.page + PAGES_AHEAD); n++) wanted[n] = true;
+    [total - 1, total].forEach(function (n) {
+      if (n >= 1) wanted[n] = true;
+    });
+    var numbers = Object.keys(wanted)
+      .map(Number)
+      .sort(function (a, b) {
+        return a - b;
+      });
+    var previous = 0;
+    numbers.forEach(function (n) {
+      if (previous && n - previous > 1) {
+        var gap = document.createElement("span");
+        gap.className = "gap";
+        gap.setAttribute("aria-hidden", "true");
+        gap.textContent = "\u2026";
+        row.appendChild(gap);
+      }
       row.appendChild(pageLink(String(n), n, { current: n === state.page, aria: "Page " + n }));
-    }
+      previous = n;
+    });
 
     row.appendChild(pageLink("Next →", state.page + 1, { disabled: state.page >= total, aria: "Next page" }));
     pager.appendChild(row);

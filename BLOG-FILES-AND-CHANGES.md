@@ -75,8 +75,8 @@ Generated on every build, not stored in the repo: the `blog/` folder, `sitemap.x
 
 ### Page numbers on the blog list (24 Nov 2026)
 
-- **What it does:** the blog list shows 10 posts per page. Under the list there is a row with Previous, the current page number and the next 3 page numbers (for example 4 5 6 7), and Next. A line says "Page 4 of 9". With 10 posts or fewer, no page numbers appear.
-- **To show more or fewer numbers:** in `scripts/blog.js`, change `var PAGES_AHEAD = 3;`.
+- **What it does:** the blog list shows 10 posts per page. Under the list there is a row with Previous, the current page, the next 2 pages, "...", the last 2 pages, and Next (for example 4 5 6 ... 8 9). A line says "Page 4 of 9". Changing page does not scroll the view. With 10 posts or fewer, no page numbers appear.
+- **To show more or fewer numbers:** in `scripts/blog.js`, change `var PAGES_AHEAD = 2;`.
 - **Addresses:** `blog/?page=3`, or with a category, `blog/?category=reflections&page=2`. Visitors can share these and the back button works.
 - **Categories:** each category has its own page count.
 - **To change how many posts show per page:** open `scripts/build-blog.mjs` and change the number in `const POSTS_PER_PAGE = 10;`, then save and commit.
