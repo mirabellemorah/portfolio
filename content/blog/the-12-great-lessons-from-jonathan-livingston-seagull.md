@@ -4,7 +4,6 @@ date: 2022-02-11
 category:
   - Reflections
 summary: "When people don't understand you, they either call you a devil or a god. "
-cover: /assets/blog-assets/image.png
 draft: false
 ---
 ![image.png](/assets/blog-assets/image.png)
