@@ -8,7 +8,7 @@ Each file in this folder is one reusable piece of the website. Edit the file onc
 | `navbar.html` | The whole top bar: logo, the menu, and the MENU button on phones |
 | `footer.html` | Email, copy button, social icons and credit line |
 | `star-toggle.html` | The button that changes the colours of the page |
-| `availability.html` | The "Not too available" button |
+| `availability.html` | The availability button. Edit the words in this file to change every page |
 | `view-all.html` | The "View all projects" button |
 
 ## Using a component on a page
@@ -21,7 +21,6 @@ Put one line where the piece should appear:
 
 - `current="about"` highlights About in the menu. Use `about`, `work`, `play` or `blog`, or leave it out.
 - Some components accept words of their own on that page:
-  `<!-- @include availability text="Fully booked" -->`
   `<!-- @include view-all text="View other work" -->`
 - `{{root}}` inside a component is filled in automatically so links work from any folder.
 
