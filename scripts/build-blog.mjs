@@ -297,6 +297,29 @@ const listHtml = render("blog-list.html", {
 });
 fs.writeFileSync(path.join(OUT_DIR, "index.html"), listHtml);
 
+// Search index: the plain text of every post, so the search box can look inside the posts.
+const plain = (html) =>
+  html
+    .replace(/<(script|style)[\s\S]*?<\/\1>/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
+fs.writeFileSync(
+  path.join(OUT_DIR, "search-index.json"),
+  JSON.stringify(
+    posts.map((p) => ({
+      slug: p.slug,
+      text: plain([p.title, p.summary, p.categories.map((c) => c.name).join(" "), p.html].join(" ")).toLowerCase(),
+    })),
+  ),
+);
+
 // ---------- sitemap.xml and robots.txt (written to the site root) ----------
 const xmlEsc = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 

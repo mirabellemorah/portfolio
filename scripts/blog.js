@@ -29,10 +29,51 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
 
   var perPage = parseInt(pager && pager.getAttribute("data-per-page"), 10) || 10;
   var PAGES_AHEAD = 2; // page numbers shown right after the current one (then "..." and the last two pages)
-  var state = { slug: "all", page: 1 };
+  var state = { slug: "all", page: 1, q: "" };
+
+  // Search box: looks inside every post. The text of the posts is loaded the first time you use it.
+  var searchBox = document.getElementById("blog-search-input");
+  var searchStatus = document.querySelector(".blog-search-status");
+  var texts = {}; // post address -> all its words in lower case
+  var indexState = "idle"; // idle, loading, ready, failed
+  items.forEach(function (li) {
+    var a = li.querySelector("a");
+    li.setAttribute("data-slug", a ? a.getAttribute("href") : "");
+    texts[li.getAttribute("data-slug")] = li.textContent.toLowerCase().replace(/\s+/g, " ");
+  });
+
+  function loadIndex() {
+    if (indexState !== "idle" || !searchBox) return;
+    indexState = "loading";
+    fetch(searchBox.getAttribute("data-index"))
+      .then(function (r) {
+        if (!r.ok) throw new Error("no index");
+        return r.json();
+      })
+      .then(function (list) {
+        list.forEach(function (p) {
+          texts[p.slug] = p.text;
+        });
+        indexState = "ready";
+        render(false);
+      })
+      .catch(function () {
+        indexState = "failed"; // the search still works on titles and summaries
+      });
+  }
+
+  function matchesQuery(li) {
+    var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!words.length) return true;
+    var text = texts[li.getAttribute("data-slug")] || "";
+    return words.every(function (w) {
+      return text.indexOf(w) !== -1;
+    });
+  }
 
   function matching() {
     return items.filter(function (li) {
+      if (!matchesQuery(li)) return false;
       if (state.slug === "all") return true;
       var cats = (li.getAttribute("data-category") || "").split(" ");
       return cats.indexOf(state.slug) !== -1;
@@ -41,6 +82,7 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
 
   function addressFor(slug, page) {
     var parts = [];
+    if (state.q) parts.push("q=" + encodeURIComponent(state.q));
     if (slug !== "all") parts.push("category=" + encodeURIComponent(slug));
     if (page > 1) parts.push("page=" + page);
     return window.location.pathname + (parts.length ? "?" + parts.join("&") : "");
@@ -136,6 +178,11 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
       b.classList.toggle("selected", b.getAttribute("data-filter") === state.slug);
     });
     if (empty) empty.hidden = list.length !== 0;
+    if (searchStatus) {
+      searchStatus.textContent = state.q
+        ? list.length + (list.length === 1 ? " post matches" : " posts match") + ' "' + state.q + '"'
+        : "";
+    }
     buildPager(total);
   }
 
@@ -150,6 +197,8 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     var params = new URLSearchParams(window.location.search);
     state.slug = params.get("category") || "all";
     state.page = parseInt(params.get("page"), 10) || 1;
+    state.q = params.get("q") || "";
+    if (searchBox) searchBox.value = state.q;
   }
 
   filters.forEach(function (b) {
@@ -158,6 +207,21 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     });
   });
 
+  if (searchBox) {
+    var timer;
+    searchBox.addEventListener("focus", loadIndex);
+    searchBox.addEventListener("input", function () {
+      loadIndex();
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        state.q = searchBox.value.trim();
+        state.page = 1;
+        history.replaceState(null, "", addressFor(state.slug, 1));
+        render(false);
+      }, 150);
+    });
+  }
+
   // Back and forward buttons keep working.
   window.addEventListener("popstate", function () {
     readAddress();
@@ -165,5 +229,6 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
   });
 
   readAddress();
+  if (state.q) loadIndex();
   render(false);
 })();

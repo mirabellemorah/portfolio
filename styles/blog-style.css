@@ -264,6 +264,43 @@
   margin-bottom: 1.6em;
 }
 
+.blog-search {
+  margin-bottom: 18px;
+}
+
+.blog-search label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.blog-search input {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border: 1px solid var(--blog-line);
+  border-radius: 24px;
+  background: transparent;
+  color: var(--color-black);
+}
+
+.blog-search input:focus {
+  outline: 2px solid var(--color-black);
+  outline-offset: 2px;
+}
+
+.blog-search-status {
+  margin: 8px 0 0;
+  min-height: 1.2em;
+  font-size: 0.9rem;
+  color: var(--blog-soft);
+}
+
 .blog-filters {
   display: flex;
   flex-wrap: wrap;

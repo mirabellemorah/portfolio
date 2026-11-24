@@ -58,6 +58,13 @@
       <h1>Writing</h1>
       <p class="blog-list-intro">Notes, lessons and stories.</p>
 
+      <form class="blog-search" role="search" onsubmit="return false">
+        <label for="blog-search-input">Search posts</label>
+        <input id="blog-search-input" type="search" placeholder="Search titles and posts" autocomplete="off"
+          data-index="{{root}}blog/search-index.json" />
+        <p class="blog-search-status" aria-live="polite"></p>
+      </form>
+
       <div class="blog-filters" aria-label="Filter posts by category">
         <button type="button" class="selected" data-filter="all">All</button>
         {{category_filters}}
@@ -67,7 +74,7 @@
         {{post_list}}
       </ol>
 
-      <p class="blog-empty" hidden>No posts in this category yet.</p>
+      <p class="blog-empty" hidden>No posts found. Try different words or another category.</p>
 
       <nav class="blog-pager" aria-label="Blog pages" data-per-page="{{per_page}}" hidden></nav>
     </div>
