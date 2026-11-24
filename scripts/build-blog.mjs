@@ -185,11 +185,11 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 const navCard = (post, kind) => {
   if (!post) return `<span></span>`;
   const label = kind === "prev" ? "&larr; Previous" : "Next &rarr;";
-  return `<a class="blog-${kind}" href="${esc(post.slug)}.html" rel="${kind}"><small>${label}</small>${esc(post.title)}</a>`;
+  return `<a class="blog-${kind}" href="${esc(post.slug)}" rel="${kind}"><small>${label}</small>${esc(post.title)}</a>`;
 };
 
 posts.forEach((post, i) => {
-  const url = `${SITE_URL}/blog/${post.slug}.html`;
+  const url = `${SITE_URL}/blog/${post.slug}`;
   const older = posts[i + 1]; // "Previous" goes back in time
   const newer = posts[i - 1];
   const cover = post.cover
@@ -263,7 +263,7 @@ const listHtml = render("blog-list.html", {
     blogPost: posts.map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
-      url: `${SITE_URL}/blog/${p.slug}.html`,
+      url: `${SITE_URL}/blog/${p.slug}`,
       datePublished: p.date.toISOString().slice(0, 10),
     })),
   }),
@@ -273,7 +273,7 @@ const listHtml = render("blog-list.html", {
   post_list: posts
     .map(
       (p) => `<li class="blog-item" data-category="${p.categorySlug}">
-          <a href="${esc(p.slug)}.html">
+          <a href="${esc(p.slug)}">
             <div class="blog-item-meta">${[p.category && esc(p.category), fmt(p.date, "short"), `${p.minutes} min read`]
               .filter(Boolean)
               .join(" &middot; ")}</div>
@@ -304,7 +304,7 @@ const workPages = fs.existsSync(workDir)
 const sitemapEntries = [
   ...[...rootPages, ...workPages].sort().map((u) => ({ loc: SITE_URL + u })),
   { loc: `${SITE_URL}/blog/`, lastmod: posts[0]?.date.toISOString().slice(0, 10) },
-  ...posts.map((p) => ({ loc: `${SITE_URL}/blog/${p.slug}.html`, lastmod: p.date.toISOString().slice(0, 10) })),
+  ...posts.map((p) => ({ loc: `${SITE_URL}/blog/${p.slug}`, lastmod: p.date.toISOString().slice(0, 10) })),
 ];
 fs.writeFileSync(
   path.join(ROOT, "sitemap.xml"),
