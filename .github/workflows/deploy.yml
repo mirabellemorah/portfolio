@@ -21,17 +21,25 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: rm -rf node_modules
+      - name: Collect only the website files
+        run: |
+          mkdir _site
+          rsync -a ./ _site/ \
+            --exclude='_site' --exclude='.git' --exclude='.github' \
+            --exclude='node_modules' --exclude='templates' --exclude='content' \
+            --exclude='HIDDEN-FILES-visible-copies' --exclude='.pages.yml' \
+            --exclude='package.json' --exclude='package-lock.json' \
+            --exclude='BLOG-*.md' --exclude='.gitignore' --exclude='.DS_Store'
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
