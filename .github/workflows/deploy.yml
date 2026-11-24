@@ -6,7 +6,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  actions: read
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
@@ -15,6 +18,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -32,10 +38,9 @@ jobs:
             --exclude='HIDDEN-FILES-visible-copies' --exclude='.pages.yml' \
             --exclude='package.json' --exclude='package-lock.json' \
             --exclude='BLOG-*.md' --exclude='.gitignore' --exclude='.DS_Store'
-          touch _site/.nojekyll
-      - name: Publish to the gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
-          force_orphan: true
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
