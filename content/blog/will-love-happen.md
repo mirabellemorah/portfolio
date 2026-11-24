@@ -2,7 +2,7 @@
 title: "When Will My Own Love Happen"
 date: 2016-05-18
 category:
-  - Historic
+  - Reflection
 summary: "A poem about searching for love, never quite finding it and asking when it will finally come."
 seo_title: "When Will My Own Love Happen: A Poem | Mirabelle Morah"
 seo_description: "A poem by Mirabelle Morah on longing and heartbreak, asking when her own love will finally happen. From the Mira Writes archive."

@@ -2,7 +2,7 @@
 title: "Child"
 date: 2016-04-20
 category:
-  - Historic
+  - Shakes
 summary: "A short story about a boy, a wounded bird and the shade of an old Iroko tree."
 seo_title: "Child: A Short Story by Mirabelle Morah"
 seo_description: "Child is a short story by Mirabelle Morah about a boy who finds an injured bird under an Iroko tree. Read this early piece from the Mira Writes archive."

@@ -2,7 +2,7 @@
 title: "Here are a few tips to help you sacrifice and prioritize your young life"
 date: 2018-04-22
 category:
-  - Historic
+  - Shakes
 summary: "Practical tips on sacrifice and priorities when you are young and unsure of your next move."
 seo_title: "How to Sacrifice and Prioritize Your Young Life"
 seo_description: "Mirabelle Morah shares tips on sacrifice and prioritizing in your youth, built on advice a friend gave her when she doubted her path."

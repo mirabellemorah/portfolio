@@ -2,7 +2,7 @@
 title: "I Wish I Knew by Mirabelle Morah"
 date: 2016-12-23
 category:
-  - Historic
+  - Reflection
 summary: "A short story about a child who watches her mother suffer and does not know how to help."
 seo_title: "I Wish I Knew: A Short Story | Mirabelle Morah"
 seo_description: "I Wish I Knew is a short story by Mirabelle Morah about a child who sees her mother hurt and wishes she knew how to make it stop."

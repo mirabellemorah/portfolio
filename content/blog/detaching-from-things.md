@@ -2,7 +2,7 @@
 title: "Detaching from things"
 date: 2026-11-24
 category:
-  - Reflections
+  - Reflection
 summary: "A draft reflection on learning to detach after a busy Social Enterprise World Forum policy forum."
 seo_title: "Detaching From Things | Mirabelle Morah"
 seo_description: "A draft reflection by Mirabelle Morah on detaching from things, written after working on her second SEWF Policy Forum."

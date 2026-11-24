@@ -2,7 +2,7 @@
 title: "The Writers' Pain"
 date: 2016-05-28
 category:
-  - Historic
+  - Reflection
 summary: "A poem on why writers must feel heartbreak deeply before they can write about it."
 seo_title: "The Writers' Pain: A Poem | Mirabelle Morah"
 seo_description: "A poem by Mirabelle Morah about heartbreak, depression and why writers give themselves wholly to love in order to write about it."

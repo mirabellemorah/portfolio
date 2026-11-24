@@ -330,7 +330,8 @@
 }
 
 .blog-search.is-open {
-  width: 240px;
+  width: 220px;
+  max-width: 100%;
 }
 
 .blog-search:focus-within {
@@ -349,10 +350,13 @@
   color: var(--blog-soft);
 }
 
-@media (max-width: 768px) {
-  /* On phones the open search bar takes its own row, so it never squeezes the category buttons */
+@media (max-width: 1024px) {
+  /* Phones and tablets: 16px text stops iPhones from zooming in (which made the page wider) */
+  .blog-search input {
+    font-size: 16px;
+  }
   .blog-search.is-open {
-    width: 100%;
+    width: min(220px, 100%);
   }
 }
 

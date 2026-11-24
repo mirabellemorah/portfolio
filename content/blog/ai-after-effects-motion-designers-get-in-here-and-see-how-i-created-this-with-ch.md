@@ -2,7 +2,7 @@
 title: "AI + After Effects: Motion designers get in here and see how I created this with ChatGPT"
 date: 2024-07-27
 category:
-  - Design
+  - Makes
 summary: "How Mirabelle used ChatGPT to generate an After Effects expression and build a motion design."
 seo_title: "AI + After Effects: Using ChatGPT for Motion Design"
 seo_description: "Mirabelle Morah shows how she used ChatGPT to generate an After Effects expression and guide her through making a motion design."

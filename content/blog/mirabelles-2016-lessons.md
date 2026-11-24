@@ -2,7 +2,7 @@
 title: "Mirabelle's 2016 Lessons"
 date: 2017-01-10
 category:
-  - Historic
+  - Reflection
 summary: "The lessons Mirabelle learned in 2016, a year she first felt she had wasted."
 seo_title: "Mirabelle's 2016 Lessons | Mirabelle Morah"
 seo_description: "Mirabelle Morah looks back on 2016, a year that began in heartbreak, and shares the lessons that made it worthwhile after all."

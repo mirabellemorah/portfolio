@@ -2,8 +2,7 @@
 title: "Give your social enterprise the powerful digital presence it'd appreciate (as if it were human)"
 date: 2025-02-03
 category:
-  - Creative Business
-  - Design
+  - Shakes
 summary: "What a social enterprise's website needs so supporters can find it, trust it and join in."
 seo_title: "Digital Presence for Your Social Enterprise"
 seo_description: "Mirabelle Morah explains why a social enterprise needs a strong website and what to include, from impact stories to a newsletter."

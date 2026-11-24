@@ -2,7 +2,7 @@
 title: "Familiar African Tales | Ekpo in GSS Exam By Mira Morah"
 date: 2016-11-26
 category:
-  - Historic
+  - Shakes
 summary: "A Familiar African Tales story about a classmate pleading for answers during an exam."
 seo_title: "Ekpo in GSS Exam: Familiar African Tales | Mirabelle Morah"
 seo_description: "A Familiar African Tales story by Mirabelle Morah about a classmate begging for answers during a GSS exam and the choice to refuse."

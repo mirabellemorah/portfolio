@@ -2,7 +2,7 @@
 title: "To Nne'm"
 date: 2016-05-13
 category:
-  - Historic
+  - Reflection
 summary: "A short letter of love and respect to a mother, written for Mother's Day."
 seo_title: "To Nne'm: A Letter to My Mother | Mirabelle Morah"
 seo_description: "To Nne'm is a short, heartfelt note from Mirabelle Morah to her mother, celebrating her strength and the sacrifices she has made."

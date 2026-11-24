@@ -2,7 +2,7 @@
 title: "This is What I Experienced at the Ashoka ChangeMakerXchange"
 date: 2017-12-09
 category:
-  - Historic
+  - Shakes
 summary: "Mirabelle's experience at the Ashoka ChangeMakerXchange and what it taught her about living in the present."
 seo_title: "My Experience at the Ashoka ChangeMakerXchange"
 seo_description: "Mirabelle Morah shares what she experienced at the Ashoka ChangeMakerXchange and the advice she took there to live in the present."

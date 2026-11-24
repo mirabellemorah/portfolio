@@ -2,7 +2,7 @@
 title: "Run Away, Love"
 date: 2016-06-14
 category:
-  - Historic
+  - Shakes
 summary: "A short story about love, regret and the warning to wait until your heart is ready."
 seo_title: "Run Away, Love: A Short Story | Mirabelle Morah"
 seo_description: "Run Away, Love is a short story by Mirabelle Morah about a young man who wanted to love the right way and learned what readiness costs."

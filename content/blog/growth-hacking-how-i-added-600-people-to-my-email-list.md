@@ -2,7 +2,7 @@
 title: "Growth hacking: how I added 600 people to my email list"
 date: 2024-08-06
 category:
-  - Creative Business
+  - Business
 summary: "How a contest helped Mirabelle add 600 people to her email list, plus what growth hacking means."
 seo_title: "Growth Hacking: How I Added 600 Email Subscribers"
 seo_description: "Mirabelle Morah explains growth hacking and how she added 600 people to her email list through a contest."

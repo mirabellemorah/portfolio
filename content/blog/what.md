@@ -2,7 +2,7 @@
 title: "What Exactly is Wrong With Mentees?"
 date: 2018-04-19
 category:
-  - Historic
+  - Shakes
 summary: "Mirabelle shares what she believes mentees get wrong in mentoring relationships."
 seo_title: "What Is Wrong With Mentees? | Mirabelle Morah"
 seo_description: "Mirabelle Morah writes about the privilege of having a mentor and what mentees often get wrong in a mentoring relationship."

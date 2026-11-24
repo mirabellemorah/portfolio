@@ -2,7 +2,7 @@
 title: "Too Many Friends Too Many Wahala by Mira Morah"
 date: 2016-09-06
 category:
-  - Historic
+  - Reflection
 summary: "A story about a friend's wisdom and why the company you keep matters."
 seo_title: "Too Many Friends, Too Many Wahala | Mirabelle Morah"
 seo_description: "Mirabelle Morah reflects on a friend who seems to know everything and on the saying that the caliber of friends you keep matters."

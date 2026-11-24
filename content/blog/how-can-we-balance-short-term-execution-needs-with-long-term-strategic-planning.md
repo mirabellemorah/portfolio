@@ -2,7 +2,7 @@
 title: "How can we balance short-term execution needs with long-term strategic planning?"
 date: 2025-03-10
 category:
-  - Creative Business
+  - Shakes
 summary: "How a communications strategist balances short term execution with long term strategy."
 seo_title: "Short-Term Execution vs Long-Term Strategy in Comms"
 seo_description: "Mirabelle Morah shares how, as a comms strategist, she balances short term execution with long term planning across several organisations."

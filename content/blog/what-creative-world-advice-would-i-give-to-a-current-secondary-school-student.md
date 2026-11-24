@@ -2,8 +2,8 @@
 title: "What creative world advice would I give to a current secondary school student?"
 date: 2025-03-31
 category:
-  - Reflections
-  - Creative Business
+  - Shakes
+  - Reflection
 summary: "Advice for a secondary school student on creative careers, mistakes and your future self."
 seo_title: "Creative Career Advice for Secondary School Students"
 seo_description: "Mirabelle Morah shares the advice she gave secondary school students on digital content creation, creative arts and media."

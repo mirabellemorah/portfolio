@@ -2,7 +2,7 @@
 title: "Explain the open model of innovation to an 8-year-old"
 date: 2025-05-05
 category:
-  - Creative Business
+  - Business
 summary: "An open model of innovation explained simply, as if to an 8 year old."
 seo_title: "The Open Model of Innovation, Explained Simply"
 seo_description: "Mirabelle Morah explains the open model of innovation in simple terms, as if explaining it to an 8 year old."

@@ -2,7 +2,7 @@
 title: "I’m Not 'Understanding' This African Time Thing Nigerians Do Again oo by Mirabelle Morah"
 date: 2016-12-19
 category:
-  - Historic
+  - Shakes
 summary: "A light hearted rant about events that shift, late starts and African time in Nigeria."
 seo_title: "Understanding African Time in Nigeria | Mirabelle Morah"
 seo_description: "Mirabelle Morah recounts a rescheduled event, a trip to Akpabuyo and her frustration with so called African time."

@@ -2,7 +2,7 @@
 title: The 12 great lessons from Jonathan Livingston Seagull
 date: 2022-02-11
 category:
-  - Reflections
+  - Reflection
 summary: "When people don't understand you, they either call you a devil or a god. "
 draft: false
 ---

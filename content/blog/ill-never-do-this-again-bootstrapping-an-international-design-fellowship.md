@@ -2,8 +2,8 @@
 title: "“I’ll never do this again”: bootstrapping an international design fellowship"
 date: 2025-07-08
 category:
-  - Creative Business
-  - Reflections
+  - Business
+  - Reflection
 summary: "What Mirabelle learned from bootstrapping an international design fellowship despite being afraid."
 seo_title: "Bootstrapping an International Design Fellowship"
 seo_description: "Mirabelle Morah shares what it took to bootstrap the Grohwie Design Fellowship, and why she did it even though she was scared."

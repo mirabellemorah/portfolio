@@ -2,7 +2,7 @@
 title: "The Marathonization of my life"
 date: 2026-04-22
 category:
-  - Reflections
+  - Reflection
 summary: "What Mirabelle calls the marathonization of life, and what a hard book taught her about pace."
 seo_title: "The Marathonization of My Life"
 seo_description: "Mirabelle Morah explains her idea of the marathonization of life, sparked by years of struggling to finish one book."

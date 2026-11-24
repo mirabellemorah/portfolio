@@ -2,7 +2,7 @@
 title: "Dev journal: From kitchen to keyboard: A fresh take on restaurant websites"
 date: 2025-05-07
 category:
-  - Design
+  - Makes
 summary: "A dev journal on why restaurants need better websites and what a fresh take looks like."
 seo_title: "Dev Journal: A Fresh Take on Restaurant Websites"
 seo_description: "Mirabelle Morah shares her dev journal on building a restaurant website, starting from the problem of hungry customers who can't find one."

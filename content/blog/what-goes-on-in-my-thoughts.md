@@ -2,7 +2,7 @@
 title: "What Goes On In My Thoughts"
 date: 2016-06-27
 category:
-  - Historic
+  - Reflection
 summary: "A candid post about second guessing every decision and wishing life came with a map."
 seo_title: "What Goes On In My Thoughts | Mirabelle Morah"
 seo_description: "Mirabelle Morah writes honestly about overthinking, doubting her choices and wishing she had a map for every step of life."

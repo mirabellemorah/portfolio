@@ -2,7 +2,7 @@
 title: "Queendom: Herstory"
 date: 2016-06-08
 category:
-  - Historic
+  - Shakes
 summary: "A short story about a girl who refuses to let anything spoil a bright, drizzling morning."
 seo_title: "Queendom: Herstory, a Short Story | Mirabelle Morah"
 seo_description: "Queendom: Herstory is a short story by Mirabelle Morah about a young woman, a rainy morning and her decision to guard her joy."

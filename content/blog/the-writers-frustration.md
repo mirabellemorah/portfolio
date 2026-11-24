@@ -2,7 +2,7 @@
 title: "THE WRITER'S FRUSTRATION"
 date: 2016-08-12
 category:
-  - Historic
+  - Reflection
 summary: "A poem about writer's block by guest poet Nten Mpama, shared on BlankPaperz."
 seo_title: "The Writer's Frustration: A Poem | BlankPaperz"
 seo_description: "The Writer's Frustration is a poem about the restless feeling of wanting to write and finding no words, shared on Mira Writes."

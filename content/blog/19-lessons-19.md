@@ -2,7 +2,7 @@
 title: "19 Lessons From Being 19"
 date: 2017-08-06
 category:
-  - Historic
+  - Reflection
 summary: "Nineteen lessons from nineteen years, from family and focus to faith and growth."
 seo_title: "19 Lessons From Being 19 | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares 19 lessons she learned by age 19, covering family, friendships, faith and growing up."

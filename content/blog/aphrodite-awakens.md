@@ -2,7 +2,7 @@
 title: "Aphrodite Awakens"
 date: 2016-05-27
 category:
-  - Historic
+  - Reflection
 summary: "A poem about a long suppressed love that wakes up and refuses to go back to sleep."
 seo_title: "Aphrodite Awakens: A Poem by Mirabelle Morah"
 seo_description: "Aphrodite Awakens is a poem by Mirabelle Morah about desire, years of holding back and what happens when a lover stirs the heart."

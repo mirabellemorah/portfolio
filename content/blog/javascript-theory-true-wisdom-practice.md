@@ -2,8 +2,8 @@
 title: "JavaScript, theory, true wisdom, practice"
 date: 2024-12-02
 category:
-  - Design
-  - Reflections
+  - Makes
+  - Reflection
 summary: "Why Mirabelle wanted to know the 'why' behind JavaScript while learning to code, and what it taught her."
 seo_title: "JavaScript, Theory, True Wisdom and Practice"
 seo_description: "Mirabelle Morah shares her JavaScript learning journey with Mimo and Code First Girls, and why knowing the why behind the code matters."

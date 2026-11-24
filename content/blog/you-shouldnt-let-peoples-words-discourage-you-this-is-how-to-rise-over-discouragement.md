@@ -2,7 +2,7 @@
 title: "You shouldn’t let people’s words discourage you. This is how to rise over discouragement"
 date: 2020-01-15
 category:
-  - Historic
+  - Shakes
 summary: "How to rise above discouragement when people say negative things about you."
 seo_title: "How to Rise Over Discouragement | Mirabelle Morah"
 seo_description: "Mirabelle Morah explains how to stop replaying discouraging words and rise above negative comments from other people."

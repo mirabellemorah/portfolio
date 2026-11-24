@@ -2,7 +2,7 @@
 title: "Midnights by Mirabelle Morah"
 date: 2016-10-10
 category:
-  - Historic
+  - Shakes
 summary: "A short horror story about a girl who hears something in the night and cannot escape it."
 seo_title: "Midnights: A Short Story by Mirabelle Morah"
 seo_description: "Midnights is a short horror story by Mirabelle Morah about a girl who turns her mirrors to the wall and locks her door against a sound at night."

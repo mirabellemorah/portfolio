@@ -2,7 +2,7 @@
 title: "ASK THE PASSENGERS"
 date: 2016-04-23
 category:
-  - Historic
+  - Shakes
 summary: "A review of A. S. King's Ask the Passengers, the story of seventeen year old Astrid Jones and her search for who she is."
 seo_title: "Ask the Passengers Book Review | Mirabelle Morah"
 seo_description: "Mirabelle Morah reviews A. S. King's Ask the Passengers, a YA novel about Astrid Jones, who is figuring out her sexuality and her place in the world."

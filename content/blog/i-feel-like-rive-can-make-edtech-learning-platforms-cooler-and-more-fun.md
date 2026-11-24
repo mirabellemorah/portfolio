@@ -2,7 +2,7 @@
 title: "I feel like Rive can make EdTech learning platforms cooler and more fun"
 date: 2024-04-15
 category:
-  - Design
+  - Makes
 summary: "How Rive could make online learning and EdTech platforms cooler and more engaging."
 seo_title: "How Rive Can Make EdTech Cooler and More Fun"
 seo_description: "Mirabelle Morah explains what Rive is and how its interactive animations could make EdTech learning platforms more engaging."

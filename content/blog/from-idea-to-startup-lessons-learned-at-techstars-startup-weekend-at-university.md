@@ -2,8 +2,8 @@
 title: "From idea to startup: lessons learned at Techstars Startup Weekend at University of Edinburgh"
 date: 2024-03-19
 category:
-  - Creative Business
-  - Reflections
+  - Business
+  - Shakes
 summary: "Lessons from a weekend at Techstars Startup Weekend: experiment, fail, learn, repeat."
 seo_title: "Lessons From Techstars Startup Weekend Edinburgh"
 seo_description: "Mirabelle Morah shares what she learned building a startup idea at Techstars Startup Weekend at the University of Edinburgh."

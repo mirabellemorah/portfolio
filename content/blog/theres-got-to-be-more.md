@@ -2,7 +2,7 @@
 title: "There's Got to Be More"
 date: 2016-06-01
 category:
-  - Historic
+  - Reflection
 summary: "A short poem on being tired of routine and wanting a life bigger than ourselves."
 seo_title: "There's Got to Be More: A Poem | Mirabelle Morah"
 seo_description: "A short poem by Mirabelle Morah about weariness with school, work and self interest, and the search for a life of greater purpose."

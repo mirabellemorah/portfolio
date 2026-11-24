@@ -2,7 +2,7 @@
 title: "I've Got My Love Now by Mira Morah"
 date: 2016-09-18
 category:
-  - Historic
+  - Reflection
 summary: "A personal story about opening up, telling the truth and letting someone in."
 seo_title: "I've Got My Love Now | Mirabelle Morah"
 seo_description: "Mirabelle Morah writes about sadness, honesty and the courage it took to open her heart and finally let someone in."

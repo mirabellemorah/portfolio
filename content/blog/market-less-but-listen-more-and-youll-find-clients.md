@@ -2,7 +2,7 @@
 title: "Market less but listen more and you’ll find clients"
 date: 2025-08-05
 category:
-  - Creative Business
+  - Business
 summary: "A simple email approach for getting people to register for events: community care and clarity."
 seo_title: "Market Less, Listen More and You'll Find Clients"
 seo_description: "Mirabelle Morah shares a simple email marketing approach that gets people to register for events, built on community care and clarity."

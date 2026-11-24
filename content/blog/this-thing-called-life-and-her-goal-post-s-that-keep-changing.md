@@ -2,7 +2,7 @@
 title: "This thing called life and her goal post(s) that keep changing"
 date: 2026-08-09
 category:
-  - Reflections
+  - Reflection
 summary: "A reflection on why the goalposts of life keep moving and what she really wants."
 seo_title: "Life and Her Changing Goal Posts | Mirabelle Morah"
 seo_description: "Mirabelle Morah reflects on why the goalposts in life keep changing and what she really wants out of it."

@@ -1,3 +1,3 @@
 ---
-name: Creative Business
+name: Business
 ---

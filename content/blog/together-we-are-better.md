@@ -2,7 +2,7 @@
 title: "Together We Are Better"
 date: 2016-10-09
 category:
-  - Historic
+  - Reflection
 summary: "A reflection on working alone, a church sermon and the value of working with others."
 seo_title: "Together We Are Better | Mirabelle Morah"
 seo_description: "After a Sunday sermon, Mirabelle Morah reflects on why she loves working alone and what she is learning about the strength of teamwork."

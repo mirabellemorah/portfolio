@@ -2,7 +2,8 @@
 title: "The best or not? All you need to know about interning at Salzburg Global Seminar (challenges & tips)"
 date: 2020-06-24
 category:
-  - Historic
+  - Shakes
+  - Reflection
 summary: "An honest guide to interning at Salzburg Global Seminar, with the application, visa, challenges and tips."
 seo_title: "Interning at Salzburg Global Seminar: Honest Guide"
 seo_description: "Mirabelle Morah's guide to interning at Salzburg Global Seminar: how she applied, the visa process, the challenges and tips for applicants."

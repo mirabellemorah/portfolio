@@ -2,7 +2,7 @@
 title: "Dev journal + adventure: these illustrated smiles are more than just code"
 date: 2025-03-03
 category:
-  - Design
+  - Makes
 summary: "The real story behind the Illustrated Smiles website, built on SuperHi with Mirabelle's illustrations."
 seo_title: "Dev Journal: The Illustrated Smiles Website"
 seo_description: "Mirabelle Morah shares the story behind the Illustrated Smiles website, built on SuperHi with her own illustrations."

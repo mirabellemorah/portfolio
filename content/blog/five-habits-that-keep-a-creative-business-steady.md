@@ -1,7 +1,8 @@
 ---
 title: Five habits that keep a creative business steady
 date: 2026-10-22
-category: Reflections
+category:
+  - Business
 summary: Simple, repeatable habits for building a creative studio without burning out, explained with small everyday examples.
 cover: /assets/home-page-assets/vula.png
 cover_alt: A bright abstract illustration

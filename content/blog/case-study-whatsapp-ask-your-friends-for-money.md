@@ -2,7 +2,7 @@
 title: "Case Study: WhatsApp — ask your friends for money"
 date: 2025-02-13
 category:
-  - Creative Business
+  - Shakes
 summary: "A short case study on a video inspired by a request for money from someone she had not heard from in years."
 seo_title: "Case Study: WhatsApp, Ask Your Friends for Money"
 seo_description: "Mirabelle Morah shares a short case study of a video inspired by a request for money from someone she had not heard from in years."

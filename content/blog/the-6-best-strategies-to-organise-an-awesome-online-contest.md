@@ -2,7 +2,7 @@
 title: "The 6 best strategies to organise an awesome online contest"
 date: 2022-06-18
 category:
-  - Creative Business
+  - Business
 summary: "Six strategies for organising an online contest that people actually want to join."
 seo_title: "6 Strategies for an Awesome Online Contest"
 seo_description: "Mirabelle Morah shares 6 strategies to organise an online contest, built on the idea that people care most about how your offer makes them feel."

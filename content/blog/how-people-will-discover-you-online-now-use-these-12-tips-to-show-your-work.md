@@ -2,7 +2,7 @@
 title: "How people will discover you online: now use these 12 tips to show your work"
 date: 2024-11-11
 category:
-  - Creative Business
+  - Business
 summary: "Twelve lessons on showing your work online, from documenting daily to staying consistent."
 seo_title: "12 Tips to Show Your Work and Be Discovered Online"
 seo_description: "Mirabelle Morah shares 12 tips for showing your work online, from documenting your process and building a website to staying consistent."

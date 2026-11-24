@@ -2,7 +2,7 @@
 title: "Lagos Memories: The untold stories about my holiday in Lagos - Mirabelle Morah"
 date: 2016-12-17
 category:
-  - Historic
+  - Shakes
 summary: "Mirabelle's honest, funny account of a holiday in Lagos, from a Calabar girl's point of view."
 seo_title: "Lagos Memories: My Holiday in Lagos | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares the untold stories of her holiday in Lagos, a city very different from Calabar, where she has lived all her life."

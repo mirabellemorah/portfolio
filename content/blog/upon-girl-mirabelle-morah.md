@@ -2,7 +2,7 @@
 title: "Once Upon A Girl By Mirabelle Morah"
 date: 2016-10-24
 category:
-  - Historic
+  - Reflection
 summary: "A short story about Cynthia, the kind girl next door who always made time for the narrator."
 seo_title: "Once Upon A Girl: A Short Story | Mirabelle Morah"
 seo_description: "Once Upon A Girl is a short story by Mirabelle Morah about a friendship with the girl next door and what it taught the narrator."

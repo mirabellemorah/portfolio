@@ -2,8 +2,8 @@
 title: "Make a website for yourself before you need one (see how to below)"
 date: 2025-03-24
 category:
-  - Design
-  - Creative Business
+  - Makes
+  - Business
 summary: "Why you should build a personal website before you need one, and how to get started."
 seo_title: "Make a Website for Yourself Before You Need One"
 seo_description: "Mirabelle Morah explains why you should have a personal website before opportunities arrive, with steps for how to make one."

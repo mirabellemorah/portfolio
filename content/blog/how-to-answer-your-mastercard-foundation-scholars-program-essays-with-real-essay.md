@@ -2,7 +2,7 @@
 title: "How to answer your Mastercard Foundation Scholars Program essays (with real essay example)"
 date: 2024-10-04
 category:
-  - Reflections
+  - Shakes
 summary: "A detailed guide to answering the Mastercard Foundation Scholars Program essays, with a real example."
 seo_title: "How to Answer Mastercard Foundation Scholars Essays"
 seo_description: "Mirabelle Morah's detailed guide to the Mastercard Foundation Scholars Program essays, including a real essay example."

@@ -2,7 +2,7 @@
 title: "How I Killed My Sister"
 date: 2016-07-10
 category:
-  - Historic
+  - Shakes
 summary: "A short story about jealousy between two sisters and the consequences of hatred."
 seo_title: "How I Killed My Sister: A Short Story | Mirabelle Morah"
 seo_description: "How I Killed My Sister is a short story by Mirabelle Morah about a teenage girl, her younger sister and a resentment that goes too far."

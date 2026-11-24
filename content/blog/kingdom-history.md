@@ -2,7 +2,7 @@
 title: "Kingdom: History"
 date: 2016-06-09
 category:
-  - Historic
+  - Shakes
 summary: "A short story about a father and his little daughter on an ordinary morning."
 seo_title: "Kingdom: History, a Short Story | Mirabelle Morah"
 seo_description: "Kingdom: History is a short story by Mirabelle Morah that follows a father and his young daughter through a tender, ordinary morning."

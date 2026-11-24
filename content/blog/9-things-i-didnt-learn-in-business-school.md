@@ -2,7 +2,7 @@
 title: "The 9 things I didn't learn in business school"
 date: 2026-09-04
 category:
-  - Creative Business
+  - Business
 summary: "Here's why it's your 17th idea that could work, not the 1st. And a timeline of my business journey."
 seo_title: "The 9 things I didn't learn in business school"
 seo_description: "Here's why it's your 17th idea that could work, not the 1st."

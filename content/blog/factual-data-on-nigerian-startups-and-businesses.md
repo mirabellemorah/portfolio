@@ -2,7 +2,7 @@
 title: "Why is it hard to find factual business data about Nigerian startups?"
 date: 2025-06-11
 category:
-  - Creative Business
+  - Business
 summary: "Why is there a lack of transparency and limited public documentation on financial details of Nigerian tech startups?"
 seo_title: "Why is it hard to find factual business data about Nigerian startups?"
 seo_description: "Why is there a lack of transparency and limited public documentation on financial details of Nigerian tech startups?"

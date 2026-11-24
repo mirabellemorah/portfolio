@@ -2,8 +2,8 @@
 title: "How your identity capital will help you stop overthinking and choose your career"
 date: 2024-09-16
 category:
-  - Reflections
-  - Creative Business
+  - Shakes
+  - Reflection
 summary: "How identity capital, from Meg Jay's The Defining Decade, can help you choose your next step."
 seo_title: "How Identity Capital Helps You Choose Your Career"
 seo_description: "Mirabelle Morah explains identity capital from Meg Jay's The Defining Decade and how it can help you stop overthinking your next career step."

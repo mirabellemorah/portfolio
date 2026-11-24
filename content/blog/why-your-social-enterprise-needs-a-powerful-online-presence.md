@@ -2,8 +2,7 @@
 title: "Why your social enterprise needs a powerful online presence"
 date: 2025-02-03
 category:
-  - Creative Business
-  - Design
+  - Shakes
 summary: "Why a social enterprise loses supporters without a strong, findable online presence."
 seo_title: "Why Social Enterprises Need an Online Presence"
 seo_description: "Mirabelle Morah explains why a social enterprise needs a powerful online presence, told from the view of a donor who can't find you."

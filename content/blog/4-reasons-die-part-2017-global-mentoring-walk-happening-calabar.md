@@ -2,7 +2,7 @@
 title: "4 Reasons Why You Should Die To Be A Part Of The 2017 Global Mentoring Walk Happening In Calabar"
 date: 2017-02-12
 category:
-  - Historic
+  - Shakes
 summary: "Four reasons women in Calabar should join the 2017 Global Mentoring Walk."
 seo_title: "Why Join the 2017 Global Mentoring Walk, Calabar"
 seo_description: "Mirabelle Morah shares four reasons women in Calabar should join the 2017 Global Mentoring Walk, drawing on her own experience as a mentee."

@@ -2,7 +2,7 @@
 title: "Familiar African Tales | MY PALLY PALLY BY MIRA MORAH"
 date: 2016-11-24
 category:
-  - Historic
+  - Shakes
 summary: "A Familiar African Tales story about a school best friend and a final exam favour."
 seo_title: "My Pally Pally: Familiar African Tales | Mirabelle Morah"
 seo_description: "In this Familiar African Tales story, Mirabelle Morah recalls a close school friend and the day exam pressure tested their friendship."

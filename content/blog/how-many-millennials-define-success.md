@@ -2,7 +2,7 @@
 title: "This could be how millennials define success but how should you define success?"
 date: 2019-01-22
 category:
-  - Historic
+  - Shakes
 summary: "How millennials define success in the #The10YearsChallenge era, and how you could define it."
 seo_title: "How Should You Define Success? | Mirabelle Morah"
 seo_description: "Mirabelle Morah reflects on how the #10YearsChallenge shows millennial ideas of success and offers a way to define your own."

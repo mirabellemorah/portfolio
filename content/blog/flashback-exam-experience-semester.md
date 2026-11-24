@@ -2,7 +2,7 @@
 title: "Flashback to My Exam Experience this Semester"
 date: 2016-06-28
 category:
-  - Historic
+  - Reflection
 summary: "A funny, honest account of a stressful exam week and the struggle to get out of bed."
 seo_title: "Flashback to My Exam Experience | Mirabelle Morah"
 seo_description: "Mirabelle Morah recounts an exam week at university, from missed alarms and a dark room to the effort of reading for English papers."

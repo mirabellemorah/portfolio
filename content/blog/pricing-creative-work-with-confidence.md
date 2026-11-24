@@ -1,7 +1,8 @@
 ---
 title: Pricing creative work with confidence
 date: 2026-11-05
-category: Creative Business
+category:
+  - Business
 summary: Three questions that help you price a project without guessing, and without undercharging.
 seo_title: How to price creative work with confidence | Mirabelle Morah
 seo_description: Three simple questions to help creatives price a project without guessing, and without undercharging.

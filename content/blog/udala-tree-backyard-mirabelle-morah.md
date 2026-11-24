@@ -2,7 +2,7 @@
 title: "The Udala Tree In Our Backyard by Mirabelle Morah"
 date: 2016-12-26
 category:
-  - Historic
+  - Reflection
 summary: "A short story about an Udala tree, an overprotective mother and a family's backyard."
 seo_title: "The Udala Tree In Our Backyard | Mirabelle Morah"
 seo_description: "A short story by Mirabelle Morah about watching leaves fall from the Udala tree behind the house and the people who pass by it."

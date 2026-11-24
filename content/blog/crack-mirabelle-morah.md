@@ -2,7 +2,7 @@
 title: "My Crack By Mirabelle Morah"
 date: 2016-10-11
 category:
-  - Historic
+  - Reflection
 summary: "A candid confession about pride, humility and the flaws behind the name Mirabelle."
 seo_title: "My Crack: A Candid Essay | Mirabelle Morah"
 seo_description: "Mirabelle Morah admits she is not always wonderful, writing openly about pride, snobbery and her prayers for humility."

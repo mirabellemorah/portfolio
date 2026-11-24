@@ -2,7 +2,7 @@
 title: "Short Story: Gray"
 date: 2016-06-15
 category:
-  - Historic
+  - Shakes
 summary: "A short story told by someone watching a girl they cannot stop noticing."
 seo_title: "Gray: A Short Story by Mirabelle Morah"
 seo_description: "Gray is a short story by Mirabelle Morah, a quiet character study told through close and admiring observation of one girl."

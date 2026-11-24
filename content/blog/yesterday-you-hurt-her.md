@@ -2,7 +2,7 @@
 title: "Yesterday: You Hurt Her"
 date: 2016-05-25
 category:
-  - Historic
+  - Reflection
 summary: "A poem addressed to a man who hurt the woman who once made him her whole world."
 seo_title: "Yesterday: You Hurt Her, a Poem by Mirabelle Morah"
 seo_description: "A poem by Mirabelle Morah about love, careless words and the pain of being hurt by someone who once treasured you."

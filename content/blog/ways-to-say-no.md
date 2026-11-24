@@ -2,7 +2,7 @@
 title: "8 fantastic and essentialist ways writers and social-do-gooders can say NO"
 date: 2019-01-24
 category:
-  - Historic
+  - Shakes
 summary: "Eight essentialist ways for writers and social do-gooders to say no without guilt."
 seo_title: "8 Essentialist Ways to Say No | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares eight essentialist ways for writers and social do-gooders to say no in 2019 and protect their time and projects."

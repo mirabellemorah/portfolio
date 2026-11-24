@@ -2,7 +2,7 @@
 title: "Torn"
 date: 2016-06-10
 category:
-  - Historic
+  - Reflection
 summary: "A short piece about lying awake wondering whether someone misses you as much as you miss them."
 seo_title: "Torn: A Short Piece by Mirabelle Morah"
 seo_description: "Torn is a short, honest piece by Mirabelle Morah about waiting, wondering and the ache of loving someone who has gone quiet."

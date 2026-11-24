@@ -2,7 +2,7 @@
 title: "42 Practical Ways To Improve Yourself"
 date: 2017-08-06
 category:
-  - Historic
+  - Shakes
 summary: "A quick list of 42 practical ways to grow, from reading daily to writing to your future self."
 seo_title: "42 Practical Ways To Improve Yourself"
 seo_description: "A simple checklist of 42 self improvement ideas by Mirabelle Morah, from reading daily to learning a language and asking for feedback."

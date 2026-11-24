@@ -2,7 +2,7 @@
 title: "3 things I changed to make my life easier"
 date: 2025-11-09
 category:
-  - Reflections
+  - Reflection
 summary: "Three changes that made Mirabelle's days more fulfilling and her time more productive."
 seo_title: "3 Things I Changed to Make My Life Easier"
 seo_description: "Mirabelle Morah shares three changes she made to build life patterns that make each day more fulfilling and productive."

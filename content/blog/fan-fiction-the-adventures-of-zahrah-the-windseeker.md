@@ -2,7 +2,7 @@
 title: "Fan-Fiction: The Adventures of Zahrah the WindSeeker"
 date: 2016-04-20
 category:
-  - Historic
+  - Shakes
 summary: "Fan fiction inspired by Zahrah the Windseeker, following a flying visit to a friend on earth."
 seo_title: "Zahrah the WindSeeker Fan Fiction | Mirabelle Morah"
 seo_description: "Mirabelle Morah's fan fiction inspired by Nnedi Okorafor's Zahrah the Windseeker, in which a sixth visit to earth leads to a new friendship."

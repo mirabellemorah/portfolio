@@ -1,6 +1,8 @@
 ---
 title: "#1: learning to animate  ( in 5 days)"
 date: 2026-11-24
+category:
+  - Makes
 summary: I'm always in total awe of people who make frame by frame animations and oof!
 seo_title: How to learn how to animate in 5 days
 seo_description: This is all I did to learn how to make animations in 5 days

@@ -2,7 +2,7 @@
 title: "Yes! Here’s why I developed a website for Beyonce (Code First Girls)"
 date: 2025-01-05
 category:
-  - Design
+  - Makes
 summary: "Why Mirabelle built a Beyonce website with three teammates on the Code First Girls course."
 seo_title: "Why I Built a Beyonce Website (Code First Girls)"
 seo_description: "Mirabelle Morah explains the Beyonce website she built with a team on the Code First Girls intro to web development course."

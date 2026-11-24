@@ -2,7 +2,7 @@
 title: "What Makes Life, Life?"
 date: 2016-05-26
 category:
-  - Historic
+  - Reflection
 summary: "A poem of questions about love, pain, the moon and what makes life worth living."
 seo_title: "What Makes Life, Life? A Poem | Mirabelle Morah"
 seo_description: "A reflective poem by Mirabelle Morah that asks what makes love hurt, what makes hearts long and what really makes life, life."

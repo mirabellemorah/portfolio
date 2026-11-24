@@ -2,7 +2,7 @@
 title: "The Hard Life"
 date: 2016-06-13
 category:
-  - Historic
+  - Shakes
 summary: "A short story about a seventeen year old who carries his family on little more than #200 a day."
 seo_title: "The Hard Life: A Short Story | Mirabelle Morah"
 seo_description: "The Hard Life is a short story by Mirabelle Morah about a teenage boy who becomes the man of the house and stretches every naira."

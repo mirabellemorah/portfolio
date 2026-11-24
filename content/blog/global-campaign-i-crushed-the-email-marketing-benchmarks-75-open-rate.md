@@ -2,7 +2,7 @@
 title: "Global campaign: I crushed the email marketing benchmarks (75% Open Rate!) 📈"
 date: 2025-01-13
 category:
-  - Creative Business
+  - Shakes
 summary: "A case study on leading the first People and Planet First Week and a 75% email open rate."
 seo_title: "Global Campaign: 75% Email Open Rate Case Study"
 seo_description: "Mirabelle Morah shares how she led the first People and Planet First Week campaign and beat email marketing benchmarks with a 75% open rate."
