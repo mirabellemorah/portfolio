@@ -6,6 +6,7 @@ category:
   - Makes
 summary: This is an example of work I just created, and I’m looking forward to
   doing more.
+cover: /assets/blog-assets/phone mockup.gif
 draft: false
 ---
 I just wrote about my [creative coding workshop](https://medium.com/@mirabellemorah/my-experience-at-coding-systems-creative-coding-workshop-and-intl-12e5da65d10c) experience with creative systems. As the year progresses, I’ve been playing and experimenting with how things appear and how we can turn a simple loaf of bread into a full bread salad. In other words, I’m exploring how to combine different elements in new ways.
