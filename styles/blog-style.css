@@ -356,7 +356,15 @@
     font-size: 16px;
   }
   .blog-search.is-open {
-    width: min(220px, 100%);
+    width: min(150px, 100%);
+  }
+  /* Never let the list area push the page wider than the screen */
+  .blog-list-wrap {
+    overflow-x: clip;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 }
 

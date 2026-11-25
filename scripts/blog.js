@@ -41,7 +41,7 @@ document.querySelectorAll(".copy-link").forEach(function (btn) {
     searchForm.classList.toggle("is-open", open);
     searchToggle.setAttribute("aria-expanded", open ? "true" : "false");
     searchBox.tabIndex = open ? 0 : -1;
-    if (open) searchBox.focus();
+    if (open) searchBox.focus({ preventScroll: true });
   }
   var searchStatus = document.querySelector(".blog-search-status");
   var texts = {}; // post address -> all its words in lower case
