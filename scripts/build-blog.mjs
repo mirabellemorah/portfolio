@@ -25,7 +25,7 @@ import { expandIncludes } from "./lib/components.mjs";
 const SITE_URL = "https://www.mirabellemorah.com";
 const WORDS_PER_MINUTE = 225;
 const POSTS_PER_PAGE = 10; // how many posts the blog list shows on one page
-const DEFAULT_SHARE_IMAGE = "/assets/home-page-assets/kish1.png";
+const DEFAULT_SHARE_IMAGE = "/assets/home-page-assets/introducingme.png";
 const AUTHOR = "Mirabelle Morah";
 // -----------------------------------------------------
 
@@ -56,7 +56,12 @@ const toDate = (v) => {
   return Number.isNaN(d.getTime()) ? null : d;
 };
 const fmt = (d, month) =>
-  d.toLocaleDateString("en-GB", { day: "numeric", month, year: "numeric", timeZone: "UTC" });
+  d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month,
+    year: "numeric",
+    timeZone: "UTC",
+  });
 
 // Point "assets/x.png" and "/assets/x.png" at the site root; leave full URLs alone.
 const assetUrl = (p) => {
@@ -78,10 +83,12 @@ const countWords = (md) =>
   plainText(md)
     .split(/\s+/)
     .filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
-const readingTime = (md) => Math.max(1, Math.ceil(countWords(md) / WORDS_PER_MINUTE));
+const readingTime = (md) =>
+  Math.max(1, Math.ceil(countWords(md) / WORDS_PER_MINUTE));
 
 // Structured data for search engines. The "<" is escaped so the data can never close the script tag early.
-const jsonLd = (obj) => `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;
+const jsonLd = (obj) =>
+  `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;
 const authorLd = { "@type": "Person", name: AUTHOR, url: SITE_URL };
 
 // ---------- Markdown -> HTML ----------
@@ -99,9 +106,14 @@ marked.use({
 // The menu, header, buttons and footer live in the components/ folder.
 // The templates pull them in with lines like <!-- @include navbar current="blog" -->.
 function render(templateName, vars) {
-  let html = expandIncludes(read("templates", templateName), { root: vars.root });
+  let html = expandIncludes(read("templates", templateName), {
+    root: vars.root,
+  });
   return html.replace(/\{\{(\w+)\}\}/g, (_, key) => {
-    if (!(key in vars)) throw new Error(`Template ${templateName} uses {{${key}}} but the build has no value for it.`);
+    if (!(key in vars))
+      throw new Error(
+        `Template ${templateName} uses {{${key}}} but the build has no value for it.`,
+      );
     return vars[key];
   });
 }
@@ -111,7 +123,8 @@ const ICONS = {
   x: '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>',
   linkedin:
     '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
-  facebook: '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+  facebook:
+    '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
   whatsapp:
     '<path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>',
   email:
@@ -142,7 +155,9 @@ function shareHtml(url, title) {
 const posts = [];
 for (const file of fs.readdirSync(POSTS_DIR)) {
   if (!file.endsWith(".md") || file.toLowerCase() === "readme.md") continue;
-  const { data, content } = matter(fs.readFileSync(path.join(POSTS_DIR, file), "utf8"));
+  const { data, content } = matter(
+    fs.readFileSync(path.join(POSTS_DIR, file), "utf8"),
+  );
   const slug = file.replace(/\.md$/, "");
   const date = toDate(data.date);
 
@@ -156,12 +171,17 @@ for (const file of fs.readdirSync(POSTS_DIR)) {
   }
 
   // "category" can be one name (older posts) or a list of names (Pages CMS "choose one or more").
-  const rawCategories = Array.isArray(data.category) ? data.category : data.category ? [data.category] : [];
+  const rawCategories = Array.isArray(data.category)
+    ? data.category
+    : data.category
+      ? [data.category]
+      : [];
   const categories = [];
   for (const c of rawCategories) {
     const name = String(c ?? "").trim();
     const slug = slugify(name);
-    if (name && slug && !categories.some((x) => x.slug === slug)) categories.push({ name, slug });
+    if (name && slug && !categories.some((x) => x.slug === slug))
+      categories.push({ name, slug });
   }
   const summary =
     String(data.summary ?? "").trim() ||
@@ -203,7 +223,10 @@ posts.forEach((post, i) => {
     : "";
   const pill = post.categories.length
     ? `<p class="blog-tags">${post.categories
-        .map((c) => `<a href="${ROOT_PREFIX}blog/?category=${c.slug}">${esc(c.name)}</a>`)
+        .map(
+          (c) =>
+            `<a href="${ROOT_PREFIX}blog/?category=${c.slug}">${esc(c.name)}</a>`,
+        )
         .join(" ")}</p>`
     : "";
 
@@ -234,7 +257,12 @@ posts.forEach((post, i) => {
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       url,
       ...(post.categories.length
-        ? { articleSection: post.categories.length === 1 ? post.categories[0].name : post.categories.map((c) => c.name) }
+        ? {
+            articleSection:
+              post.categories.length === 1
+                ? post.categories[0].name
+                : post.categories.map((c) => c.name),
+          }
         : {}),
       wordCount: post.words,
       timeRequired: `PT${post.minutes}M`,
@@ -254,9 +282,11 @@ posts.forEach((post, i) => {
 });
 
 // List page (text only)
-const categories = [...new Map(posts.flatMap((p) => p.categories.map((c) => [c.slug, c.name]))).entries()].sort((a, b) =>
-  a[1].localeCompare(b[1]),
-);
+const categories = [
+  ...new Map(
+    posts.flatMap((p) => p.categories.map((c) => [c.slug, c.name])),
+  ).entries(),
+].sort((a, b) => a[1].localeCompare(b[1]));
 
 const listHtml = render("blog-list.html", {
   root: ROOT_PREFIX,
@@ -279,13 +309,23 @@ const listHtml = render("blog-list.html", {
     })),
   }),
   category_filters: categories
-    .map(([slug, name]) => `<button type="button" data-filter="${slug}">${esc(name)}</button>`)
+    .map(
+      ([slug, name]) =>
+        `<button type="button" data-filter="${slug}">${esc(name)}</button>`,
+    )
     .join("\n        "),
   post_list: posts
     .map(
-      (p) => `<li class="blog-item" data-category="${p.categories.map((c) => c.slug).join(" ")}">
+      (
+        p,
+      ) => `<li class="blog-item" data-category="${p.categories.map((c) => c.slug).join(" ")}">
           <a href="${esc(p.slug)}">
-            <div class="blog-item-meta">${[p.categories.length && esc(p.categories.map((c) => c.name).join(", ")), fmt(p.date, "short"), `${p.minutes} min read`]
+            <div class="blog-item-meta">${[
+              p.categories.length &&
+                esc(p.categories.map((c) => c.name).join(", ")),
+              fmt(p.date, "short"),
+              `${p.minutes} min read`,
+            ]
               .filter(Boolean)
               .join(" &middot; ")}</div>
             <h2>${esc(p.title)}</h2>
@@ -315,13 +355,21 @@ fs.writeFileSync(
   JSON.stringify(
     posts.map((p) => ({
       slug: p.slug,
-      text: plain([p.title, p.summary, p.categories.map((c) => c.name).join(" "), p.html].join(" ")).toLowerCase(),
+      text: plain(
+        [
+          p.title,
+          p.summary,
+          p.categories.map((c) => c.name).join(" "),
+          p.html,
+        ].join(" "),
+      ).toLowerCase(),
     })),
   ),
 );
 
 // ---------- sitemap.xml and robots.txt (written to the site root) ----------
-const xmlEsc = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const xmlEsc = (t) =>
+  t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // Your existing pages: index.html becomes "/", the rest keep their file names.
 // post.html is skipped because it is a template page, not a real page.
@@ -332,24 +380,41 @@ const rootPages = fs
   .map((f) => (f === "index.html" ? "/" : `/${f}`));
 const workDir = path.join(ROOT, "work");
 const workPages = fs.existsSync(workDir)
-  ? fs.readdirSync(workDir).filter((f) => f.endsWith(".html")).map((f) => `/work/${f}`)
+  ? fs
+      .readdirSync(workDir)
+      .filter((f) => f.endsWith(".html"))
+      .map((f) => `/work/${f}`)
   : [];
 
 const sitemapEntries = [
   ...[...rootPages, ...workPages].sort().map((u) => ({ loc: SITE_URL + u })),
-  { loc: `${SITE_URL}/blog/`, lastmod: posts[0]?.date.toISOString().slice(0, 10) },
-  ...posts.map((p) => ({ loc: `${SITE_URL}/blog/${p.slug}`, lastmod: p.date.toISOString().slice(0, 10) })),
+  {
+    loc: `${SITE_URL}/blog/`,
+    lastmod: posts[0]?.date.toISOString().slice(0, 10),
+  },
+  ...posts.map((p) => ({
+    loc: `${SITE_URL}/blog/${p.slug}`,
+    lastmod: p.date.toISOString().slice(0, 10),
+  })),
 ];
 fs.writeFileSync(
   path.join(ROOT, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     sitemapEntries
-      .map((e) => `  <url><loc>${xmlEsc(e.loc)}</loc>${e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ""}</url>`)
+      .map(
+        (e) =>
+          `  <url><loc>${xmlEsc(e.loc)}</loc>${e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ""}</url>`,
+      )
       .join("\n") +
     `\n</urlset>\n`,
 );
-fs.writeFileSync(path.join(ROOT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+fs.writeFileSync(
+  path.join(ROOT, "robots.txt"),
+  `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+);
 
 console.log(`Built ${posts.length} post(s) and the blog list into blog/`);
-console.log(`Wrote sitemap.xml (${sitemapEntries.length} addresses) and robots.txt`);
+console.log(
+  `Wrote sitemap.xml (${sitemapEntries.length} addresses) and robots.txt`,
+);
 for (const p of posts) console.log(`  ${p.slug}.html  (${p.minutes} min read)`);
