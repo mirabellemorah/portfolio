@@ -4,7 +4,7 @@ date: 2024-10-14
 category:
   - Business
   - Shakes
-summary: "Mirabelle's GMD model for messaging people you don't know: greetings, your message, then details."
+summary: "My GMD model for messaging people you don't know: greetings, your message, then details."
 seo_title: "How to Talk to Anyone and Get a Meeting"
 seo_description: "Mirabelle Morah shares her GMD model for reaching out to people you don't know: greetings first, your message next, details last."
 draft: false

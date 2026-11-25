@@ -3,7 +3,7 @@ title: "This is The Compelling Reason Why I Smile The Way I Do :)"
 date: 2016-08-13
 category:
   - Reflection
-summary: "I explain why I once felt awkward about her wide smile and how I came to love it."
+summary: "I explain why I once felt awkward about my wide smile and how I came to love it."
 seo_title: "Why I Smile the Way I Do | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares how teasing about her big smile made her self conscious as a child, and how she learned to smile freely."
 draft: false

@@ -4,7 +4,7 @@ date: 2026-04-29
 category:
   - Business
   - Reflection
-summary: "What changed when Mirabelle expanded the Grohwie Design Fellowship for its second cohort."
+summary: "What changed when I expanded the Grohwie Design Fellowship for its second cohort."
 seo_title: "Bootstrapping Another International Design Fellowship"
 seo_description: "Mirabelle Morah shares what she learned running the second year of the Grohwie Design Fellowship with fellows from more countries."
 draft: false

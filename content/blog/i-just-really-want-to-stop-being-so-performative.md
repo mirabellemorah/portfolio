@@ -3,7 +3,7 @@ title: "I just really want to stop being so performative."
 date: 2025-11-09
 category:
   - Reflection
-summary: "An honest note on tiring of tailoring her creative work to what other people think."
+summary: "An honest note on tiring of tailoring my creative work to what other people think."
 seo_title: "I Want to Stop Being So Performative"
 seo_description: "Mirabelle Morah writes honestly about being tired of shaping her creative work around what people might think, and wanting to stop performing."
 draft: false

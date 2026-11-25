@@ -3,7 +3,7 @@ title: "I had a love affair with Entrepreneurs First that never happened"
 date: 2026-08-17
 category:
   - Reflection
-summary: "Mirabelle's account of applying to Entrepreneurs First and being told she wasn't eligible."
+summary: "My account of applying to Entrepreneurs First and being told I wasn't eligible."
 seo_title: "My Entrepreneurs First Love Affair That Never Happened"
 seo_description: "Mirabelle Morah recounts applying to Entrepreneurs First, making it to interview and being told she wasn't eligible the next day."
 draft: false

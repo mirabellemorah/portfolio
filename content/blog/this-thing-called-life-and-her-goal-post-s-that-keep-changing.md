@@ -4,7 +4,7 @@ date: 2026-08-09
 category:
   - Reflection
   - Business
-summary: "A reflection on why the goalposts of life keep moving and what she really wants."
+summary: "A reflection on why the goalposts of life keep moving and what I really want."
 seo_title: "Life and Her Changing Goal Posts | Mirabelle Morah"
 seo_description: "Mirabelle Morah reflects on why the goalposts in life keep changing and what she really wants out of it."
 draft: false

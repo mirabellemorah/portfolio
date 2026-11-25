@@ -4,7 +4,7 @@ date: 2024-01-01
 category:
   - Shakes
   - Reflection
-summary: "A humorous look at Mirabelle's first three months as a Mastercard Foundation Scholar in Edinburgh."
+summary: "A humorous look at my first three months as a Mastercard Foundation Scholar in Edinburgh."
 seo_title: "From Abuja to Edinburgh: My First Semester"
 seo_description: "Mirabelle Morah shares her first semester as a Mastercard Foundation Scholar at the University of Edinburgh, from settling in to heavy wind."
 draft: false

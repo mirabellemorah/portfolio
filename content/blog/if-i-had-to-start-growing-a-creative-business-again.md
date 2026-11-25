@@ -3,7 +3,7 @@ title: "If I had to start growing a creative business again"
 date: 2026-05-11
 category:
   - Business
-summary: "What Mirabelle would do first if she had to grow a creative business from scratch again."
+summary: "What I would do first if I had to grow a creative business from scratch again."
 seo_title: "If I Had to Start Growing a Creative Business Again"
 seo_description: "Mirabelle Morah shares what she'd do differently when starting a creative business again, beginning with writing herself a contract."
 draft: false
