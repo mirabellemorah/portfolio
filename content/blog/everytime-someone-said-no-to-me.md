@@ -1,5 +1,5 @@
 ---
-title: Everytime someone said no to me
+title: Everytime a grant provider said no to me
 date: 2026-11-25
 category:
   - Reflection
@@ -42,7 +42,6 @@ One in particular was the We Are Family Youth to the Front Fund. I was quite exc
 
 During that application and wait season I had already started organising the second cohort of the Grohwie Design Fellowship. Because if I learned anything, it’s that it’s cool to be invited to a table but don’t wait if it’s taking too long, go create your own stuff. This time I was accepting 20 international fellows and had had close to 300 total applications since the start of the fellowship. More countries applied: over 30 countries had applied.
 
-
 #### **No funding? Nobody can stop reggae!**
 
 This was going to be longer: 8 weeks total, with 4 weeks of theory and then, for the remaining 4 weeks, fellows were going to be paired to work in other organizations to build their portfolio and do some #DesignForGood projects. Was it scary? Yes. But we did it anyway.
@@ -65,12 +64,12 @@ When I didn’t get the We Are Family Foundation grant, it kind of sucked becaus
 
 But a moving woman will always meet her targets with greater opportunities. As God would have it, I found support from Mastercard Foundation FAST program with Anzisha as my implementing partners. I went through a 4-month business mentorship program that took me from getting funded to build a design software to actually getting funded to organizing two in person design workshops that were incredibly fascinating: one in Calabar and one in Lagos.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GBy9S3jAKD0?si=BKX-dphRYDl1-cY2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-https://youtu.be/AiYTC6hEL2k?si=JDf5GIvyKEeRWgkW
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYTC6hEL2k?si=qN08WG_bsD9G-9uK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GBy9S3jAKD0?si=w-xLlNVPhn_x6JNm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The feedback was wowza! I guess this is a reminder to go for the things that you want to go for.
-
 
 #### **Other accelerators I got into in 2026**
 
