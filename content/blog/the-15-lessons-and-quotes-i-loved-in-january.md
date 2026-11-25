@@ -3,7 +3,7 @@ title: "The 15 lessons and quotes I loved in January"
 date: 2025-02-24
 category:
   - Reflection
-summary: "A collection of fifteen quotes and lessons that stayed with Mirabelle in January."
+summary: "A collection of fifteen quotes and lessons that stayed with me in January."
 seo_title: "15 Lessons and Quotes I Loved in January"
 seo_description: "Mirabelle Morah shares fifteen quotes and lessons she read and heard in January that resonated with her."
 draft: false

@@ -4,7 +4,7 @@ date: 2024-10-23
 category:
   - Makes
   - Reflection
-summary: "What Mirabelle learned from sticking with coding and motion design: if you keep going, it finds you."
+summary: "What I learned from sticking with coding and motion design: if you keep going, it finds you."
 seo_title: "Coding, Motion Design and Life | Mirabelle Morah"
 seo_description: "Mirabelle Morah looks back on opening After Effects for the first time and on learning to code, with a lesson on not giving up."
 draft: false

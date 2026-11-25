@@ -1,8 +1,8 @@
 ---
-title: "Poison by Mirabelle Morah"
+title: "Poison"
 date: 2017-02-10
 category:
-  - Shakes
+  - Reflection
 summary: "A short story about a woman afraid of marriage because of the home she grew up in."
 seo_title: "Poison: A Short Story by Mirabelle Morah"
 seo_description: "Poison is a short story by Mirabelle Morah, a revised take on Poisoned, about a woman who fears repeating her family's pain."

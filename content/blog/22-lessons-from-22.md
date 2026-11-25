@@ -3,7 +3,7 @@ title: "22 lessons from being 22"
 date: 2021-02-05
 category:
   - Reflection
-summary: "Twenty two lessons Mirabelle learned by age 22, a follow up to earlier lesson posts."
+summary: "Twenty two lessons I learned by age 22, a follow up to earlier lesson posts."
 seo_title: "22 Lessons From Being 22 | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares 22 lessons from being 22, continuing her yearly reflections on growth, faith and moving out of comfort zones."
 draft: false

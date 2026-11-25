@@ -2,8 +2,8 @@
 title: "Creative Technologies: Immersive Labs and Projection Mapping"
 date: 2026-05-25
 category:
-  - Makes
-summary: "What Mirabelle learned about projection mapping at a two day ImmersiveLabs program."
+  - Reflection
+summary: "What I learned about projection mapping at a two day ImmersiveLabs program."
 seo_title: "Immersive Labs and Projection Mapping | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares what she learned about projection mapping at a two day ImmersiveLabs program run by Surge and Scottish Youth Theatre."
 draft: false

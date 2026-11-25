@@ -3,6 +3,7 @@ title: "The 3 types of creative business ownership"
 date: 2026-04-27
 category:
   - Business
+  - Reflection
 summary: "The technician, manager and owner levels of creative business ownership, and which one you want."
 seo_title: "The 3 Types of Creative Business Ownership"
 seo_description: "Mirabelle Morah explains the three levels of creative business ownership for freelancers who want to grow into running a studio or agency."

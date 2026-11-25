@@ -4,7 +4,7 @@ date: 2025-11-06
 category:
   - Business
   - Reflection
-summary: "Why Mirabelle left a promotion track to build her own path in the creative sector."
+summary: "Why I left a promotion track to build my own path in the creative sector."
 seo_title: "I Kept Begging, So I Built Mine | Mirabelle Morah"
 seo_description: "Mirabelle Morah explains why she left after a promotion offer and built her own path in the creative sector."
 draft: false

@@ -3,6 +3,7 @@ title: "What skills should we focus on developing in our comms team to meet evol
 date: 2025-04-21
 category:
   - Shakes
+  - Reflection
 summary: "Skills communications teams should build to meet changing challenges, from a session in Kano."
 seo_title: "Skills Comms Teams Need to Meet New Challenges"
 seo_description: "Mirabelle Morah shares takeaways from a session with NGO communications leaders in Kano, Nigeria, on skills comms teams should build."

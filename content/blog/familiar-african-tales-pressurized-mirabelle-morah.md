@@ -1,8 +1,8 @@
 ---
-title: "Familiar African Tales | Pressurized By Mirabelle Morah"
+title: "Familiar African Tales | Pressurized"
 date: 2016-11-18
 category:
-  - Shakes
+  - Reflection
 summary: "A Familiar African Tales story about surviving high school without a boyfriend."
 seo_title: "Pressurized: Familiar African Tales | Mirabelle Morah"
 seo_description: "In this Familiar African Tales story, Mirabelle Morah recalls the pressure from a persistent admirer and from friends to date in high school."

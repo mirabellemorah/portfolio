@@ -3,7 +3,7 @@ title: "The 6 books that changed me"
 date: 2022-05-22
 category:
   - Reflection
-summary: "The six books that opened Mirabelle's mind to what is possible inside her."
+summary: "The six books that opened my mind to what is possible inside me."
 seo_title: "The 6 Books That Changed Me | Mirabelle Morah"
 seo_description: "Mirabelle Morah shares the six books that changed her mindset and opened her mind to the possibilities inside of her."
 draft: false

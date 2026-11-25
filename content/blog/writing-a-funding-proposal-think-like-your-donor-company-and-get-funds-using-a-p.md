@@ -2,7 +2,7 @@
 title: "Writing a funding proposal? Think like your donor company and get funds using a PESTEL framework"
 date: 2025-01-14
 category:
-  - Shakes
+  - Business
 summary: "How a PESTEL analysis helps you write funding proposals that speak to your donor."
 seo_title: "Funding Proposal Tips Using a PESTEL Framework"
 seo_description: "Mirabelle Morah explains how to use a PESTEL framework to think like your donor and write a stronger funding proposal."

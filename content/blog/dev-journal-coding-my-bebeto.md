@@ -3,7 +3,6 @@ title: "Dev journal: coding my bebeto"
 date: 2025-01-27
 category:
   - Makes
-  - Reflection
 summary: "The story behind Bebeto, the first website Mirabelle ever developed."
 seo_title: "Dev Journal: Coding My Bebeto | Mirabelle Morah"
 seo_description: "In this dev journal, Mirabelle Morah shares the story of Bebeto, the first website she ever developed."

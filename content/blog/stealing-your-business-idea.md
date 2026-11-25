@@ -3,7 +3,7 @@ title: "Lol, won’t people still steal my idea?"
 date: 2024-03-03
 category:
   - Business
-summary: "Lots of people get scared that their business ideas will be stolen. What if your business ideas won’t be stolen?."
+summary: "Lots of people get scared that their business ideas will be stolen. What if your business ideas won’t be stolen?"
 seo_title: "When people steal your business idea."
 seo_description: "Many fear that others will steal their business ideas, but what if that doesn’t happen? How can you support yourself?"
 draft: false

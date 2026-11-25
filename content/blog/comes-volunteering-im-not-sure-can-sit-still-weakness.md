@@ -3,7 +3,8 @@ title: "When It Comes To Volunteering I'm Not Sure I Can Sit Still - Is This My 
 date: 2017-04-20
 category:
   - Reflection
-summary: "Mirabelle examines her habit of saying yes to every chance to volunteer."
+  - Shakes
+summary: "I examine habit of saying yes to every chance to volunteer."
 seo_title: "Why I Can't Say No to Volunteering | Mirabelle Morah"
 seo_description: "Mirabelle Morah asks whether her urge to volunteer and help out everywhere is a strength or a weakness in her life."
 draft: false

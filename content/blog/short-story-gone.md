@@ -2,7 +2,7 @@
 title: "Short Story: Gone"
 date: 2016-06-16
 category:
-  - Shakes
+  - Reflection
 summary: "A short story about a goodbye, told by someone who loves the person leaving."
 seo_title: "Gone: A Short Story by Mirabelle Morah"
 seo_description: "Gone is a short story by Mirabelle Morah about a packed bag, an unspoken goodbye and a love that cannot ask someone to stay."

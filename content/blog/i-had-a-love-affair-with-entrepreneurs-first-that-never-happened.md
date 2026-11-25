@@ -2,7 +2,6 @@
 title: "I had a love affair with Entrepreneurs First that never happened"
 date: 2026-08-17
 category:
-  - Shakes
   - Reflection
 summary: "Mirabelle's account of applying to Entrepreneurs First and being told she wasn't eligible."
 seo_title: "My Entrepreneurs First Love Affair That Never Happened"

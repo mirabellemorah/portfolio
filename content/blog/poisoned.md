@@ -2,7 +2,7 @@
 title: "Short Story: Poisoned"
 date: 2016-07-18
 category:
-  - Shakes
+  - Reflection
 summary: "A short story about a young woman afraid of marriage, divorce and leaving broken children behind."
 seo_title: "Poisoned: A Short Story by Mirabelle Morah"
 seo_description: "Poisoned is a short story by Mirabelle Morah about a woman who fears marriage because of what she saw at home and how that fear shapes her."

@@ -4,7 +4,7 @@ date: 2023-06-11
 category:
   - Makes
   - Reflection
-summary: "How becoming a motion designer changed what Mirabelle believes is possible."
+summary: "How becoming a motion designer changed what I believe is possible."
 seo_title: "How Motion Design Changed My View of Impossible"
 seo_description: "Mirabelle Morah explains three ways learning motion design changed her mindset and made her believe far more is possible."
 draft: false

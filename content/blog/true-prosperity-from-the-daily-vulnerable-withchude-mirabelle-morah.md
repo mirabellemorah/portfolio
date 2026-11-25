@@ -3,7 +3,7 @@ title: "True Prosperity from The Daily Vulnerable #WithChude — Mirabelle M
 date: 2022-05-30
 category:
   - Reflection
-summary: "What Mirabelle took from Chude Jideonwo's The Daily Vulnerable about real stories and true prosperity."
+summary: "What I took from Chude Jideonwo's The Daily Vulnerable about real stories and true prosperity."
 seo_title: "True Prosperity: The Daily Vulnerable #WithChude"
 seo_description: "Mirabelle Morah reflects on The Daily Vulnerable #WithChude, a show of real life stories she turned to when she wasn't feeling happy."
 draft: false

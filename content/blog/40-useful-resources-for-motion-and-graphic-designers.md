@@ -3,6 +3,7 @@ title: "40 useful resources for motion and graphic designers"
 date: 2022-05-14
 category:
   - Makes
+  - Shakes
 summary: "40+ design resources and tools Mirabelle uses daily as a motion and graphic designer."
 seo_title: "40 Resources for Motion and Graphic Designers"
 seo_description: "Mirabelle Morah shares 40+ resources and tools she uses daily as a motion and graphic designer, from her own design journey."

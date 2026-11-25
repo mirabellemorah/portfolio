@@ -2,7 +2,7 @@
 title: "Digital impact: making websites work for social enterprises"
 date: 2025-02-17
 category:
-  - Shakes
+  - Business
   - Makes
 summary: "How to build a useful website that shows the social or environmental problems your organisation solves."
 seo_title: "Websites That Work for Social Enterprises"

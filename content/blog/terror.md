@@ -2,7 +2,7 @@
 title: "Short Story: Terror in The Woods"
 date: 2016-07-19
 category:
-  - Shakes
+  - Reflection
 summary: "A horror short story about Olaedo, a boy raised by a godmother, and a night in the woods."
 seo_title: "Terror in The Woods: A Short Story | Mirabelle Morah"
 seo_description: "Terror in The Woods is a short story by Mirabelle Morah about Olaedo, a boy who grew up without his parents, and a frightening trip into the woods."

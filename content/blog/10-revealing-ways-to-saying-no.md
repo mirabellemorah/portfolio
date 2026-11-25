@@ -2,7 +2,8 @@
 title: "10 revealing ways to say no without feeling guilty"
 date: 2019-01-20
 category:
-  - Shakes
+  - Reflection
+  - Business
 summary: "Ten ways to say no without feeling guilty, learned after a busy post exam season."
 seo_title: "10 Ways to Say No Without Feeling Guilty"
 seo_description: "Mirabelle Morah shares 10 revealing ways to say no without guilt, drawn from the lessons of an overcommitted season."

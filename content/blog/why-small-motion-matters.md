@@ -2,7 +2,7 @@
 title: Why small motion matters
 date: 2026-11-19
 category:
-  - Makes
+  - Business
 summary: A button that moves a little feels alive. A button that does not move feels like a picture of a button.
 cover: /assets/home-page-assets/kish1.png
 cover_alt: A colourful motion design still

@@ -1,5 +1,5 @@
 ---
-title: "Once Upon A Girl By Mirabelle Morah"
+title: "Once Upon A Girl"
 date: 2016-10-24
 category:
   - Reflection

@@ -3,7 +3,7 @@ title: "Waking up in Biafra"
 date: 2016-09-14
 category:
   - Reflection
-summary: "A story written at sixteen, inspired by Chimamanda Adichie, about waking up in the chaos of war."
+summary: "A story I had written at sixteen, inspired by Chimamanda Adichie, about waking up in the chaos of war."
 seo_title: "Waking Up in Biafra: A Story by Mirabelle Morah"
 seo_description: "Waking Up in Biafra is a short story Mirabelle Morah wrote at sixteen, inspired by Chimamanda Adichie's writing on the Nigerian civil war."
 draft: false

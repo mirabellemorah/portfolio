@@ -4,7 +4,8 @@ date: 2025-07-08
 category:
   - Business
   - Reflection
-summary: "What Mirabelle learned from bootstrapping an international design fellowship despite being afraid."
+  - Shakes
+summary: "What I learned from bootstrapping an international design fellowship despite being afraid."
 seo_title: "Bootstrapping an International Design Fellowship"
 seo_description: "Mirabelle Morah shares what it took to bootstrap the Grohwie Design Fellowship, and why she did it even though she was scared."
 draft: false

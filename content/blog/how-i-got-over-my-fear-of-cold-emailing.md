@@ -3,8 +3,8 @@ title: "How I got over my fear of cold emailing"
 date: 2025-09-01
 category:
   - Business
-  - Shakes
-summary: "How Mirabelle went from fearing cold messages to loving reaching out."
+  - Reflection
+summary: "How I went from fearing cold messages to loving reaching out."
 seo_title: "How I Got Over My Fear of Cold Emailing"
 seo_description: "Mirabelle Morah shares how she overcame her fear of cold messaging and emailing and began to enjoy reaching out to people."
 draft: false

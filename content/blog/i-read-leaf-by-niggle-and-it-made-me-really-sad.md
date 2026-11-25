@@ -3,7 +3,7 @@ title: "I read “Leaf by Niggle” and it made me really sad"
 date: 2025-04-15
 category:
   - Reflection
-summary: "A reflection on the short story Leaf by Niggle and the phrase that made Mirabelle feel seen."
+summary: "A reflection on the short story Leaf by Niggle and the phrase that made me feel seen."
 seo_title: "Reading Leaf by Niggle | Mirabelle Morah"
 seo_description: "Mirabelle Morah reflects on reading Leaf by Niggle and the phrase in it that made her feel seen and a little sad."
 draft: false

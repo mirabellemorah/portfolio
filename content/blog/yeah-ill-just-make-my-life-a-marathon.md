@@ -3,7 +3,7 @@ title: "Yeah I'll just make my life a marathon"
 date: 2026-04-22
 category:
   - Reflection
-summary: "Why Mirabelle runs parts of her life like a marathon instead of waiting for the perfect sprint."
+summary: "Why I runs parts of my life like a marathon instead of waiting for the perfect sprint."
 seo_title: "Yeah, I'll Just Make My Life a Marathon"
 seo_description: "Mirabelle Morah explains the marathonization of life: moving steadily toward a goal instead of waiting for the perfect time to sprint."
 draft: false

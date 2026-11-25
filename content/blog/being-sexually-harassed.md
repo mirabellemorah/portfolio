@@ -2,7 +2,7 @@
 title: "A male and female guide: this is what you must do if you’re being sexually harassed"
 date: 2019-01-24
 category:
-  - Shakes
+  - Reflection
 summary: "A guide for women and men on what to do if you are being sexually harassed."
 seo_title: "What To Do If You're Being Sexually Harassed"
 seo_description: "A guide by Mirabelle Morah for men and women on recognising sexual harassment and what to do if it is happening to you."

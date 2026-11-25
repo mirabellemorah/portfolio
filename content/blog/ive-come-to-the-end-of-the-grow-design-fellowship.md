@@ -2,7 +2,6 @@
 title: "I’ve come to the end of the Grow Design Fellowship."
 date: 2026-11-24
 category:
-  - Shakes
   - Reflection
 summary: "A draft reflection on finishing the Grow Design Fellowship and what she did and didn't expect."
 seo_title: "Finishing the Grow Design Fellowship"

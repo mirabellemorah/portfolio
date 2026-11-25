@@ -2,7 +2,7 @@
 title: "How They Made a 2-Hour Meeting Feel Like a Breeze (with Mentimeter)"
 date: 2026-06-16
 category:
-  - Shakes
+  - Reflection
 summary: "How Mentimeter made a two hour Student Enterprise Board meeting feel easy."
 seo_title: "How Mentimeter Made a 2-Hour Meeting Feel Easy"
 seo_description: "Mirabelle Morah shares how Mentimeter kept a two hour Edinburgh Innovations Student Enterprise Board meeting engaging."

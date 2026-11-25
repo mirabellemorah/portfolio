@@ -2,7 +2,7 @@
 title: "How do you deal with ever-expanding responsibilities as a comms strategist?"
 date: 2025-02-12
 category:
-  - Shakes
+  - Business
 summary: "Break every task into smaller parts to find your time thieves, advice for busy comms strategists."
 seo_title: "Ever-Expanding Responsibilities as a Comms Strategist"
 seo_description: "Mirabelle Morah shares how communications managers can handle an ever growing to-do list by breaking tasks down and finding time thieves."

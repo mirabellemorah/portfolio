@@ -3,7 +3,7 @@ title: "4 life lessons you’ll learn from hanging out with Tony Joy"
 date: 2023-05-09
 category:
   - Reflection
-summary: "Four life lessons Mirabelle learned from spending time around Tony Joy."
+summary: "Four life lessons I learned from spending time around Tony Joy."
 seo_title: "4 Life Lessons From Hanging Out With Tony Joy"
 seo_description: "Mirabelle Morah shares four life lessons learned from Tony Joy, whom she first saw at the Her Network Woman of the Year Award in Lagos."
 draft: false

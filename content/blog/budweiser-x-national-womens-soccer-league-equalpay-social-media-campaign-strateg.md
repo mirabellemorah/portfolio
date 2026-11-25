@@ -2,7 +2,7 @@
 title: "Budweiser x National Women’s Soccer League #EqualPay social media campaign strategy"
 date: 2025-06-08
 category:
-  - Shakes
+  - Makes
 summary: "A creative brief and social media campaign strategy for Budweiser and the NWSL on equal pay."
 seo_title: "Budweiser x NWSL #EqualPay Campaign Strategy"
 seo_description: "Mirabelle Morah's creative brief and social media campaign strategy for Budweiser and the NWSL around the #EqualPay conversation."

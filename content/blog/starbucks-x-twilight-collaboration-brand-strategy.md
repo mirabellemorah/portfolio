@@ -2,7 +2,7 @@
 title: "Starbucks x Twilight Collaboration brand strategy"
 date: 2025-06-09
 category:
-  - Shakes
+  - Makes
 summary: "A social media campaign brief for a Starbucks and Twilight collaboration."
 seo_title: "Starbucks x Twilight Brand Collaboration Strategy"
 seo_description: "Mirabelle Morah's creative brief and brand strategy for a Starbucks and Twilight fandom collaboration social media campaign."

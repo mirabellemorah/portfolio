@@ -3,7 +3,7 @@ title: "Jobs to be done framework: understanding customer needs in new product d
 date: 2025-03-17
 category:
   - Business
-summary: "What Mirabelle learned about the jobs to be done framework from Anthony Ulwick's book."
+summary: "What I learned about the jobs to be done framework from Anthony Ulwick's book."
 seo_title: "Jobs to Be Done Framework Explained"
 seo_description: "Mirabelle Morah explains the jobs to be done framework from Anthony Ulwick's book and the difference between jobs and solutions."
 draft: false
