@@ -9,17 +9,16 @@ seo_title: My experience with Coding Systems (a creative coding workshop)
   and INTL graphic design
 seo_description: My experience with Coding Systems (a creative coding workshop)
   and INTL graphic design
+cover: /assets/blog-assets/Screenshot 2026-11-25 at 14.31.28.png
 draft: false
 ---
-![](</assets/blog-assets/Screenshot 2026-11-25 at 14.31.28.png>)
-
 I’ve been [programming](https://github.com/mirabellemorah) for the past 2 years, and every single little opportunity I find, trust me, I’m always trying to find ways to merge my coding practice with my design skills.
 
 From when I first developed [my first solo website](https://github.com/mirabellemorah/girlcode) (it was looking so cool), to when I also decided to build my own [portfolio](https://www.mirabellemorah.com/) website completely using HTML, CSS, and JavaScript on my own, the story goes on. For a while, I also started reaching out to creative technologists, asking them for advice, and met some really cool, interesting people.
 
-**Reaching out to creative technologists**
-
 ![](https://cdn-images-1.medium.com/max/1440/1*MdwvTRS35eYu4zsy7H2DQQ.png)
+
+**Reaching out and going for it**
 
 I recently attended [INTL](https://intl.international/), a design festival that brings together really super interesting creative and design minds from all over the world to Glasgow. I attended a 2-day coding workshop on building “FLEXIBLE VISUAL SYSTEMS DESIGN” with [Coding Systems](https://codingsystems.info/). This was with *“[Tim Rodenbröker,](https://timrodenbroeker.de/) MA — an experienced Creative Coding teacher, and [Martin Lorenz, PhD (Martin Lorenz)](https://www.linkedin.com/in/drmartinlorenz/) — who has been teaching and applying Flexible Visual Systems since 2001.”* And I really, really liked that. I think I just found 2 creative technology heroes.
 
